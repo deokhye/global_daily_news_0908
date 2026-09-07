@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Daily News</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN for graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F8F9FA;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1.5rem;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            padding: 1.5rem;
+        }
+        .icon-wrapper {
+            background-color: #FFF0E6;
+            color: #F27A18;
+            border-radius: 0.75rem;
+            padding: 0.5rem;
+        }
+        .region-tab {
+            padding: 0.5rem 1.15rem;
+            border-radius: 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            white-space: nowrap;
+            border: 1px solid #E5E7EB;
+            color: #64748B;
+            background: white;
+            cursor: pointer;
+            transition: all .15s ease;
+        }
+        .region-tab:hover { background: #FFF7EF; color: #F27A18; }
+        .region-tab.active {
+            background: #F27A18;
+            border-color: #F27A18;
+            color: white;
+            box-shadow: 0 2px 8px rgba(242,122,24,0.35);
+        }
+        .country-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+            border: 1px solid #E5E7EB;
+            color: #475569;
+            background: #F8FAFC;
+            cursor: pointer;
+            transition: all .15s ease;
+        }
+        .country-chip:hover { border-color: #F27A18; color: #F27A18; transform: translateY(-1px); }
+        .country-chip.active {
+            background: #1E293B;
+            border-color: #1E293B;
+            color: white;
+            box-shadow: 0 2px 8px rgba(30,41,59,0.25);
+        }
+        .country-chip img { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; }
+        .scroll-row { overflow-x: auto; scrollbar-width: thin; }
+        .scroll-row::-webkit-scrollbar { height: 6px; }
+        .scroll-row::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 999px; }
+        #country-chips { animation: fadeSlideIn .18s ease; }
+        @keyframes fadeSlideIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .date-picker-wrap {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 0.75rem;
+            padding: 0.45rem 0.8rem;
+        }
+        .date-picker-wrap input[type="date"] {
+            border: none;
+            outline: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #334155;
+            background: transparent;
+        }
+        .date-picker-wrap.loading { opacity: 0.6; pointer-events: none; }
+        .translated-badge {
+            display: inline-flex;
+            align-items: center;
+            font-size: 9px;
+            font-weight: 700;
+            color: #64748B;
+            background: #F1F5F9;
+            border: 1px solid #E2E8F0;
+            border-radius: 4px;
+            padding: 1px 5px;
+            margin-left: 4px;
+        }
+        .loading-dim { opacity: 0.45; pointer-events: none; transition: opacity .15s ease; }
+        .calc-input {
+            width: 100%;
+            border: 1px solid #E2E8F0;
+            border-radius: 0.65rem;
+            padding: 0.55rem 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1E293B;
+            background: #F8FAFC;
+        }
+        .calc-input:focus {
+            outline: none;
+            border-color: #F27A18;
+            box-shadow: 0 0 0 3px rgba(242,122,24,0.15);
+            background: white;
+        }
+    </style>
+</head>
+<body class="text-slate-800 min-h-screen antialiased">
+
+    <!-- 데이터 로딩 완전 실패 시(초기 임베드 JSON 자체가 깨진 경우) 노출되는 오류 배너 -->
+    <div id="fatal-error-banner" class="hidden bg-red-600 text-white text-sm font-semibold text-center py-2 px-4">
+        대시보드 데이터를 불러오지 못했습니다. data/countries_data.json 이 올바르게 생성되었는지 확인해주세요.
+    </div>
+
+    <!-- 1. Header -->
+    <header class="bg-white border-b border-slate-200/80 sticky top-0 z-50">
+        <div class="max-w-[1600px] mx-auto px-6 py-4 flex flex-col gap-4">
+            <div class="flex justify-between items-center flex-wrap gap-3">
+                <div class="flex items-center gap-3.5">
+                    <div class="px-3 py-2 bg-[#FFF0E6] text-[#F27A18] rounded-xl font-extrabold flex items-center justify-center tracking-wide text-xs">
+                        <span class="mr-2 h-2 w-2 rounded-full bg-[#F27A18] animate-pulse"></span>
+                        DAILY BRIEF
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-black text-slate-900 tracking-tight">Global Daily News</h1>
+                        <p class="text-[11px] text-slate-400 mt-0.5">Global Market &amp; Business Intelligence</p>
+                    </div>
+                </div>
+
+                <!-- Clean Date Picker: 과거 아카이브(docs/archive/YYYY-MM-DD.json) 조회 -->
+                <div class="flex flex-col items-end gap-1">
+                    <div id="date-picker-wrap" class="date-picker-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#F27A18]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <input type="date" id="briefDatePicker"
+                               value="{{ generated_at_date }}"
+                               min="{{ archive_min_date }}"
+                               max="{{ archive_max_date }}">
+                    </div>
+                    <p id="date-picker-warning" class="hidden text-[10px] text-red-500 font-semibold max-w-[260px] text-right"></p>
+                </div>
+            </div>
+
+            <!-- Region Nav -->
+            <div id="region-nav" class="flex gap-2 scroll-row pb-1"></div>
+            <!-- Country Chips -->
+            <div id="country-chips" class="flex flex-wrap gap-2 scroll-row pb-1"></div>
+        </div>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main id="main-content" class="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
+
+        <!-- Top Banner -->
+        <div class="card flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="text-5xl font-bold p-2.5 bg-slate-50 rounded-2xl border border-slate-100 shadow-inner">
+                    <img id="country-flag" src="" alt="flag" class="w-10 h-auto">
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span id="country-name-en" class="text-xs font-bold text-[#F27A18] bg-[#FFF0E6] px-2.5 py-0.5 rounded-md">-</span>
+                        <span id="country-currency" class="text-xs font-semibold text-slate-400">-</span>
+                    </div>
+                    <h2 id="country-name-kr" class="text-2xl font-black text-slate-900 mt-1 tracking-tight">-</h2>
+                </div>
+            </div>
+            <div class="text-left md:text-right flex flex-col items-start md:items-end gap-1.5">
+                <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span id="sync-display-text">{{ as_of_display }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1: Country Profile -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">국가 기본 프로필</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">수도</span><span id="profile-capital" class="font-bold text-slate-800 text-sm">-</span></div>
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">총 인구</span><span id="profile-population" class="font-bold text-slate-800 text-sm">-</span></div>
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">연간 GDP 규모</span><span id="profile-gdp" class="font-bold text-slate-800 text-sm">-</span></div>
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">인플레이션 (CPI YoY)</span><span id="profile-inflation" class="font-bold text-slate-800 text-sm">-</span></div>
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">실업률</span><span id="profile-unemployment" class="font-bold text-slate-800 text-sm">-</span></div>
+                        <div id="profile-minwage-row" class="flex justify-between items-center pb-2 border-b border-slate-100 hidden">
+                            <span class="text-slate-500 text-sm">최저임금</span><span id="profile-minwage" class="font-bold text-slate-800 text-sm">-</span>
+                        </div>
+                        <div class="pt-2">
+                            <span class="text-sm block mb-1.5 font-bold text-[#F27A18] flex items-center gap-1">🏢 한국타이어 주요 거점</span>
+                            <div class="bg-[#FFF0E6]/30 border border-[#F27A18]/15 rounded-xl p-3">
+                                <span id="country-hubs" class="font-semibold text-slate-800 text-xs leading-relaxed block">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-stats-source" class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                    * 인구·GDP·수도: World Bank Open API
+                </div>
+            </div>
+
+            <!-- Card 2: Exchange Rate with Graph + Calculator -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2.5 mb-2">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 id="exchange-title" class="font-bold text-base text-slate-900">기준 환율 (KRW)</h3>
+                    </div>
+                    <div class="text-center py-4 bg-slate-50 rounded-2xl my-4 border border-slate-100">
+                        <p id="exchange-unit-label" class="text-xs text-slate-400 mb-1">-</p>
+                        <p id="exchange-current-rate" class="text-3xl font-black text-slate-900 tracking-tight">- 원</p>
+                        <div id="exchange-change-badge" class="mt-2 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold"></div>
+                    </div>
+                    <div id="exchange-chart-wrap">
+                         <p id="exchange-chart-caption" class="text-xs font-semibold text-slate-500 mb-2 text-center">최근 1년 환율 추이</p>
+                         <div class="w-full h-24 relative">
+                            <canvas id="exchangeRateChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- 실시간 환율 계산기 -->
+                    <div id="calculator-wrap" class="mt-5 pt-4 border-t border-slate-100">
+                        <p class="text-xs font-semibold text-slate-500 mb-2">간편 환율 계산기</p>
+                        <div class="flex items-center gap-2">
+                            <input type="number" id="calcInput" value="1" min="0" step="any" inputmode="decimal" class="calc-input">
+                            <span id="calc-currency-label" class="text-xs font-bold text-slate-500 whitespace-nowrap min-w-[36px]">-</span>
+                            <span class="text-slate-300 font-bold">=</span>
+                            <span id="calcResult" class="text-base font-black text-[#F27A18] whitespace-nowrap">0.0 원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                     <span id="exchange-source-note">Yahoo Finance 기준</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Local Headlines -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2.5 mb-5">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">현지 주요 뉴스</h3>
+                    </div>
+                    <div id="headlines-list" class="space-y-3"></div>
+                </div>
+            </div>
+
+            <!-- Card 4: Industry & HR Trends -->
+            <div class="card lg:col-span-3">
+                <div class="flex items-center justify-between mb-5 border-b border-slate-100 pb-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="icon-wrapper">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base text-slate-900">주요 산업 및 비즈니스 동향</h3>
+                            <p class="text-[10px] text-slate-400">완성차·타이어 / 노동·인력 / 경기 / 관세·공급망 — 4대 핵심 분야</p>
+                        </div>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#FFF0E6] text-[#F27A18] border border-[#F27A18]/20">HR &amp; BIZ INTELLIGENCE</span>
+                </div>
+                <div id="industry-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-6 text-center text-xs text-slate-400">
+            <p>© Hankook Tire &amp; Technology - Global HR Team</p>
+            <p class="mt-1">본 페이지는 매일 KST 06:00에 자동으로 갱신됩니다.</p>
+        </div>
+    </footer>
+
+    <!-- 오늘자 39개국 데이터 (regions + countries + as_of_display) — 초기 렌더용 임베드 -->
+    <!-- ⚠️ |safe 필수: 없으면 Jinja2 autoescape가 JSON의 큰따옴표를 HTML 엔티티로 바꿔 JSON.parse()가 깨진다 -->
+    <script id="dashboard-data" type="application/json">{{ dashboard_json|safe }}</script>
+
+    <script>
+    (function () {
+        const INITIAL_DATE = "{{ generated_at_date }}";
+
+        let DASHBOARD, REGIONS, COUNTRIES;
+        try {
+            const raw = document.getElementById('dashboard-data').textContent;
+            DASHBOARD = JSON.parse(raw);
+            REGIONS = DASHBOARD.regions || [];
+            COUNTRIES = DASHBOARD.countries || [];
+            if (!Array.isArray(COUNTRIES) || COUNTRIES.length === 0) {
+                throw new Error('countries 배열이 비어 있습니다.');
+            }
+        } catch (err) {
+            console.error('대시보드 데이터 파싱 실패:', err);
+            document.getElementById('fatal-error-banner').classList.remove('hidden');
+            return; // 잘못된 데이터로 이후 렌더링을 시도하지 않음
+        }
+
+        let currentRegion = 'ALL';
+        let currentCode = (COUNTRIES.find(c => c.code === 'KR') || COUNTRIES[0]).code;
+        let currentDateStr = INITIAL_DATE;   // 날짜 피커 롤백용
+        let chartInstance = null;
+        let currentFx = null;                // 계산기가 참조하는 현재 국가의 환율 정보
+
+        // ---------------------------------------------------------------
+        // 권역 탭 / 국가 칩
+        // ---------------------------------------------------------------
+        function countriesInRegion(regionKey) {
+            if (regionKey === 'ALL') return COUNTRIES;
+            return COUNTRIES.filter(c => c.region === regionKey);
+        }
+
+        function renderRegionTabs() {
+            const el = document.getElementById('region-nav');
+            el.innerHTML = '';
+            REGIONS.forEach(r => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'region-tab' + (r.key === currentRegion ? ' active' : '');
+                btn.textContent = r.label;
+                btn.onclick = () => selectRegion(r.key);
+                el.appendChild(btn);
+            });
+        }
+
+        function renderCountryChips() {
+            const el = document.getElementById('country-chips');
+            el.innerHTML = '';
+            const list = countriesInRegion(currentRegion);
+            list.forEach(c => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'country-chip' + (c.code === currentCode ? ' active' : '');
+                btn.innerHTML = `<img src="https://flagcdn.com/w40/${c.flag}.png" alt="${c.code}"><span>${c.name_kr}</span>`;
+                btn.onclick = () => selectCountry(c.code);
+                el.appendChild(btn);
+            });
+        }
+
+        function selectRegion(regionKey) {
+            currentRegion = regionKey;
+            const list = countriesInRegion(regionKey);
+            if (!list.find(c => c.code === currentCode) && list.length > 0) {
+                currentCode = list[0].code;
+            }
+            renderRegionTabs();
+            renderCountryChips();
+            renderCountry(currentCode);
+        }
+
+        function selectCountry(code) {
+            currentCode = code;
+            renderCountryChips();
+            renderCountry(code);
+        }
+
+        // ---------------------------------------------------------------
+        // 날짜 피커 → 아카이브 비동기 로드 (No-Reload)
+        // ---------------------------------------------------------------
+        function setLoading(isLoading) {
+            document.getElementById('date-picker-wrap').classList.toggle('loading', isLoading);
+            document.getElementById('main-content').classList.toggle('loading-dim', isLoading);
+        }
+
+        function showDateWarning(msg) {
+            const el = document.getElementById('date-picker-warning');
+            if (!msg) { el.classList.add('hidden'); el.textContent = ''; return; }
+            el.textContent = msg;
+            el.classList.remove('hidden');
+        }
+
+        function applyDataset(dashboard, dateStr) {
+            REGIONS = dashboard.regions || REGIONS;
+            COUNTRIES = dashboard.countries || [];
+            currentDateStr = dateStr;
+
+            document.getElementById('sync-display-text').textContent =
+                dashboard.as_of_display || `${dateStr} 06:00 KST 기준`;
+
+            if (!REGIONS.find(r => r.key === currentRegion)) currentRegion = 'ALL';
+            const list = countriesInRegion(currentRegion);
+            if (!list.find(c => c.code === currentCode)) {
+                currentCode = (list[0] || COUNTRIES[0] || {}).code;
+            }
+
+            renderRegionTabs();
+            renderCountryChips();
+            if (currentCode) renderCountry(currentCode);
+        }
+
+        async function onDateChange(e) {
+            const dateStr = e.target.value;
+            showDateWarning('');
+
+            if (dateStr === INITIAL_DATE) {
+                // 오늘 날짜로 되돌아오는 경우 — 별도 네트워크 요청 없이 초기 임베드 데이터를 재사용
+                applyDataset(DASHBOARD, INITIAL_DATE);
+                return;
+            }
+
+            setLoading(true);
+            try {
+                const res = await fetch('./archive/' + dateStr + '.json', { cache: 'no-store' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const json = await res.json();
+                if (!json.countries || !json.countries.length) {
+                    throw new Error('countries 데이터가 비어 있습니다.');
+                }
+                applyDataset(json, dateStr);
+            } catch (err) {
+                console.error('아카이브 로드 실패:', err);
+                showDateWarning(dateStr + ' 데이터를 찾을 수 없습니다. 이전 화면을 계속 표시합니다.');
+                e.target.value = currentDateStr; // 선택을 이전 유효 날짜로 롤백
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        document.getElementById('briefDatePicker').addEventListener('change', onDateChange);
+
+        // ---------------------------------------------------------------
+        // 원화 표기 포맷 — 항상 소수점 1자리 + 천단위 콤마
+        // ---------------------------------------------------------------
+        function fmtWon(v) {
+            const n = Number(v);
+            if (!isFinite(n)) return '0.0';
+            return n.toLocaleString('ko-KR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+        }
+
+        // ---------------------------------------------------------------
+        // 실시간 환율 계산기
+        // ---------------------------------------------------------------
+        function updateCalculator(c) {
+            const fx = c.exchange_rate || {};
+            const wrap = document.getElementById('calculator-wrap');
+            const label = document.getElementById('calc-currency-label');
+            const input = document.getElementById('calcInput');
+
+            if (fx.is_base) {
+                wrap.classList.add('hidden');
+                return;
+            }
+            wrap.classList.remove('hidden');
+            label.textContent = c.currency || '';
+            input.value = 1;
+            recalcCalculator();
+        }
+
+        function recalcCalculator() {
+            const resultEl = document.getElementById('calcResult');
+            const fx = currentFx;
+            if (!fx || fx.is_base) {
+                resultEl.textContent = '0.0 원';
+                return;
+            }
+            const amount = parseFloat(document.getElementById('calcInput').value);
+            if (isNaN(amount)) {
+                resultEl.textContent = '0.0 원';
+                return;
+            }
+            const unitBase = fx.unit_base || 1;
+            const perUnitRate = (fx.current_rate || 0) / unitBase; // 1단위(또는 1 VND/JPY/IDR)당 원화 환산 단가
+            const result = amount * perUnitRate;
+            resultEl.textContent = fmtWon(result) + ' 원';
+        }
+
+        document.getElementById('calcInput').addEventListener('input', recalcCalculator);
+
+        // ---------------------------------------------------------------
+        // 카드 렌더링
+        // ---------------------------------------------------------------
+        function renderProfile(c) {
+            document.getElementById('country-flag').src = `https://flagcdn.com/w80/${c.flag}.png`;
+            document.getElementById('country-name-en').textContent = (c.name_en || '-').toUpperCase();
+            document.getElementById('country-currency').textContent = c.currency || '-';
+            document.getElementById('country-name-kr').textContent = `${c.name_kr || '-'} (${c.name_en || '-'})`;
+
+            const p = c.profile || {};
+            document.getElementById('profile-capital').textContent = p.capital || '-';
+            document.getElementById('profile-population').textContent = p.population || '-';
+            document.getElementById('profile-gdp').textContent = p.gdp || '-';
+            document.getElementById('profile-inflation').textContent = p.inflation || '-';
+            document.getElementById('profile-unemployment').textContent = p.unemployment || '-';
+
+            const wageRow = document.getElementById('profile-minwage-row');
+            if (p.min_wage) {
+                wageRow.classList.remove('hidden');
+                document.getElementById('profile-minwage').textContent =
+                    p.min_wage_note ? `${p.min_wage} (${p.min_wage_note})` : p.min_wage;
+            } else {
+                wageRow.classList.add('hidden');
+            }
+
+            document.getElementById('country-hubs').textContent = (c.hubs && c.hubs.length) ? c.hubs.join(', ') : '-';
+            document.getElementById('profile-stats-source').textContent =
+                `* 인구·GDP·수도: World Bank Open API ｜ 물가·고용: ${p.stats_source || '-'} (${p.stats_asof || '-'} 기준)`;
+        }
+
+        function renderExchange(c) {
+            const fx = c.exchange_rate || {};
+            currentFx = fx;
+            const unitBase = fx.unit_base || 1;
+            const title = document.getElementById('exchange-title');
+            const unitLabel = document.getElementById('exchange-unit-label');
+            const rateEl = document.getElementById('exchange-current-rate');
+            const badge = document.getElementById('exchange-change-badge');
+            const chartWrap = document.getElementById('exchange-chart-wrap');
+            const chartCaption = document.getElementById('exchange-chart-caption');
+            const sourceNote = document.getElementById('exchange-source-note');
+
+            title.textContent = unitBase > 1
+                ? `기준 ${unitBase} ${c.currency || ''} / KRW 환율`
+                : `기준 ${c.currency || ''}/KRW 환율`;
+
+            if (fx.is_base) {
+                unitLabel.textContent = '대한민국 기준 통화';
+                rateEl.textContent = '기준 통화 (KRW)';
+                badge.className = 'mt-2 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-500';
+                badge.textContent = '환산 불필요';
+                chartWrap.classList.add('hidden');
+                sourceNote.textContent = '원화(KRW)는 자국 통화이므로 별도 환율 정보가 없습니다.';
+                if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+                updateCalculator(c);
+                return;
+            }
+
+            chartWrap.classList.remove('hidden');
+            unitLabel.textContent = unitBase > 1
+                ? `${unitBase} ${c.currency || ''} (${c.name_kr || ''} 통화) 기준`
+                : `1 ${c.currency || ''} (${c.name_kr || ''} 통화) 기준`;
+            rateEl.textContent = `${fmtWon(fx.current_rate || 0)} 원`;
+
+            const isUp = (fx.change_pct || 0) >= 0;
+            badge.className = 'mt-2 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold ' +
+                (isUp ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700');
+            badge.textContent = `${isUp ? '▲' : '▼'} 전일 대비 ${isUp ? '상승' : '하락'} (${isUp ? '+' : '-'}${Math.abs(fx.change_pct || 0).toFixed(2)}%)`;
+
+            chartCaption.textContent = unitBase > 1
+                ? `최근 1년 환율 추이 (${unitBase} ${c.currency} 기준)`
+                : '최근 1년 환율 추이';
+            sourceNote.textContent = `${fx.source || 'Yahoo Finance'} 기준`;
+
+            renderChart(fx.history_labels || [], fx.history_values || []);
+            updateCalculator(c);
+        }
+
+        function renderChart(labels, values) {
+            const canvas = document.getElementById('exchangeRateChart');
+            const ctx = canvas.getContext('2d');
+            if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+
+            if (!labels.length || !values.length) return; // 데이터 없으면 빈 캔버스 유지 (에러 방지)
+
+            const gradient = ctx.createLinearGradient(0, 0, 0, 100);
+            gradient.addColorStop(0, 'rgba(242, 122, 24, 0.15)');
+            gradient.addColorStop(1, 'rgba(242, 122, 24, 0)');
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: values,
+                        borderColor: '#F27A18',
+                        borderWidth: 2.5,
+                        fill: true,
+                        backgroundColor: gradient,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 6,
+                        pointHitRadius: 20,
+                        pointBackgroundColor: '#F27A18',
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            enabled: true,
+                            backgroundColor: '#1E293B',
+                            titleColor: '#F8FAFC',
+                            bodyColor: '#F8FAFC',
+                            padding: 10,
+                            cornerRadius: 8,
+                            displayColors: false,
+                            callbacks: {
+                                title: (items) => items[0].label,
+                                label: (item) => `${fmtWon(item.parsed.y)} 원`,
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { display: false },
+                        y: { display: false }
+                    },
+                    layout: { padding: { top: 5 } }
+                }
+            });
+        }
+
+        function translatedBadge(item) {
+            if (!item.translated) return '';
+            const original = (item.original_title || '').replace(/"/g, '&quot;');
+            return `<span class="translated-badge" title="원문: ${original}">EN→KO 자동번역</span>`;
+        }
+
+        function renderHeadlines(c) {
+            const el = document.getElementById('headlines-list');
+            el.innerHTML = '';
+            const list = c.headlines || [];
+            if (list.length === 0) {
+                el.innerHTML = '<p class="text-xs text-slate-400">수집된 뉴스가 없습니다.</p>';
+                return;
+            }
+            list.forEach(h => {
+                const a = document.createElement('a');
+                a.href = h.link || '#';
+                a.target = '_blank';
+                a.rel = 'noopener';
+                a.className = 'block bg-slate-50 hover:bg-orange-50/50 p-3 rounded-lg transition duration-200 border border-slate-100 group';
+                a.innerHTML = `
+                    <div class="flex items-center justify-between text-[10px] text-slate-400 mb-1">
+                        <span class="font-bold text-slate-500">${h.source || 'Google News'}</span>
+                        ${translatedBadge(h)}
+                    </div>
+                    <p class="font-bold text-xs text-slate-800 leading-snug">${h.title || ''}</p>
+                    ${h.summary ? `<p class="text-[11px] text-slate-500 leading-snug mt-1">${h.summary}</p>` : ''}
+                `;
+                el.appendChild(a);
+            });
+        }
+
+        function renderIndustry(c) {
+            const el = document.getElementById('industry-grid');
+            el.innerHTML = '';
+            const list = c.hr_trends || [];
+            if (list.length === 0) {
+                el.innerHTML = '<p class="text-xs text-slate-400 col-span-4">수집된 동향이 없습니다.</p>';
+                return;
+            }
+            list.forEach(t => {
+                const a = document.createElement('a');
+                a.href = t.link || '#';
+                a.target = '_blank';
+                a.rel = 'noopener';
+                a.className = 'bg-slate-50 border border-slate-100 rounded-2xl p-4 hover:bg-orange-50/40 hover:border-orange-200 transition-all cursor-pointer group block';
+                a.innerHTML = `
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold ${t.tag_class || 'bg-slate-100 text-slate-700'}">${t.category || ''}</span>
+                        ${translatedBadge(t)}
+                    </div>
+                    <p class="text-[10px] font-bold text-slate-400 mb-1">${t.tag || ''}</p>
+                    <h4 class="font-bold text-sm text-slate-900 mb-1 leading-snug">${t.title || ''}</h4>
+                    <p class="text-xs text-slate-600 leading-snug">${t.desc || ''}</p>
+                    <p class="text-[10px] text-slate-400 mt-2">${t.source || ''}</p>
+                `;
+                el.appendChild(a);
+            });
+        }
+
+        function renderCountry(code) {
+            const c = COUNTRIES.find(x => x.code === code);
+            if (!c) return;
+            renderProfile(c);
+            renderExchange(c);   // 내부에서 currentFx 갱신 + updateCalculator 호출까지 수행
+            renderHeadlines(c);
+            renderIndustry(c);
+        }
+
+        // 초기 렌더
+        renderRegionTabs();
+        renderCountryChips();
+        renderCountry(currentCode);
+    })();
+    </script>
+</body>
+</html>
