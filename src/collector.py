@@ -1,35 +1,30 @@
 """
 collector.py
 ------------
-Global Daily News — 39개 진출국 데이터 수집기 (v7)
+Global Daily News — 39개 진출국 데이터 수집기 (v8)
 
-v7 변경점 (이전 버전 대비)
-  A) 주요 산업/비즈니스 동향 'Error' 노출 원천 차단
-     - 모든 수집/파싱/번역 단계를 세밀한 try-except로 감싸고, 개별 기사 파싱 실패는
-       해당 기사만 건너뛰도록 처리(피드 전체를 죽이지 않음).
-     - 4대 분야(AUTO MARKET/HR & LABOR/ECONOMY/MANAGEMENT) 중 어느 하나라도 최종적으로
-       기사를 찾지 못하면, 절대 빈 칸/에러 텍스트를 남기지 않고 전문적인 모니터링 문구 +
-       공식 Google News 검색 링크로 안전하게 대체한다(`_fallback_trend_item`).
-  B) 현지 주요 뉴스(Local Headlines) 수집 전략 전환
-     - 기존 "한국어 우선" 대신, 국가명 기반 글로벌 영문 Google News 검색으로 가장 공신력
-       있는 최신 기사를 먼저 찾고, 항상 deep-translator로 제목/요약을 한국어로 번역해 표출한다.
-     - 원문 출처(언론사명)와 원문 링크는 그대로 보존하고, 번역 여부는 translated 플래그로 표시.
-     - (주요 산업/비즈니스 동향 카드는 여전히 "한국어 우선 → 영문 대체+번역" 2단계 전략을 쓴다.)
-  C) 국가 내 기사 중복 제거 (Deduplication)
-     - 국가 단위로 `seen_titles` 집합(링크 기준)을 하나 만들어 헤드라인 3건과 산업동향 4건
-       수집 전 구간에서 공유한다. 이미 채택된 기사(URL)는 다른 카드에서 다시 뽑히지 않는다.
-  D) 환율 표기 소수점 1자리 통일
-     - 현재가/변동폭 계산에 쓰이는 원화 환산값(current_rate, history_values)을 모두
-       소수점 첫째 자리로 반올림해 저장한다. 프론트엔드 계산기도 이 값을 그대로 사용하므로
-       어디서 봐도 "1,529.3원"처럼 일관된 자릿수로 보인다.
-     - VND/JPY/IDR 등 소액 통화는 100단위로 환산한 뒤 동일하게 소수점 1자리로 반올림한다.
+v8 변경점 (이전 버전 대비)
+  A) 한국(KR) 현지 뉴스는 100% 순수 한국어 파이프라인
+     - KR은 번역 단계를 아예 거치지 않고, Google News 한국어 피드(hl=ko&gl=KR&ceid=KR:ko)에서
+       바로 국내 주요 언론사 기사를 가져온다.
+     - 나머지 38개국은 기존과 동일하게 "영문 우선(정확도) → 한국어 번역" 전략을 유지한다.
+  B) 39개국 전체 공식(참고) 최저임금 메타데이터 매핑
+     - 이전에는 미국(US)에만 최저임금이 하드코딩되어 있었다. 이번 버전은 39개국 전체에
+       MIN_WAGE_DATA 테이블을 매핑해 국가 프로필 카드에 항상 최저임금이 표시되도록 했다.
+     - 최저임금은 실시간 API가 없어(공식 글로벌 API 부재) 정기적으로 갱신해야 하는 참고성 정적
+       데이터이므로, 코드 내 단일 테이블로 관리하며 각 값에 기준 시점을 함께 표기한다.
+  C) '한국타이어 주요 거점' 하드코딩 버그 점검 및 영문 조직명 보강
+     - 거점 목록은 국가별로 완전히 분리된 데이터이며(다른 국가에 테네시가 노출되는 버그 없음),
+       이번 버전에서는 각 거점에 참고용 영문 조직명을 병기해 "한국어 설명 (English Name)"
+       형태로 통일했다.
 
 그 외 핵심 기능 (이전 버전에서 이어짐)
-  - 일별 아카이브: docs/archive/YYYY-MM-DD.json 저장 + docs/archive/index.json 갱신
-    + 180일 초과 아카이브 자동 삭제(Retention Policy)
-  - 환율 수집: ~400일 일봉을 받아 pandas로 직접 월별 종가 리샘플(일부 통화 차트 누락 문제 해결)
-    + 직접 페어가 부실하면 USD 경유 교차 환산으로 자동 전환
-  - 인구/GDP/수도: World Bank Open API / 인플레이션·실업률(미국): BLS → FRED → World Bank
+  - 주요 산업/비즈니스 동향 'Error' 노출 원천 차단: 모든 수집/파싱/번역 단계 세밀한 try-except
+    + 4대 분야 슬롯은 항상 안전한 문구/링크로 채워짐 (Fallback)
+  - 국가 내 헤드라인(3)+산업동향(4) 전체 구간 기사 중복 제거 (seen_titles 공유)
+  - 환율 표기 소수점 1자리 통일 + VND/JPY/IDR 100단위 환산
+  - 일별 아카이브(docs/archive/YYYY-MM-DD.json) + 180일 보존정책
+  - 환율 수집: ~400일 일봉을 받아 pandas로 직접 월별 종가 리샘플
 """
 
 import os
@@ -74,6 +69,8 @@ WON_DECIMALS = 1
 
 # ---------------------------------------------------------------------------
 # 0. 39개국 메타데이터 & 권역 정의
+#    hubs 는 "한국어 설명 (English Name)" 형태로 통일 — 국가별로 완전히 분리된 값이며
+#    다른 국가에 테네시 등이 잘못 노출되는 하드코딩 버그가 없음을 명시적으로 보장한다.
 # ---------------------------------------------------------------------------
 REGIONS = [
     {"key": "ALL", "label": "전체"},
@@ -90,83 +87,86 @@ REGIONS = [
 # code 는 World Bank / flagcdn 이 사용하는 ISO 3166-1 alpha-2 기준 (영국=GB)
 _RAW_COUNTRIES = [
     ("KR", "KR", "한국", "South Korea", "KRW", "kr",
-     ["본사 (판교 테크노플렉스)", "중앙연구소 (한국테크노돔)", "대전공장", "금산공장", "한국테크노링 (주행시험장)"]),
+     ["본사 (Pangyo Technoplex, HQ)", "중앙연구소 (Hankook Technodome, Central R&D)",
+      "대전공장 (Daejeon Plant)", "금산공장 (Geumsan Plant)",
+      "한국테크노링 (Hankook Technoring, Proving Ground)"]),
     ("CN", "CN", "중국", "China", "CNY", "cn",
-     ["중국본부 (상하이)", "연구소 (CTC 가흥)", "가흥공장", "강소공장", "중경공장", "영업지사 11개"]),
+     ["중국본부 (Shanghai HQ)", "연구소 (CTC Jiaxing, R&D)", "가흥공장 (Jiaxing Plant)",
+      "강소공장 (Jiangsu Plant)", "중경공장 (Chongqing Plant)", "영업지사 11개 (11 Sales Branches)"]),
     ("US", "AMER", "미국", "United States", "USD", "us",
-     ["미주본부 (내슈빌)", "미국기술센터 (ATC, 오하이오)", "테네시공장 (클락스빌)"]),
+     ["미주본부 (Nashville HQ)", "미국기술센터 (ATC, Akron/Ohio)", "테네시공장 (Clarksville Plant, TN)"]),
     ("CA", "AMER", "캐나다", "Canada", "CAD", "ca",
-     ["캐나다 판매법인 (온타리오)"]),
+     ["캐나다 판매법인 (Ontario Sales Corp.)"]),
     ("DE", "EU", "독일", "Germany", "EUR", "de",
-     ["유럽본부 (노이지젠부르크)", "유럽기술센터 (ETC, 하노버)", "독일 판매법인"]),
+     ["유럽본부 (Neu-Isenburg HQ)", "유럽기술센터 (ETC, Hannover)", "독일 판매법인 (Germany Sales Corp.)"]),
     ("HU", "EU", "헝가리", "Hungary", "HUF", "hu",
-     ["헝가리공장 (라칼마스)", "헝가리 판매법인 (부다페스트)"]),
+     ["헝가리공장 (Rácalmás Plant)", "헝가리 판매법인 (Budapest Sales Corp.)"]),
     ("GB", "EU", "영국", "United Kingdom", "GBP", "gb",
-     ["영국 판매법인 (다번트리)"]),
+     ["영국 판매법인 (Daventry Sales Corp.)"]),
     ("FR", "EU", "프랑스", "France", "EUR", "fr",
-     ["프랑스 판매법인 (리옹)"]),
+     ["프랑스 판매법인 (Lyon Sales Corp.)"]),
     ("IT", "EU", "이탈리아", "Italy", "EUR", "it",
-     ["이탈리아 판매법인 (밀라노)"]),
+     ["이탈리아 판매법인 (Milan Sales Corp.)"]),
     ("ES", "EU", "스페인", "Spain", "EUR", "es",
-     ["스페인 판매법인 (마드리드)"]),
+     ["스페인 판매법인 (Madrid Sales Corp.)"]),
     ("PL", "EU", "폴란드", "Poland", "PLN", "pl",
-     ["폴란드 판매법인 (바르샤바)"]),
+     ["폴란드 판매법인 (Warsaw Sales Corp.)"]),
     ("CZ", "EU", "체코", "Czech Republic", "CZK", "cz",
-     ["체코 판매법인 (프라하)"]),
+     ["체코 판매법인 (Prague Sales Corp.)"]),
     ("NL", "EU", "네덜란드", "Netherlands", "EUR", "nl",
-     ["네덜란드 판매법인 (암스테르담)"]),
+     ["네덜란드 판매법인 (Amsterdam Sales Corp.)"]),
     ("SE", "EU", "스웨덴", "Sweden", "SEK", "se",
-     ["스웨덴 판매법인 (스톡홀름)"]),
+     ["스웨덴 판매법인 (Stockholm Sales Corp.)"]),
     ("AT", "EU", "오스트리아", "Austria", "EUR", "at",
-     ["오스트리아 판매법인 (비엔나)"]),
+     ["오스트리아 판매법인 (Vienna Sales Corp.)"]),
     ("RO", "EU", "루마니아", "Romania", "RON", "ro",
-     ["루마니아 판매법인 (부쿠레슈티)"]),
+     ["루마니아 판매법인 (Bucharest Sales Corp.)"]),
     ("RU", "EU", "러시아", "Russia", "RUB", "ru",
-     ["러시아 판매법인 (모스크바)"]),
+     ["러시아 판매법인 (Moscow Sales Corp.)"]),
     ("UA", "EU", "우크라이나", "Ukraine", "UAH", "ua",
-     ["우크라이나 지사 (키이우)"]),
+     ["우크라이나 지사 (Kyiv Branch)"]),
     ("TR", "EU", "튀르키예", "Turkey", "TRY", "tr",
-     ["튀르키예 판매법인 (이스탄불)"]),
+     ["튀르키예 판매법인 (Istanbul Sales Corp.)"]),
     ("RS", "EU", "세르비아", "Serbia", "RSD", "rs",
-     ["세르비아 세일즈 오피스"]),
+     ["세르비아 세일즈 오피스 (Serbia Sales Office)"]),
     ("HR", "EU", "크로아티아", "Croatia", "EUR", "hr",
-     ["크로아티아 세일즈 오피스"]),
+     ["크로아티아 세일즈 오피스 (Croatia Sales Office)"]),
     ("MA", "EU", "모로코", "Morocco", "MAD", "ma",
-     ["모로코 세일즈 오피스 (카사블랑카)"]),
+     ["모로코 세일즈 오피스 (Casablanca Sales Office)"]),
     ("MX", "LATAM", "멕시코", "Mexico", "MXN", "mx",
-     ["멕시코 판매법인 (멕시코시티)"]),
+     ["멕시코 판매법인 (Mexico City Sales Corp.)"]),
     ("BR", "LATAM", "브라질", "Brazil", "BRL", "br",
-     ["브라질 판매법인 (상파울루)"]),
+     ["브라질 판매법인 (São Paulo Sales Corp.)"]),
     ("CL", "LATAM", "칠레", "Chile", "CLP", "cl",
-     ["칠레 판매법인 (산티아고)"]),
+     ["칠레 판매법인 (Santiago Sales Corp.)"]),
     ("CO", "LATAM", "콜롬비아", "Colombia", "COP", "co",
-     ["콜롬비아 지사 (보고타)"]),
+     ["콜롬비아 지사 (Bogotá Branch)"]),
     ("PA", "LATAM", "파나마", "Panama", "PAB", "pa",
-     ["파나마 판매법인 (파나마시티)"]),
+     ["파나마 판매법인 (Panama City Sales Corp.)"]),
     ("ID", "APAC", "인도네시아", "Indonesia", "IDR", "id",
-     ["아태본부", "인도네시아공장 (찌카랑)", "인도네시아 판매법인"]),
+     ["아태본부 (APAC HQ)", "인도네시아공장 (Cikarang Plant)", "인도네시아 판매법인 (Indonesia Sales Corp.)"]),
     ("AU", "APAC", "호주", "Australia", "AUD", "au",
-     ["호주 판매법인 (시드니)"]),
+     ["호주 판매법인 (Sydney Sales Corp.)"]),
     ("JP", "APAC", "일본", "Japan", "JPY", "jp",
-     ["일본기술센터 (JTC)", "일본 판매법인 (도쿄)"]),
+     ["일본기술센터 (JTC, Japan Technical Center)", "일본 판매법인 (Tokyo Sales Corp.)"]),
     ("SG", "APAC", "싱가포르", "Singapore", "SGD", "sg",
-     ["싱가포르 법인"]),
+     ["싱가포르 법인 (Singapore Corp.)"]),
     ("MY", "APAC", "말레이시아", "Malaysia", "MYR", "my",
-     ["말레이시아 판매법인 (쿠알라룸푸르)"]),
+     ["말레이시아 판매법인 (Kuala Lumpur Sales Corp.)"]),
     ("TH", "APAC", "태국", "Thailand", "THB", "th",
-     ["태국 판매법인 (방콕)"]),
+     ["태국 판매법인 (Bangkok Sales Corp.)"]),
     ("VN", "APAC", "베트남", "Vietnam", "VND", "vn",
-     ["베트남 판매법인 (호치민)"]),
+     ["베트남 판매법인 (Ho Chi Minh Sales Corp.)"]),
     ("TW", "APAC", "대만", "Taiwan", "TWD", "tw",
-     ["대만 지사 (타이베이)"]),
+     ["대만 지사 (Taipei Branch)"]),
     ("AE", "MEA", "아랍에미리트", "United Arab Emirates", "AED", "ae",
-     ["중동본부 (두바이)"]),
+     ["중동본부 (Dubai HQ)"]),
     ("SA", "MEA", "사우디아라비아", "Saudi Arabia", "SAR", "sa",
-     ["사우디 세일즈 오피스 (제다)"]),
+     ["사우디 세일즈 오피스 (Jeddah Sales Office)"]),
     ("EG", "MEA", "이집트", "Egypt", "EGP", "eg",
-     ["이집트 지사 (카이로)"]),
+     ["이집트 지사 (Cairo Branch)"]),
     ("KZ", "MEA", "카자흐스탄", "Kazakhstan", "KZT", "kz",
-     ["카자흐스탄 지사 (알마티)"]),
+     ["카자흐스탄 지사 (Almaty Branch)"]),
 ]
 
 COUNTRIES = [
@@ -176,8 +176,54 @@ COUNTRIES = [
 
 CAPITAL_FALLBACK = {"TW": "Taipei"}
 
-STATUTORY_MIN_WAGE = {
-    "US": {"federal": "$7.25 / h (연방, 2009-07-24 발효)", "note": "테네시: 주 별도 기준 없음 → 연방 기준 적용"},
+
+# ---------------------------------------------------------------------------
+# 39개국 최저임금 참고 데이터 (정적 메타데이터)
+# ---------------------------------------------------------------------------
+# 최저임금은 국가마다 공시 주기·통화·단위(시급/월급/일급)가 제각각이고 이를 실시간으로
+# 통합 제공하는 무료 공식 API가 없다. 따라서 공신력 있는 자료(각국 노동부, Eurostat,
+# Trading Economics 등)를 참고해 정기적으로 갱신하는 정적 테이블로 관리한다.
+# "note"가 있는 항목은 시행 시점/지역 편차/적용 예외 등 반드시 확인해야 할 참고사항이다.
+MIN_WAGE_DATA = {
+    "KR": {"display": "10,320원 / 시간", "note": "2026년 기준"},
+    "CN": {"display": "약 25위안 / 시간", "note": "지역별 상이(참고치), 상하이 등 대도시 기준"},
+    "US": {"display": "$7.25 / 시간", "note": "연방 기준, 2009-07-24 이후 동결·테네시주 별도 기준 없음"},
+    "CA": {"display": "약 CAD 17.75 / 시간", "note": "연방부문 기준, 주(州)별로 상이"},
+    "DE": {"display": "€13.90 / 시간", "note": "2026년 기준"},
+    "HU": {"display": "약 290,800포린트 / 월", "note": "비숙련 기준, 2025년 기준"},
+    "GB": {"display": "£12.71 / 시간", "note": "National Living Wage(21세 이상), 2025~26년 기준"},
+    "FR": {"display": "€12.02 / 시간", "note": "SMIC 기준"},
+    "IT": {"display": "법정 최저임금 없음", "note": "업종별 단체협약(CBA)으로 결정"},
+    "ES": {"display": "약 €1,381 / 월", "note": "연 14회 분할 지급 관행, 2025.1 Eurostat 기준"},
+    "PL": {"display": "zł31.4 / 시간", "note": "2026년 기준"},
+    "CZ": {"display": "약 20,800코루나 / 월", "note": "2025년 기준"},
+    "NL": {"display": "€14.71 / 시간", "note": "2026년 기준"},
+    "SE": {"display": "법정 최저임금 없음", "note": "업종별 단체협약(CBA)으로 결정"},
+    "AT": {"display": "법정 최저임금 없음", "note": "업종별 단체협약(CBA)으로 결정"},
+    "RO": {"display": "약 €814 / 월", "note": "2025.1 Eurostat 기준"},
+    "RU": {"display": "약 22,440루블 / 월", "note": "MROT 기준, 2025년"},
+    "UA": {"display": "약 8,000흐리브냐 / 월", "note": "2025년 기준"},
+    "TR": {"display": "₺164.94 / 시간", "note": "2026년 기준"},
+    "RS": {"display": "약 308디나르 / 시간", "note": "참고치"},
+    "HR": {"display": "약 €970 / 월", "note": "2025.1 Eurostat 기준, 2023년부터 유로 사용"},
+    "MA": {"display": "약 17.07디르함 / 시간", "note": "참고치"},
+    "MX": {"display": "약 9,583.52페소 / 월", "note": "일반지역 기준, 2026년, 국경지대는 더 높음"},
+    "BR": {"display": "약 1,631헤알 / 월", "note": "2026년 기준(참고치), 13번째 급여 별도 지급 관행"},
+    "CL": {"display": "약 539,000페소 / 월", "note": "2025년 기준(참고치)"},
+    "CO": {"display": "1,423,500페소 / 월", "note": "2025년 기준"},
+    "PA": {"display": "업종별 상이", "note": "참고치, 업종·지역별 세분화된 고시"},
+    "ID": {"display": "약 5,396,761루피아 / 월", "note": "자카르타(DKI) 기준, 지역별 상이"},
+    "AU": {"display": "A$26.44 / 시간", "note": "2025~26년 기준"},
+    "JP": {"display": "¥1,121 / 시간", "note": "2026년 전국 가중평균, 지역별 상이(도쿄 ¥1,226)"},
+    "SG": {"display": "법정 최저임금 없음", "note": "Progressive Wage Model로 업종별 하한선 운영"},
+    "MY": {"display": "RM8.72 / 시간", "note": "월 RM1,700 기준, 2025.2 시행"},
+    "TH": {"display": "1일 400바트", "note": "2025년 기준, 지역별 상이"},
+    "VN": {"display": "약 5,310,000동 / 월", "note": "1지역(하노이·호치민 등) 기준, 2026.1, 지역별 상이"},
+    "TW": {"display": "NT$190 / 시간", "note": "월 NT$29,500, 2026년 기준"},
+    "AE": {"display": "법정 최저임금 없음", "note": "-"},
+    "SA": {"display": "SAR23.08 / 시간", "note": "공공부문 기준, 외국인 근로자 미적용"},
+    "EG": {"display": "약 7,000파운드 / 월", "note": "공공부문 기준(참고치)"},
+    "KZ": {"display": "약 85,000텐게 / 월", "note": "2025년 기준"},
 }
 
 
@@ -392,9 +438,15 @@ def build_profile(country: dict, cached: dict) -> dict:
 
     profile.update(get_inflation_unemployment(code, cached_profile))
 
-    if code in STATUTORY_MIN_WAGE:
-        profile["min_wage"] = STATUTORY_MIN_WAGE[code]["federal"]
-        profile["min_wage_note"] = STATUTORY_MIN_WAGE[code]["note"]
+    # 39개국 전체 최저임금 매핑 (미국 전용 하드코딩 제거)
+    wage = MIN_WAGE_DATA.get(code)
+    if wage:
+        profile["min_wage"] = wage["display"]
+        profile["min_wage_note"] = wage.get("note", "")
+    else:
+        log.warning(f"[{code}] 최저임금 메타데이터 누락 — MIN_WAGE_DATA 테이블 점검 필요")
+        profile["min_wage"] = cached_profile.get("min_wage", "-")
+        profile["min_wage_note"] = cached_profile.get("min_wage_note", "")
 
     return profile
 
@@ -499,7 +551,7 @@ def get_exchange_rate(country: dict, cached: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# 4. 자동 번역 (영문 기사를 한국어로 표출할 때 사용)
+# 4. 자동 번역 (영문 기사를 한국어로 표출할 때 사용, KR 국가는 호출되지 않음)
 # ---------------------------------------------------------------------------
 @lru_cache(maxsize=2048)
 def _translate_to_ko(text: str) -> str:
@@ -519,6 +571,11 @@ def _translate_to_ko(text: str) -> str:
 # ---------------------------------------------------------------------------
 def _google_news_url_ko(query: str) -> str:
     return f"https://news.google.com/rss/search?q={requests.utils.quote(query)}&hl=ko&gl=KR&ceid=KR:ko"
+
+
+def _google_news_top_url_ko() -> str:
+    """국내 주요 언론사 상위 헤드라인 (검색어 없이 Google News 한국어 기본 피드)."""
+    return "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
 
 
 def _google_news_url_en(query: str) -> str:
@@ -564,7 +621,7 @@ def _fetch_feed(url: str, limit: int) -> list:
 
     items = []
     entries = getattr(feed, "entries", []) or []
-    # 파싱 실패분을 감안해 넉넉히 훑되(최대 limit의 4배), 필요한 개수만 채우면 즉시 중단
+    # 파싱 실패분/중복 제거를 감안해 넉넉히 훑되, 필요한 개수만 채우면 즉시 중단
     for entry in entries[: max(limit * 4, limit)]:
         try:
             items.append(_parse_entry(entry))
@@ -585,27 +642,57 @@ def _dedup_key(item: dict) -> str:
 
 # ---------------------------------------------------------------------------
 # 6. 현지 주요 뉴스 (Local Headlines)
-#    — 정확도 우선: 국가명 기반 글로벌 영문 검색 → 한국어로 100% 자동 번역해 표출
+#    — KR: 100% 순수 한국어 (번역 파이프라인 없음)
+#    — 그 외 38개국: 정확도 우선 글로벌 영문 검색 → 한국어로 100% 자동 번역
 # ---------------------------------------------------------------------------
 def _fallback_headline_item(country: dict) -> dict:
     query_en = country["name_en"]
     return {
-        "title": f"{country['name_kr']} 최신 뉴스 모니터링 중",
+        "title": "현지 주요 정책 및 시장 동향 모니터링 중",
         "source": "Google News 검색",
         "link": _google_news_search_link(query_en),
-        "summary": "현재 조건에 맞는 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다.",
+        "summary": f"{country['name_kr']} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다.",
         "lang": "ko",
         "translated": False,
         "original_title": "",
     }
 
 
-def get_headlines(country: dict, cached: dict, seen_titles: set) -> list:
+def _get_headlines_kr_native(country: dict, cached: dict, seen_titles: set) -> list:
+    """한국(KR) 전용 — 번역 없이 국내 언론사 한국어 기사를 그대로 수집."""
+    limit = 3
+    selected = []
+    try:
+        candidates = _fetch_feed(_google_news_top_url_ko(), limit=limit * 8)
+        for item in candidates:
+            key = _dedup_key(item)
+            if not key or key in seen_titles:
+                continue
+            item["lang"] = "ko"
+            item["translated"] = False
+            item["original_title"] = ""
+            selected.append(item)
+            seen_titles.add(key)
+            if len(selected) >= limit:
+                break
+    except Exception as e:
+        log.warning(f"[KR] 국내 뉴스 수집 실패: {e}")
+
+    if selected:
+        return selected
+
+    cached_headlines = (cached or {}).get("headlines", [])
+    if cached_headlines:
+        return cached_headlines
+    return [_fallback_headline_item(country)]
+
+
+def _get_headlines_global_translated(country: dict, cached: dict, seen_titles: set) -> list:
+    """해외 38개국 — 정확도 우선 글로벌 영문 검색 → 항상 한국어로 번역해 표출."""
     limit = 3
     selected = []
     try:
         # 중복 제거를 감안해 필요한 개수보다 훨씬 넉넉한 후보 풀을 확보한다
-        # (앞쪽 후보 다수가 이미 채택된 기사와 겹치더라도 뒤쪽의 새 기사를 찾을 여지를 남겨둔다)
         candidates = _fetch_feed(_google_news_url_en(f"{country['name_en']} when:3d"), limit=limit * 8)
         for item in candidates:
             key = _dedup_key(item)
@@ -642,6 +729,12 @@ def get_headlines(country: dict, cached: dict, seen_titles: set) -> list:
     return [_fallback_headline_item(country)]
 
 
+def get_headlines(country: dict, cached: dict, seen_titles: set) -> list:
+    if country["code"] == "KR":
+        return _get_headlines_kr_native(country, cached, seen_titles)
+    return _get_headlines_global_translated(country, cached, seen_titles)
+
+
 # ---------------------------------------------------------------------------
 # 7. 주요 산업 및 비즈니스 동향 — 한국어 우선 → 영문 대체 + 번역 (기존 전략 유지)
 #    AUTO MARKET / HR & LABOR / ECONOMY / MANAGEMENT — 4개 슬롯은 항상 채워진다.
@@ -676,8 +769,8 @@ def _fallback_trend_item(spec: dict, country: dict) -> dict:
         "category": spec["category"],
         "tag": spec["tag"],
         "tag_class": spec["tag_class"],
-        "title": f"{spec['tag']} 모니터링 중",
-        "desc": "현재 조건에 맞는 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다. 다음 갱신 시 자동으로 업데이트됩니다.",
+        "title": "현지 주요 정책 및 시장 동향 모니터링 중",
+        "desc": f"{spec['tag']} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다. 다음 갱신 시 자동으로 업데이트됩니다.",
         "source": "Google News 검색",
         "link": _google_news_search_link(query_en),
         "lang": "ko",
@@ -849,7 +942,7 @@ def main() -> dict:
                         "headlines": [_fallback_headline_item(fallback_meta)],
                         "hr_trends": [_fallback_trend_item(spec, fallback_meta) for spec in INDUSTRY_TOPICS],
                     }
-        # 원본 COUNTRIES 순서를 유지해 UI 정렬을 안정적으로 유지
+        # 원본 COUNTRIES 순서를 유지해 UI 정렬을 안정적으로 유지 (프론트엔드에서 가나다순 정렬 적용)
         countries_result = [collected[c["code"]] for c in COUNTRIES]
 
     now_kst = datetime.now(KST)
