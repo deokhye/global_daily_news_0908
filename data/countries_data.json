@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T08:27:28.599412+09:00",
-  "generated_at_display": "2026-09-09 08:27 KST",
+  "generated_at": "2026-09-09T08:32:44.872850+09:00",
+  "generated_at_display": "2026-09-09 08:32 KST",
   "as_of_display": "2026-09-09 06:00 KST 기준",
   "regions": [
     {
@@ -83,18 +83,18 @@
         },
         {
           "title": "이 대통령, 마크롱에 한강 책 선물하며 “진정한 ‘꼬뺑’ 된 것 같다”",
-          "source": "한겨레",
+          "source": "hani.co.kr",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE42dklkVFdOS0dtVHk4eXlEUWpHQ284eTFBMjVmZ2ZrY1p1eWZLTXdnQmdMcTd5TFk4Z3JLeGNxdEZ4TFZKd19FRllMaUxIUU1iaExKS2tYal9fcXh0S1JtbWVxTnJUNVVmTkxz?oc=5",
-          "summary": "이 대통령, 마크롱에 한강 책 선물하며 “진정한 ‘꼬뺑’ 된 것 같다”&nbsp;&nbsp;한겨레이 대통령, 마크롱과 호르무즈 관련 논의…청와대 “파병으로 규정하…",
+          "summary": "이 대통령, 마크롱에 한강 책 선물하며 “진정한 ‘꼬뺑’ 된 것 같다”&nbsp;&nbsp;hani.co.kr이 대통령, 마크롱과 호르무즈 관련 논의…청와대 “파…",
           "lang": "ko",
           "translated": false,
           "original_title": ""
         },
         {
-          "title": "[단독] “김승원 10억 받기로” 제보에 수사…결론 왜 뒤집혔나",
-          "source": "KBS 뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41OTRFbUpiYXoxMjZndkFmQnlLYjBOMjlRSEswUlByVmlFV2RwVWU4cTRDYWJZVFQ4ZzRkbEMtZmdJaVFNS3p3YWxTaDhTRXU1RE5VbVhHN3hmOEk?oc=5",
-          "summary": "[단독] “김승원 10억 받기로” 제보에 수사…결론 왜 뒤집혔나&nbsp;&nbsp;KBS 뉴스김 후보자와 브로커는 왜 영장판사를 만나려 했을까&nbsp;&nbs…",
+          "title": "‘침묵으로 버티는 용’ 속 끓는 여당…청 “인사청문회 지켜봐야” 원칙론",
+          "source": "경향신문",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1fT0NYRlRBUEw4OGJkeHl5WUhHaERGZzNRMjRMYmluUWloNTdHUnA3OVZLVG90TEY5Q2RVUEZmQlR4WTV2TlU4bEdiS19XX2R2SnF3TjA1NkU0Z9IBX0FVX3lxTE5qTFpXOV9jZXpJdkxDWUdzUHBKSFBPLXRKcUFOd0lyaVQzVnAzUUpDXzNlS0gxZW1hbWgtMTRzQUM1ZVRqcHh1SHhfMm1iSm1yQXY1eERqcGo2MFdFeWxr?oc=5",
+          "summary": "‘침묵으로 버티는 용’ 속 끓는 여당…청 “인사청문회 지켜봐야” 원칙론&nbsp;&nbsp;경향신문靑 “김승원·용혜인 청문회 거쳐야”…결국 ‘대통령의 숙제’ 됐다…",
           "lang": "ko",
           "translated": false,
           "original_title": ""
@@ -117,8 +117,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "너무 늙고 여자: 한국의 직장 내 여성에 대한 제도적 연령과 성차별 | HRW",
-          "desc": "너무 늙고 여자: 남부 직장에서 여성에 대한 체계적인 연령과 성차별…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Human Rights Watch",
           "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQemJPamlUeVIyYXl2bUp2MUprdlp1MFQxNmpFeXAyb1lRclJiSzJrQTVEMlZlcFRkaFp3clhtMTRVRm5hMkV4N0d2cEFfQ2pnN3lnZW9SR1A3ZGlyY1BLLU5tWkdCT2ZCTHdjZkROQmttUzBER0s1aDNhVjJhcWRISFdRZ2xXd1Z1R01STjgwLWlwRjY0VFpQeTl2cVFaRnFWb2hRRFlnODRFbzZ6aHkyMVlabzNkM3hhN0E?oc=5",
           "lang": "en",
@@ -180,8 +180,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 199.7,
-        "change_pct": -0.27,
+        "current_rate": 200.0,
+        "change_pct": -0.09,
         "history_labels": [
           "10월",
           "11월",
@@ -208,37 +208,37 @@
           226.9,
           210.3,
           204.7,
-          199.7
+          200.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)"
       },
       "headlines": [
         {
-          "title": "NSA 등, 중국 기반 AI 기업이 미국 개척지 AI 모델을 증류하고 있다고 경고",
-          "source": "National Security Agency (NSA) (.gov)",
-          "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQbE80SEUzdlJMcDM2NEI3dFFreTJzNVdQeFlBenYybG5RekJvUFRldEtWd3NCZ0FJSG0wbjQ4SDgwM1BWWW55YTVvX0VEQV9yUzRNMk4wLXdPZDRVMEI3THAxSU9BRmNwMFJSNEltZk5Za28zS2ZjNFR3X2pfbzJrQnhjLUlVWVlCTXQ0X042cmhoR2loWjRUdnp0Yk1xYmVjMkR6RUxjZ295djlfOHlZemlMdEtXU01McndEdU9CVVhqOUNPMFR1TWRibmhJYXlJampGNzZzdlZDWF9TQm13eEswdFktM3VxY0tmcUJoQ012XzFMcVpNNm5kY09UQld1MlE?oc=5",
-          "summary": "NSA 및 기타 기관, 중국 기반 AI 기업이 미국 개척지 AI 모델을 증류하고 있다고 경고",
-          "lang": "en",
-          "translated": true,
-          "original_title": "NSA and Others Warn China-Based AI Companies are Distilling U.S. Frontier AI Models"
-        },
-        {
-          "title": "트럼프 행정부, 포드와 중국의 관계에 '심각한 우려' 표명",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "CNBC",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Pc3hlZmZzX1dKdWkyc0RialJMejZsalZrQU1oZXMtV0RienUzYTJ4X0ZQcVF1cTJXMGptZnZOZDBLLWFUbjVrZUpoc3Z1dFgwR1FQUF9EWjktajlFYTgtMGxkZjdtWVJRZUpZZzc0NNIBdEFVX3lxTE1BYzFIa1p4MnpkQV9KR3c0SUNlbDkyRExQRjlRd2M0bS0zREJ3SEgxcnhvLXd6bEdYaFozbVQ0LXRhZjdIWHQ3ZUtSS0N0SGdmcHFQTkc2Y2d3S0puRkRCdGpwalphQ1RJVjJHRElHdGl3SGI4?oc=5",
-          "summary": "트럼프 행정부, 포드와 중국의 관계에 '심각한 우려' 표명…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Trump administration expresses 'profound concern' over Ford's ties to China"
         },
         {
-          "title": "최신 암 치료를 위해 환자들이 중국으로 날아가고 있다",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "WSJ",
           "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbEx5Um9QbC1VWThkcE1oa2tvRkQyRWRJWGRncHZGODFjSVFLU1htb0gyaXYyY0RpRmtOenFUblpubU1GbjdDSFcyTS1mY3RSUnFaYTRKc0tGdFRDSlA2djNQek0tTlpjQk9mM0pEWV9iNVcycV9ETEVtYXNFX1RFbVVGMGRVTXl6OGdRSjN5S1duQ1VFMWR3SklfVG5pY08tRDdHbkFLcjVWY2M?oc=5",
-          "summary": "최신 암 치료를 위해 환자들이 중국으로 날아가고 있습니다&nbsp;&nbsp;WSJ",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Patients Are Flying to China for the Latest Cancer Treatment"
+        },
+        {
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Brookings",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWDJmRkJRR1FGUmkzblU5anFpREVyUWdtQ2dBWlYwMXJRLW5GM1puQlRfZGhiRkpqYm03RGRNdGJ2ajczeEVTSG5neUlmcjFsT2hFdm1ydjhfUFlIazU1MGFIajIzMzZEOWtodUlvdWdsWnJVWVBrdVA5WFBFUTREWXRtdVMtMThMZ2JFMlEzWQ?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "lang": "en",
+          "translated": true,
+          "original_title": "Europe’s China Shock 2.0: Where does it go from here?"
         }
       ],
       "hr_trends": [
@@ -258,8 +258,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -282,8 +282,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "첫 번째 변화: 북미 관세는 위협에서 운영 현실로 이동합니다.",
-          "desc": "첫 번째 변화: 북미 관세는 위협에서 운영 현실로 이동&nbsp;&nbsp;공급...",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Supply Chain Management Review",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaWd6a2dxaWE1UTVCczhCYnM0M1E3NngyYUdIZDZfa29uR1E1WEhmUFVrLWduTU00MzJTOExkazY1cExSUWo3Nnkta2c1X1p3UXRZMmpqelV1V2NyS2NEaGZjZC13YVJsNnprUTJ4TjQyNmJ2bzhFd21URWdrYVRRUmIzTENVakVtcTVHV0VJWVpzWXNsUnNIZHpoVWlWb1NsOHhJ?oc=5",
           "lang": "en",
@@ -318,8 +318,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1339.9,
-        "change_pct": -0.27,
+        "current_rate": 1340.0,
+        "change_pct": -0.26,
         "history_labels": [
           "10월",
           "11월",
@@ -346,34 +346,34 @@
           1541.7,
           1420.6,
           1377.1,
-          1339.9
+          1340.0
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "Carney가 관세로 보복함에 따라 캐나다와 미국과의 무역 전쟁이 심화되고 있음에 대해 알아야 할 사항",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "AP News",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUHRWc2I4elJ6Ukh6TzhHcF9IUEFEbnZFUkRiYTQ5Nnh2cUUxU3pQYXR0eml3UFFNWGt2bHFBdzJXeEIxRV96dXdBOUY2VzFYZXhVY2hhRmlEcVF0Y0xGNVAwX0ZzZGloOURMTzZ4bERjbDlmWnBzRWoxbVRqYUt4OWJEanc2V3YyTlNGSURSQjlpblJIV2FIT3A3bzBhQQ?oc=5",
-          "summary": "Carney가 타르로 보복하면서 캐나다와 미국과의 무역 전쟁이 심화되고 있음에 대해 알아야 할 사항…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "What to know about Canada’s escalating trade war with the US as Carney retaliates with tariffs"
         },
         {
-          "title": "캐나다의 Carney는 미국에서 피벗을 두 배로 늘렸습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZVk1UGVoWE9pY2daUmlBSEdqMlhyY3lieFdyblVObUhMTUZxYk1jYTRVb3BEUEpkbF9JUnF3LXkxVWx1TDNCVGdKM3IxT2xMcHNUT0R2QzFWWG4xTmVldFNOVU4wMkk3NnBWemNTSHhMQk9ESnNlOF9Cd3lxTmdzOWxrQkp6VHlwM3VfYzZn?oc=5",
-          "summary": "캐나다의 카니, 미국에서 벗어나 두 배로 성장&nbsp;&nbsp;뉴욕…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Canada’s Carney Doubles Down on Pivot Away from the United States"
         },
         {
-          "title": "Carney는 관세가 발효됨에 따라 캐나다가 미국 의존에서 벗어나고 있다고 말했습니다.",
-          "source": "PBS",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "pbs.org",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLW5MczdmZndFTktPYmFJVzF6YjViZ00yVllBQ0VrUjBxNzlvUkRFS2EyV21qaVA4RVdJbERPR1JhV1MtaC0wN25PcjZ6a1JLWnZIMGhoaVRPbDVuckFKR2RpcG5YbmVORkNLZ1lHcWxzUTg3SlFLZWkxeEt2UzlwRmlEekhQYklRMkVnZXZGR3ZUWUtEMEY2MXhLbWtkczJfVks2SQ?oc=5",
-          "summary": "Carney는 관세가 발효됨에 따라 캐나다가 미국 의존에서 벗어나고 있다고 말했습니다.&nbsp;&nbsp;PBS",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Carney says Canada moving from U.S. reliance as tariffs take effect"
@@ -385,8 +385,8 @@
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
           "title": "삼정KPMG “K-타이어, 전기차 RE·고인치 타이어 공략해야” [시그널]",
-          "desc": "삼정KPMG “K-타이어, 전기차 RE·고인치 타이어 공략해야” [시그널]&nbsp;&nbsp;signal.sedaily.com",
-          "source": "signal.sedaily.com",
+          "desc": "삼정KPMG “K-타이어, 전기차 RE·고인치 타이어 공략해야” [시그널]&nbsp;&nbsp;서울경제",
+          "source": "서울경제",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wekNtWDdDR3VxUHFBVlMyUXpxY3VBUXJkMFVGWUM3NmtJNTZsSkE4c0R6SnRaUXFUdW1DLTR5UzdSZHU0TVRJXzd3V2FQQ3ctbW1HQW5B?oc=5",
           "lang": "ko",
           "translated": false,
@@ -396,8 +396,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "행복한 노동절! 캘리포니아는 근로자를 위한 주 1위, 미국 경제 1위입니다.",
-          "desc": "행복한 노동절! 캘리포니아는 근로자를 위한 1위 주이자 전국 1위 경제입니다&nbsp…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "California State Portal | CA.gov",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNHB5VTRTLV9xZGY0NTk0ZEM5WC1WeGZJMzJTMnZJc0o2SWhZMktZaVZRaUNwSEhlSEItS0FDU3A2eGNQcGxrV1ZSMVZHVElhcTM3aS12VTY4eGRmS1VRSEh1S21PMnhSN1dJYkJpdGFwVmVFRTdlVXkzNy1sYjZ2Q1RrNk0yM0VFeUk0cF9tNkxFSUZyWjczbzNWZWctTzBteExQWS1DVnhJMkFWdHl1b3NnRzhDNG8?oc=5",
           "lang": "en",
@@ -454,8 +454,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 972.7,
-        "change_pct": -0.06,
+        "current_rate": 972.4,
+        "change_pct": -0.08,
         "history_labels": [
           "10월",
           "11월",
@@ -482,34 +482,34 @@
           1084.8,
           1013.9,
           990.8,
-          972.7
+          972.4
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "Carney는 관세가 발효됨에 따라 캐나다가 미국 의존에서 벗어나고 있다고 말했습니다.",
-          "source": "PBS",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "pbs.org",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLW5MczdmZndFTktPYmFJVzF6YjViZ00yVllBQ0VrUjBxNzlvUkRFS2EyV21qaVA4RVdJbERPR1JhV1MtaC0wN25PcjZ6a1JLWnZIMGhoaVRPbDVuckFKR2RpcG5YbmVORkNLZ1lHcWxzUTg3SlFLZWkxeEt2UzlwRmlEekhQYklRMkVnZXZGR3ZUWUtEMEY2MXhLbWtkczJfVks2SQ?oc=5",
-          "summary": "Carney는 관세가 발효됨에 따라 캐나다가 미국 의존에서 벗어나고 있다고 말했습니다.&nbsp;&nbsp;PBS",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Carney says Canada moving from U.S. reliance as tariffs take effect"
         },
         {
-          "title": "캐나다, 트럼프의 최근 관세 부과 이후 미국산 제품에 새로운 관세 부과",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9SV3F2R2ZRYllBQ0VJNW4tNFBiY2s4dzJrYUVhM1pUTnJWNjNVUURrei1WMnJYMzI2UktmQzRsM2J3Ti01TGttWFBISEhLbVZXZnF1ZlJSUXhydl9IN2NqNjJGd1JNd2NRWTFJQ2pnM09ieFluc3I1VQ?oc=5",
-          "summary": "캐나다는 트럼프의 최근 부과금 이후 미국 상품에 새로운 관세를 부과합니다.&nbsp;&nbsp;새로운 요…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Canada Imposes New Tariffs on U.S. Goods After Trump’s Latest Levies"
         },
         {
-          "title": "미국 무역 협상이 중단되면서 캐나다의 보복 관세가 발효되었습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV2tRQzNWVFljd0NSczFNTXlWRXI0WWtzV1BFNFBURXlDcHRjSHNOcXNzVVMzNFBYbmZpY0l6UU05OU9HSWxVeGRkSlNLS1kxa3J6OXZPcXFCc1RFN1dDdERRakxPaGloYWZqNDFkWEdhOWVZOEdvaF9TWFlEa2dSeHF2LWgzZGttdC1jMDQ4aXpUNDZkT0V0MHlHdnNnTzQxM2l5eUIzWnY5Qjd4bUxDeUNzSUZNVGk0NEx3R1c1SzNOaWZx?oc=5",
-          "summary": "미국 무역 회담이 중단됨에 따라 캐나다의 보복 관세가 발효됩니다.&nbsp;&nbsp;로이터",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Canada's retaliatory tariffs take effect as US trade talks stall"
@@ -532,9 +532,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -544,8 +544,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "전망이 더욱 개선됨에 따라 텍사스 제조 활동이 가속화됩니다.",
-          "desc": "전망이 더욱 개선됨에 따라 텍사스 제조 활동이 가속화됩니다.&nbsp;&nbsp;연방 정부…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Federal Reserve Bank of Dallas",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YNXJ3LUxZVlMtVVdkTnVnTm5qbWJ5WnZ2N21TQkVqcjFTSkhRTkNyZWtMaFNFczVJcmZudEI3S2Z1UEZIOXpfRzk4eERFOTRfNHdLSkF5UkR5N2Q1Wjk4cXNjZmUzQlM1?oc=5",
           "lang": "en",
@@ -592,8 +592,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -620,34 +620,34 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "독일의 AfD는 무엇이며, 그 부상이 유대인들에게 어떤 의미를 갖는가?",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "American Jewish Committee (AJC)",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQWVQWFRtM1lFanZhb0VQbWg2Z2xLT1hzLWQtOHVoeElEQ0FGc0FEV3pObHhBSlQ0ZHNvb2pvTTk1YWFYbE9uUWlFQTd3dVYxRy1FRk96eEhVbjM1OU91bVh1Z1NKeXRBUXFzbHFTb2ljZzdDeEtMTzNLcktLdmdwZUp2UmVoZXB4Y1E?oc=5",
-          "summary": "독일의 AfD는 무엇이며, 그 부상이 유대인들에게 무엇을 의미합니까?&nbsp;&nbsp;미국 유대인 연합…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "What Is Germany’s AfD, and What Does Its Rise Mean for Jews?"
         },
         {
-          "title": "AfD의 극우 승리는 독일 지도자 메르츠에게 새로운 압력을 가하고 있습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWVlZcTdBVDMtZWZzZWJRZE1jU1NwSGEza2tVUEFoMXpHYnRlQ2lpSmNzbjJ0bkVKdk9iRTJZWVh1MHc1aVc4OFo4VVQtUGRWNWJkUVgwaHExejZXcTBMNzNGaThRU2w5M3JacHhPOTVnT28xaHo1M0F2ak40cEc3ay1PaXA?oc=5",
-          "summary": "AfD의 극우 승리는 독일 지도자 메르츠에게 새로운 압력을 가하고 있습니다.&nbsp;&nbsp;뉴욕 팀…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "AfD’s Far Right Win Puts New Pressure on Germany’s Leader Merz"
         },
         {
-          "title": "독일 경찰, 전력망 파괴 공격 용의자 체포",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOXR3NlBTckZLc3c2Q0NRcmJhVGRycnExeThlUjZCTHpWWFR5M1VRTUIzVWdzenF5NTdZaVQ5U2g4c0dKQmo3d1kyMFQxbVlYX0lYZjJIUGtJQXB2NEpOYkhzOWw0Q1FSdC1ocWtCRDZPYWM4QTRoWmE0ZS1rUEoydURPUmRZOFloM0dNLWdBOU1NQ2ZTdDg5MDN6clVtak9seXVQMnZhMA?oc=5",
-          "summary": "독일 경찰, 전력망 파괴 공격 후 용의자 체포&nbsp;&nbsp;로이터",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "German police detain suspect after sabotage attacks on power grid"
@@ -659,8 +659,8 @@
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
           "title": "삼정KPMG “K-타이어, 전기차 RE·고인치 타이어 공략해야” [시그널]",
-          "desc": "삼정KPMG “K-타이어, 전기차 RE·고인치 타이어 공략해야” [시그널]&nbsp;&nbsp;signal.sedaily.com",
-          "source": "signal.sedaily.com",
+          "desc": "삼정KPMG “K-타이어, 전기차 RE·고인치 타이어 공략해야” [시그널]&nbsp;&nbsp;서울경제",
+          "source": "서울경제",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wekNtWDdDR3VxUHFBVlMyUXpxY3VBUXJkMFVGWUM3NmtJNTZsSkE4c0R6SnRaUXFUdW1DLTR5UzdSZHU0TVRJXzd3V2FQQ3ctbW1HQW5B?oc=5",
           "lang": "ko",
           "translated": false,
@@ -670,9 +670,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -682,8 +682,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "PMI는 8월 유로존 공장 성장률이 4년 이상 최고치를 기록했다고 밝혔습니다.",
-          "desc": "8월 유로존 공장 성장률이 4년여 만에 최고치를 기록했다고 PMI가 밝혔습니다.&nbsp;&nbsp;Reute…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNanpVcS02UDRJS3U4SmExVHhrZ0xtdU9tV241Q2IyLWo0SXRPX3g2LV9FVVhnYUV6YmV3dFQtTEl5S0dnZ2RTNzVKZlZfaGRFeFJmSnE0TkRHcU9GczNjWWtQckw1enlEc1JUaUowdmZwWFFsRjNOeHo5Y3Qyc0QxUEpQRkJXbndON2tVSFZyYVFjSmVJa25LSlpWQzVTTUhYd3Z6UmlvX3ZGWml0c2NpVXlQelItQQ?oc=5",
           "lang": "en",
@@ -694,13 +694,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "스위스-중국 자유 무역 협정(FTA) 업그레이드: 비즈니스에 미치는 영향",
-          "desc": "스위스-중국 자유 무역 협정(FTA) 업그레이드: 비즈니스에 미치는 영향&nbsp;&nbs…",
-          "source": "China Briefing",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPOW0wWG9RYmVQLThIZFZ6c1FDUEx5UU0tSmQ5b3BFVTRPSVZHLUV5S3dyaGN1NkE5cFRLbmZvcVdsbXdEVEVmTElUTWV5b2otdGRLcS1xNDMwMkRSbzk1aVZpZ2t6emp2LXV3bi13M2t1UHB5YnBDQmVfb1NPWmUySm5EeFQ3VWlGWlJ5UW00ZG1HUQ?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Switzerland-China Free Trade Agreement (FTA) Upgrade: What It Means for Business"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -730,7 +730,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 4.3,
-        "change_pct": -0.38,
+        "change_pct": -0.36,
         "history_labels": [
           "10월",
           "11월",
@@ -763,31 +763,31 @@
       },
       "headlines": [
         {
-          "title": "독점: 미국은 헝가리, 폴란드에 대한 이민 비자 처리를 재개합니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLU5LT2VyMl95SlRhUnVCekhEVUlxdC1mdnoyVnR4Sms3bWlsVGdfeFlaTEFTMl9JT1FVTnhqUTZrLXRVUm4zZ1BiV2JtVlRhVDI4cGtkNG1EU2xCQWlhNExUY2tTUWVETFJIZkhlY2Rxb29IR25qb1hSMmlaUmc4cU9DQ1VnT2N0dDh0NGhVam03QnpubzU4LWFqeFFvSUY4TUU1ZlNUT0g1b1l3dEtTN00wV3Y3ME8xX1Z5alVSV3VoTk96OWlGejJR?oc=5",
-          "summary": "독점: 미국은 일시 정지가 남아 있기 때문에 헝가리, 폴란드에 대한 이민 비자 처리를 재개합니다…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "EXCLUSIVE: US resumes immigrant visa processing for Hungary, Poland as pause remains elsewhere"
         },
         {
-          "title": "헝가리, 친모스크바 입장에서 벗어나 러시아 외교관 10명 추방",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "AP News",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeXhUSm92S2lPWFZrTHdETVd1clVYb0dOcW1vQnNnYTE5OFJMWXRrOE5Qb00zdkxmTmpvOUhpeTBscmdVVERzb1duSVdQSkZ2V0t1N2VVM1VQcEd2aWFqR0pvelRSYVo2Y3hoMHBuS25hVDdDWnRyRFB5M3N2ekIzUjQ3LTZIWEFTMWhGNUw1RnMxbDlETldwakJsZGlQWFFxd1Y1OEMzMUlGOUxuNDRyemtR?oc=5",
-          "summary": "헝가리, 친모스크바 입장에서 벗어나 러시아 외교관 10명 추방…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Hungary expels 10 Russian diplomats as it shifts away from previous pro-Moscow stance"
         },
         {
-          "title": "헝가리 84-63 일본 (2026년 9월 8일) 최종 점수",
-          "source": "ESPN",
-          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vcnZTMHduX2xMemg5dFpJM29WMHMwZGw3ZGJkb0Y1MjZtQllpZWRWRkRoSGsySW9NREpUQVJMSFhmRzlYY0E3NmRWOFBOeE51TTN2enZKUXh4VVhYRVliMk5ISDVvQi1DMzBVREFnMjk?oc=5",
-          "summary": "헝가리 84-63 일본(2026년 9월 8일) 최종 점수&nbsp;&nbsp;ESPN",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Sports Illustrated",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMk1BdXhJaF95RDl6V2xqOVMySDhrZ0F4eGNxdHFYNG90Q0hpNVdQaS1sUDJHb01hYno2QjAxUlpoVURpbHJBaUd1UTJCdXVoZEtmaklHbDlURmE4STlhb29NU0c4OEZ1RGNBeVdvbzFmZU9taXpIWE1UVVpWZHRKRXZJZ1kzZDY5MUoyeEZ6dFpxdm1reHo0Y1NZUXV5VUh5a2dLYUpFZ1hFYTl2NVNaR3d4MHlIeFd3UVdYTg?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
-          "original_title": "Hungary 84-63 Japan (Sep 8, 2026) Final Score"
+          "original_title": "Team USA vs Hungary FIBA World Cup Game Gets Early Start Time"
         }
       ],
       "hr_trends": [
@@ -795,8 +795,8 @@
           "category": "AUTO MARKET",
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
-          "title": "고급 타이어 시장 규모, 점유율 및 성장 보고서 | MRFR",
-          "desc": "고급 타이어 시장 규모, 점유율 및 성장 보고서 | MRFR&nbsp;&nbsp;시장 조사 미래",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Market Research Future",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBfbHZ0dTVnRVJ1ZmpuQkxuRmJCMG9Ib2pjcmNBUDNLR0drRGc0VTd0YVdzOFVJSHNldEI0dTJYcGlNRVRkajZDNWRrS2Q5bC01Yjd3TFh1cUpkWEtVdk41c2hMajRiclNlSlhvdVA1MkRsalp4dnYwbG9uQQ?oc=5",
           "lang": "en",
@@ -807,9 +807,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -819,8 +819,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "주간 시장 통찰력: 연준의 금리 인상 지도 없음",
-          "desc": "주간 시장 통찰력: 연준&nbsp;&nbsp;invesco.com의 금리 인상 지도 없음",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "invesco.com",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeHJFRFJ2YWM3dVZnOWVCTlZYMTJDX3lqZk9POXZhWklSMDVGSEQ2cXYtXzgzZ2RVaGdpZVNmZUI1bkthWEMxdmUwM3dOZDNiRzYyREVIdXRaM3VFTHNKZ2Jxdkt4N1pELXRqOTJLRlJVQVdSVFBDdDdBOUVBLUNFWHdyRGNSYmxObXNpQ0txSUNjNkxINUdialVraHpXdw?oc=5",
           "lang": "en",
@@ -831,13 +831,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "Shein의 홍콩 IPO는 글로벌 역풍 속에서 흔들리고 있습니다",
-          "desc": "Shein의 홍콩 IPO는 세계적인 역풍 속에 흔들리고 있습니다&nbsp;&nbsp;evrimagaci.org",
-          "source": "evrimagaci.org",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ1Z5YnJwUzlHRUVQSDNTVkhZSVc1eHFhTjhLUlpTUUlNLVJDbFU5U0hqNEJ1bnRYWlpPcFNBWVdGeWVldnlTRGZwVlBqUlVZNGlLTTRQNFpXek1YVHFZNmpPSV9KNEpnUjdFOVBrZnJIa1RRNVdKcDY0MU8zVExTcnJQS2FUZDd5QVBnZQ?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Shein’s Hong Kong IPO Falters Amid Global Headwinds"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -865,8 +865,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1813.3,
-        "change_pct": -0.37,
+        "current_rate": 1812.9,
+        "change_pct": -0.4,
         "history_labels": [
           "10월",
           "11월",
@@ -893,34 +893,34 @@
           2043.1,
           1912.2,
           1864.7,
-          1813.3
+          1812.9
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "양국 해법에 관한 외교장관 공동성명",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "GOV.UK",
           "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUg3SmV3WGFvZXVBT1JvLVotLTI5QVVWd093YXNxUnhIWHNLQzlESE01YjRWUk9ZZ1ladzlmRXBDb0taOVRjT0RVRkptQTB4MFNOQUgyZzlJVkthZlF4QnVwak9OV3RxdXlzcHIwTU9MUHRRR0dQdXhUQ1JIeHlxaV9meS1weFRCVjZYT25PTFZQcFdsMUVZV0RR?oc=5",
-          "summary": "양국 해결책에 관한 공동 외무 장관 성명&nbsp;&nbsp;GOV.UK",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Joint Foreign Ministers' Statement on the Two-State Solution"
         },
         {
-          "title": "이스라엘과 영국이 갑자기 외교 분쟁에 돌입했다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The Christian Science Monitor",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVk4wS2JrbktjLTc5YTJCSmpkT3BMUklvNkMyYklXYUpTNF9Cbm1pOEFtLTg3VGR4NWU0TlgxWktjRm5USExUbVZkVXVmMUZITWFtb0xBbC1vZnBRQWNBejRHOGREZGgtMDNRMVFRR3Q2NENlaXJfazNXOHFsTmRtOWxjWGZyX0ZrSExFZ3UweVlIdGlNSEdiN3FRdUpoV0IxRWo3Y2l30gG_AUFVX3lxTE0wLUVoT2Y1czZQLVBSZndKVmhzNGt3UFBBOHhaTlVZLXA0OTRsWUt6M1hhbnoyV1hHbmhtMFpBS2JkVDlqdzRlVUVscG5RVm5GbXFNSVFtYU5IU3g2V0hBNmw2MkRBWEF6WlQ4TGJNUlR2ejItLUp0bVBhb0JfT0diU0dQSFJ6amx1TDhERXlhQy1wX0piWkIyTi1MY2g1c1lWdWhyZUpjUmx1a2daRjlQOGNQZ3hQemtwMUJQQXk0?oc=5",
-          "summary": "이스라엘과 영국이 갑자기 외교 분쟁을 격화시키고 있습니다.&nbsp;&nbsp;The Christia…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Israel and the UK are suddenly in an escalating diplomatic dispute"
         },
         {
-          "title": "영국 스폰서 관리 시스템: 2026년 9월부터 스폰서에 대한 중요한 변경 사항",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Ogletree",
           "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQakRUR0NTYXJBMlZEWmdmbncxMjI5ZHdEUGtFZGlIVk4xQlRsZ2FkMnhULWtGbjcwQ2x0Y0VKTWxLdlBvaWs2aDE4VG5qT193WVFRa05nM0Rfcm9ET2E0SkNiYV93ay1tb0hSYjB2bmNHa2h4LW51ZFZvQUVhb0luOWdTQmdDT3VRdnk0MHc1NUsxdkEtWl95M1lGSjRWRkhZR1hMWHlXOWYxRkY4cUxDajdxZWdEOC1TTUpJNkdUVENzQVk3ektiamNJemZIdw?oc=5",
-          "summary": "영국 후원자 관리 시스템: 2026년 9월부터 후원자를 위한 중요한 변화&nbsp;&n…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "UK Sponsor Management System: Significant Changes for Sponsors From September 2026"
@@ -931,10 +931,10 @@
           "category": "AUTO MARKET",
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
-          "title": "GM, 시장 불확실성에 캐딜락 영국 재 진출 계획 전면 재검토",
-          "desc": "GM, 시장 불확실성에 캐딜락 영국 재 진출 계획 전면 재검토&nbsp;&nbsp;다나와 자동차",
+          "title": ": 다나와 자동차",
+          "desc": ": 다나와 자동차&nbsp;&nbsp;다나와 자동차",
           "source": "다나와 자동차",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQUVkbjgtTXlBVnVGaE1uQkkxSHJoZzB1d2hNQlZLMl92b3U1STNzUEY3WHp6M201TE8yWGNqclo2TzVGc0htc1lTSzdjQjdteHYzZ3ZzSVctWkhPQUs3VFVlYnBQWU15UFFsWjI3WWdoSkhPT3hxZnktQU5ySzZSSWlVVjZEaHdnSFJOYWh3Qmtyb0pBZWJYTzNVZlcwVlRwRVJPdw?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGZllQalNBTnJjY2Q1aDFNLVh1M3VfMEdWYlZ4X2dVeU85dlJjcF8tNHF0aHFhNlNKTHUwVmhUNFZJVGpUWHlWckthWnpiY09DaEFpellsOGdxaHloeUduUEk1eXVpNm9RQmNRbW5iMkNCTlo1MWI2VVVNRWNndnM?oc=5",
           "lang": "ko",
           "translated": false,
           "original_title": ""
@@ -943,9 +943,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -967,8 +967,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "캐나다는 미국 무역 협정에서 탈퇴했습니다. 이제 어떻게 되나요?",
-          "desc": "캐나다는 미국 무역 협정에서 탈퇴했습니다. 이제 어떻게 되나요?&nbsp;&nbsp;대화",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The Conversation",
           "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSS03cXZZdC1laWxGSVczTDc1N1UxOU5QdFdnTjB1aEx5S2JPb29ZdExaZklySHFnWjA5d2VhQlJySUJlTWllazRueGwxWUtiZ2hoQVpDazY5OG9vcWYtZVlKNjJ5cUZ4TjhBcWk0aGNnMG5tVkk0U0NlLUszRFp3Nk44RjdGYzNlWXFpRmtqcnVqNGhlTThz?oc=5",
           "lang": "en",
@@ -1001,8 +1001,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -1029,34 +1029,34 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "프랑스 르누아르 미술관에서 미술품을 훔친 도둑들",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNYW1iZE5CV3lMN0NORWRldHRmcnBsT1lRODdGTHpMc2xiWXVHb1U5b3llOXU3M0lsRUxpZ1NkdGl1LVQ4ajMzX1otMEV6WVZwOWYtVndUNjhZR0lZRVVfd1lHUUliMjFFQ1p4R3hVa3lOajEtSHN0TGx0eV9KYXlMSGN0c1NmQVU?oc=5",
-          "summary": "도둑들이 프랑스 르누아르 박물관의 예술품을 훔쳤습니다.&nbsp;&nbsp;The New York Times",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Thieves Steal Artworks From Renoir Museum in France"
         },
         {
-          "title": "프랑스 남부 미술관에서 르누아르 그림 도난",
-          "source": "Al Jazeera",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQTZaT0theXZnQUNDbk41WlRNdmJTWFNfT0NVRVhyVEhTandGcmViZ0dzSlZ0ZlMxSW1xT1I5d09TOElOeVRTQjJGT1Bmak1MWUpoMVhueGhyNzJnaVNhX3kxdzJfbFFHM1dfWWNvbzVWdTBNUXNxcHNuNnVUM19QdEpqdW9wSGxNMjhudFc1azM2RE5Nc1hNLU9fXzVjNnkyS0lKcWpkbl9IQU94czVJ0gG0AUFVX3lxTE1McnV4ZG80QVEyY1EybDlCN2hpbDFyY1dtUFZ5M1JqNFpHTGJHSXo0OENkNjhrTUY2Zzd3YURwMVpsU2pPWWx1QV96ZFlfeEdqLXQxUXJfUHg5MFdZZWx6UmZvRS1GZkpDRnc3OTVrYV9PN24zQXFqekUwMmg5ME5pSy1JQlp4NHZJc05hcER3TGF5QnB1MUxRUlZ2RFV3WW4xdFU1Y0dPZzUtbDgwWmMtMncycg?oc=5",
-          "summary": "프랑스 남부 박물관에서 르누아르 그림이 도난당했습니다.&nbsp;&nbsp;알자지라",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Renoir paintings stolen from museum in southern France"
         },
         {
-          "title": "영국, 캐나다, 프랑스가 이스라엘 정착촌과의 무역을 금지하는 이유",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Time Magazine",
           "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa2dMMXFqOVJfejlHR0JDRTJWU1NkRXFSZmhJN29TNktWOUlldkpGUjBUN3lpNjlTRmVQYnZlYjBqQ3BqZy1EaGRjMlEzUzQ3dDI4U3JNTUdyVUV0WTdoQlRQRmRrbkJjYVQzZ3EtUHZNVF82WldTbnAzczJGUWM2LVVYYXBwVm5TTG1TbUU2bWZQZnpiVFJma2dnQUZiR2VxSnF4QmRuWnN2MjNmWGc?oc=5",
-          "summary": "영국, 캐나다, 프랑스가 이스라엘 정착촌과의 무역을 금지하는 이유&nbsp;&nbsp;팀…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Why the U.K., Canada, and France Are Banning Trade With Israeli Settlements"
@@ -1079,8 +1079,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -1091,8 +1091,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "PMI는 8월 유로존 공장 성장률이 4년 이상 최고치를 기록했다고 밝혔습니다.",
-          "desc": "8월 유로존 공장 성장률이 4년여 만에 최고치를 기록했다고 PMI가 밝혔습니다.&nbsp;&nbsp;Reute…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNanpVcS02UDRJS3U4SmExVHhrZ0xtdU9tV241Q2IyLWo0SXRPX3g2LV9FVVhnYUV6YmV3dFQtTEl5S0dnZ2RTNzVKZlZfaGRFeFJmSnE0TkRHcU9GczNjWWtQckw1enlEc1JUaUowdmZwWFFsRjNOeHo5Y3Qyc0QxUEpQRkJXbndON2tVSFZyYVFjSmVJa25LSlpWQzVTTUhYd3Z6UmlvX3ZGWml0c2NpVXlQelItQQ?oc=5",
           "lang": "en",
@@ -1103,13 +1103,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "미국-캐나다 무역 전쟁 영향에 대한 포장 부문 버팀대",
-          "desc": "미국-캐나다 무역 전쟁의 영향에 대한 포장 부문의 보호&nbsp;&nbsp;공급망 다이브",
-          "source": "Supply Chain Dive",
-          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWTU0OE1UUkV4NzNxYmV1NnBRNGdpQU5uaHhHZHlJMG1NdzJoQldyT3Atc1RyLVR1ZzhscHh3R3h0YmpRVHpyNjJsSzZkMGpHMVJsWHlmYWo1LThDTzBSQmdHT2o3S085RndaVHcyMC01ZTVRWDNKM3FWV0xWazhpNGlvbFFTYkR1MS1mSGk1R3Z6QXp2TFo4ZXJDbEJJdnhjWkE?oc=5",
-          "lang": "en",
-          "translated": true,
-          "original_title": "Packaging sector braces for US-Canada trade war impacts"
+          "title": "韓·佛 장관급 '전략산업대화' 신설⋯산업·통상·공급망 포괄 협력",
+          "desc": "韓·佛 장관급 '전략산업대화' 신설⋯산업·통상·공급망 포괄 협력&nbsp;&nbsp;이투데이",
+          "source": "이투데이",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Ea2dTS2owcXF3cl9Za1NieERBbzZnYzNZN1A1aEgwMGphdmxWQ04tcW9qX3hnNUkxcHNrZHFSb3hBaUdHRlBlbk5fYzFZZEh3dHJ0cQ?oc=5",
+          "lang": "ko",
+          "translated": false,
+          "original_title": ""
         }
       ]
     },
@@ -1137,8 +1137,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -1165,34 +1165,34 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "이탈리아, MQ-9A 블록 5 리퍼 2대 추가 주문",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "General Atomics",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE85VTFPWDhyLUNSVUU4Nno2eFFjVjFfX29MTTVsOXo3YS0zNTNrUVpQaUdPLXVqelhrSXdyQTJlc2I0VzJLSkh3WmVfRjBtOThUUllQbjRyMEJiUm5MVTJQRUpxRFMtLXRfZU9Genl2aw?oc=5",
-          "summary": "이탈리아, MQ-9A 블록 5 리퍼 두 대를 추가 주문&nbsp;&nbsp;General Atomics",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Italy Orders Two More MQ-9A Block 5 Reapers"
         },
         {
-          "title": "프로처럼 요리하는 법 배우기: Made in Italy는 베니스의 가정 요리사에게 신선한 파스타 기술을 가르칩니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "ABC7 WWSB",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdG9qaUp5UTk4Y3Vac05ZYXZXSU1DTmhZbEdDRkNiLU5zbnFXR3UwRHBBbFBQNm92clZ3ZHEzYVFhQzB4VnFoQUpxZWRMQVBMMEdNb19ya01RRWpXZ0pKOFFxZ2NDV0dwbmpzc3lBWkh5dXJwc0YzUjdqdTFUTGVYSkNGNmZmLVlSVkM3aXlZdFgwNDVkMXd1cVhBTjJVdGtPbHRwMDRIN05DS3BmcE1oM1BQeUbSAcgBQVVfeXFMTVVycEQzcjZLdnBJVDNsdnFLUldkT2R0ZDdIdWg2MXFFdVVSekRqNlo4ZlRfN0FBNU1IZkRiR3RhZGJhcDBVbEJyZEhwWXdfV0ZfV2MyUG5FbS1qc1ZCWC1XM2pMYmUtTGFIM0d1dXFLUF9TT3l5V2JkcUdpZV9vdHYxLXhjX3lKbEEzdFV5cXpkckFkTEFNbUFQdkp2eF9vMmg4bWFMRW4tcW45TV9ib0hzbFZrTlJOd19GUTZaT1hibHoyaFhQV2k?oc=5",
-          "summary": "프로처럼 요리하는 법 배우기: Made in Italy는 베니스 가정 요리사에게 신선한 과거의 예술을 가르칩니다…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Learning to cook like a pro: Made in Italy teaches Venice home chefs the art of fresh pasta"
         },
         {
-          "title": "이탈리아, 2026 IFAF 유럽 청소년 깃발 축구 선수권 대회 개최 예정",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Cleveland Browns",
           "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRmxLTzZxd3VLX3NCUG9Sb0J6bDRrc2d5NVMwaW96OGxNOTNYQURWNE50TndVdVRUSEJUZVRRRnNUd2Y5d3d5dFIzbl9WdW5DWVZhY2JmZF84dWdudFQ2eWMwOFpaXzUwOV9FdUhBeDVaMEE0QTFkZDNtcFBVMWxNUXU1WVA3MThjeUFzMkFSUEVpNG5nc1gxbTNfRllwNkdWU0VyT1Q0WTlaWVE?oc=5",
-          "summary": "이탈리아, 2026 IFAF 유럽 청소년 깃발 축구 선수권 대회 개최 예정&nbsp;&nbsp;클리블랜드…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Italy set to host 2026 IFAF European Youth Flag Football Championships"
@@ -1215,8 +1215,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "대전사진페스티벌, 사진을 통해 글로벌 노동을 조명하다",
-          "desc": "대전사진축제, 사진을 통해 전 세계 노동을 조명하다&nbsp;&nbsp;조선일보",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "조선일보",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdGZCR1JrUzhPX2Rsd000eUE2NHp4VU1pdjBsdTBLS3Z1M0lIYlNRMFNiZ0ZfLWhEWC1CV1ptSHQ2SlFXX2thWEhvOVhWaW5JZmpScTYwSWdteXJsa1EzZFNDeVRrVVp6bS1FNUVmenBnR2MxTnRvbUpSVENXZWdqelZWalA?oc=5",
           "lang": "en",
@@ -1227,8 +1227,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "이탈리아 8월 제조업 PMI는 49.6으로 하락해 예상치 하회",
-          "desc": "이탈리아의 8월 제조업 PMI는 49.6으로 하락하여 기대치를 하회했습니다.&nbsp;&nbsp;CryptoRa…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "CryptoRank",
           "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE55T1l4MnphdEVNRG9qY0VqNFJ1dWlRZ1dpQmY1MGhpNTBZY25vQ19TVFdwemJDOVpGbWFmcmtpMmhJaG93YUVPdkxoVjM2cGtsQWNCR1oxZ0MwQ3loTEJ1SThGdFM3U00tVjU5SndMbDVnU2hLZldkNXkwQjJ2UQ?oc=5",
           "lang": "en",
@@ -1239,8 +1239,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "외국 관세로 인해 미국 위스키 가격이 저렴해졌습니다 — 거주 지역에 따라 다름",
-          "desc": "외국 관세로 인해 미국 위스키 가격이 더 저렴해졌습니다 — 거주 지역에 따라&nbsp;&nbsp;식품 제조업체",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Food Manufacturing",
           "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVS1peW1DYjJXVTJXOFdXa3RXclB2UE41eHMyckFoM1VHMDJ2aXo5U1lBV3JIbHIzMDY4ZnlUb0ROYjA0bGhSNENxYmlvODF4dzhYUXZTS3NsUTdDdGl3bjFxT3pKZGoyUUk5Y3pYUG9sUk8taGRrWmo2TzNrSE00M0VxRkF1dVA4Uko4a0RVQlg5RzhhMF91TzRaNUpXTy1LZlpBWE5yZW85TWVHRURoc2xBLVV2ZS1XTkJsakY0U2hOeVBaSmw0?oc=5",
           "lang": "en",
@@ -1273,8 +1273,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -1301,34 +1301,34 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "출처: 리오넬 메시, 스페인의 두 번째 클럽 구입에 동의",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "ESPN",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeHZUTWFPQ0cyTGkxWHlNMGlEUTlScFlRZFlnVC1FbnlEUGhOVWVCTG9Jd1hMOFRCRndCYkxlWkg0ZDUzZDlEU3lOZjQ3bFBoN3dxekc0YlFwVXBrekh1Y3J0RmlPM3pFb01ZR2VaZGI5MnNqeVpKTE01VVVRRFhmTHVyYl8wVXFYRmZWSnFLVEpqNFE?oc=5",
-          "summary": "출처: 리오넬 메시, 스페인의 두 번째 클럽 인수에 동의&nbsp;&nbsp;ESPN",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Source: Lionel Messi agrees to buy second club in Spain"
         },
         {
-          "title": "'너무 크고 너무 가깝다': 스페인 북부 여행에서 멸종 위기에 처한 곰을 만나다",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The Guardian",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNX2puaXkxMllKdjY4OGZxNWxBelR2Slo4OTgyNXlWN0RnUE1hUmcyLVlyMVdVMU1sakt1RWxXZXpBRDBkLXBvYi1iUF83Z2hwTXExT1RNMl9tOU41MERycGpZVE5JckoxT2Fkc0hCRkNCRFpZajBscDhSdV92WjZiTERzTlIxcVZXUHFrYi1feGpiVm42RGtkb3prQUJ1SHJ0SXRfeg?oc=5",
-          "summary": "'너무 크고 너무 가깝다': 스페인 북부 여행 중 멸종 위기에 처한 곰 발견&nbsp;&nbsp;Th…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "‘So big and so close’: spotting endangered bears on a trip to northern Spain"
         },
         {
-          "title": "Tyler Legacy의 D'Spain이 UT Dallas에서 승리를 거두었습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "KLTV.com",
           "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wNGRyeVJxdjl6Y1d5ZHlZQndWSENqX0pVbGRuek9EUU12dXkxMVF5TGJPMFR5LXQ4SkNOOXBLOGE5QVlmR3NObDE4dXByRHJpWXdHbWtZVXc3Tm40UGhLZ3FORXBtNzR5a1B6TjgzT08wSTc5QnFkdS1wRGp6MGfSAZMBQVVfeXFMTXJUV1RvU1RmeER0cVN5SGlXd2t5Yi1qTVNaUmJ3b1hMRjhrRmdHZFh3eVhXUjlEQkg2ZHFDWTRrdzgwMk9ROWVVc3g2VGxXMzNVc2drbURpQXZJVENiTFVaLTV6VHdYNU55WGhUR0JuRUxIaTk0ZnZUVWtrNEZQdVJzZmROYlpoNExYMngwUWF1ajU4?oc=5",
-          "summary": "UT Dallas에서 Tyler Legacy의 D'Spain 득점으로 승리&nbsp;&nbsp;KLTV.com",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Tyler Legacy’s D’Spain scores in UT Dallas win"
@@ -1351,8 +1351,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -1363,8 +1363,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "PMI는 8월 유로존 공장 성장률이 4년 이상 최고치를 기록했다고 밝혔습니다.",
-          "desc": "8월 유로존 공장 성장률이 4년여 만에 최고치를 기록했다고 PMI가 밝혔습니다.&nbsp;&nbsp;Reute…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNanpVcS02UDRJS3U4SmExVHhrZ0xtdU9tV241Q2IyLWo0SXRPX3g2LV9FVVhnYUV6YmV3dFQtTEl5S0dnZ2RTNzVKZlZfaGRFeFJmSnE0TkRHcU9GczNjWWtQckw1enlEc1JUaUowdmZwWFFsRjNOeHo5Y3Qyc0QxUEpQRkJXbndON2tVSFZyYVFjSmVJa25LSlpWQzVTTUhYd3Z6UmlvX3ZGWml0c2NpVXlQelItQQ?oc=5",
           "lang": "en",
@@ -1375,8 +1375,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "미국의 생산성이 관세 충격을 어떻게 완충했는지, 그리고 알아야 할 기타 무역 뉴스",
-          "desc": "미국의 생산성이 어떻게 관세 충격을 완충했는지, 그리고 알아야 할 기타 무역 뉴스…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The World Economic Forum",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUt5by0teUFjNGZ5NWQ2cEJOZkdmQjBLeTdacVUxUS1wZFJQMEkyTFQ4Nkxpb2M1Wld2LTQ1YjZQRnFCdmFtTGlNQ29XdTRoTDFVRG5OZFYtWUtYMGdpQ1BGQjBXMWxhSHJQeVB4M1BMY3hiRUhmdUVEc0d4eUhSa2U5Q3NGeTdmRzBsb25YY0FZQVNxalFWeEluWk9iYjJBaFBWVmNoYWxjbk5fQ1lwTA?oc=5",
           "lang": "en",
@@ -1409,8 +1409,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 361.4,
-        "change_pct": -0.34,
+        "current_rate": 361.5,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -1437,34 +1437,34 @@
           410.7,
           380.3,
           367.9,
-          361.4
+          361.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)"
       },
       "headlines": [
         {
-          "title": "독점: 미국은 헝가리, 폴란드에 대한 이민 비자 처리를 재개합니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLU5LT2VyMl95SlRhUnVCekhEVUlxdC1mdnoyVnR4Sms3bWlsVGdfeFlaTEFTMl9JT1FVTnhqUTZrLXRVUm4zZ1BiV2JtVlRhVDI4cGtkNG1EU2xCQWlhNExUY2tTUWVETFJIZkhlY2Rxb29IR25qb1hSMmlaUmc4cU9DQ1VnT2N0dDh0NGhVam03QnpubzU4LWFqeFFvSUY4TUU1ZlNUT0g1b1l3dEtTN00wV3Y3ME8xX1Z5alVSV3VoTk96OWlGejJR?oc=5",
-          "summary": "독점: 미국은 일시 정지가 남아 있기 때문에 헝가리, 폴란드에 대한 이민 비자 처리를 재개합니다…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "EXCLUSIVE: US resumes immigrant visa processing for Hungary, Poland as pause remains elsewhere"
         },
         {
-          "title": "유럽의 미사일 제조업체인 MBDA가 폴란드에 첫 번째 산업 시설을 개장했습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Breaking Defense",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbUFHS2lYLW95MzBEMzFXRk1VbVJIU3ZnSmZUUENhOXd0TjYwRjNQeFZrR0dJa3dTRnJ3U1loT0ZsSzBEeUMxdVRGTU9YSGpIZHdfaThpa05GOEFWVGs0eUh2cHRwUlFhUEUtV1dnVlZ2Ulp0MEtPV3dzaFRVN2loOW9FQXVnaHNBQXF3dkRUOC0zTFRXS2VDR3ZTRUpZWG9NZ3dMRGFpZFRVZw?oc=5",
-          "summary": "유럽의 미사일 제조업체인 MBDA가 폴란드에 첫 번째 산업 시설을 개장했습니다.&nbsp;&nbsp;속보…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "European missile-maker MBDA opens first industrial facility in Poland"
         },
         {
-          "title": "폴란드의 개발 중인 전투차량은 새로운 방산-수출 드라이브를 수행합니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Defense News",
           "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWjljUUlZWmR3bkdyQ1AzdXhkdnJ5SDkyODZ1aXMzd1ZTUE15cFNHQTB5WkpJamR5b21FZjJPanhWazVHVDN4X0JuQllxZ2NTQUtHU01vcEQ3cjBLc3c1YzNWNC1ldGpZM2dnUFktWTE5cHV3dEU3cldhTzVGZUc5YUxNNkZEbU1YNEVuNWxxWE5HTE4wd2J6Q3AtaHg3Q0tEM1Z2SHkzR2czaHNLSVVSTEpRU0ZvM1ZlbHJfeDBMdEMya0puUGN6NF9nWQ?oc=5",
-          "summary": "폴란드의 개발 중인 전투차량은 새로운 국방-수출 추진력을 탑재하고 있습니다.&nbsp;&nbsp;…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Poland’s in-development fighting vehicle carries newfound defense-export drive"
@@ -1487,9 +1487,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -1499,8 +1499,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "AUD/CAD 돌파로 브래드먼 장벽이 눈에 띄게 되었습니다.",
-          "desc": "AUD/CAD 돌파로 브래드먼 장벽이 눈에 띄게 되었습니다&nbsp;&nbsp;FOREX.com",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "FOREX.com",
           "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdWZIOFF3azI2SGozM0pkUlJvc2I3Si1rQ1hkWDR6WlRxOUZKcWMtZWRpNE5HVzVRMGZULVRES25WYkVmYzZldVlIRGlyX1Q5eHVWNmRLMkJ5VXk3U3BvQzBoUlJjVnQzOFY1OVgxZndVUWoxR3JKS2YteFVqNmJlSkYzMjlhVmFMZjdXQWFQUXZwZ2x4eGVRUGJ3?oc=5",
           "lang": "en",
@@ -1511,13 +1511,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "Shein의 홍콩 IPO는 글로벌 역풍 속에서 흔들리고 있습니다",
-          "desc": "Shein의 홍콩 IPO는 세계적인 역풍 속에 흔들리고 있습니다&nbsp;&nbsp;evrimagaci.org",
-          "source": "evrimagaci.org",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ1Z5YnJwUzlHRUVQSDNTVkhZSVc1eHFhTjhLUlpTUUlNLVJDbFU5U0hqNEJ1bnRYWlpPcFNBWVdGeWVldnlTRGZwVlBqUlVZNGlLTTRQNFpXek1YVHFZNmpPSV9KNEpnUjdFOVBrZnJIa1RRNVdKcDY0MU8zVExTcnJQS2FUZDd5QVBnZQ?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Shein’s Hong Kong IPO Falters Amid Global Headwinds"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -1545,8 +1545,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 64.4,
-        "change_pct": -0.29,
+        "current_rate": 64.5,
+        "change_pct": -0.24,
         "history_labels": [
           "10월",
           "11월",
@@ -1573,34 +1573,34 @@
           72.6,
           67.7,
           66.2,
-          64.4
+          64.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)"
       },
       "headlines": [
         {
-          "title": "네브래스카를 방문하는 체코 대통령",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Nebraska Public Media",
           "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaEduQXlQZm1jS2dLY1VBeGhzVUtsendXaXRQVU8zZEV2VTNaeURabThFSHgwVVktR0xqQW13djBoQ1R6d3BOUzJLRmZvZFFxVElrY3FrOGlQbjg2R0VpX0VReWtXcHVReGI2b05wbG5waWIwVjhxMGNtQjBEVjRvLXVYTFFCVjh0VEJ0OVppSlhtVVhzMEk1TXg4X2FFcU9kUTNlbFhjVHc?oc=5",
-          "summary": "네브라스카를 방문할 체코 대통령&nbsp;&nbsp;Nebraska Public Media",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "President of Czech Republic to make Nebraska visit"
         },
         {
-          "title": "FIBA 월드컵에서 미국이 체코를 꺾고 콜리어가 12점을 획득했습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "St. Louis American",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYURRNVMtSGE5QTBheHJVWFk2czhwVC1xVW12M3A0cjVRWlZXTGVaZ1kxMmRYX01BUW9LMmtBaGMwLVpCNktMc3gxNUdLdlhPd2hvNGNJeng1TEQ0bHFLZnFwS3N2Y0xZbVlTSlAzY092VVhkWWZUTm9OU1BjNzFIVzVVOVFTZzBZMXFvdkpkRHNHWXZvUUktS3BMemp4bHU1T0QyNTA5MHdDU0JLOVZqQUpn?oc=5",
-          "summary": "FIBA 월드컵에서 미국이 체코를 꺾고 콜리어가 12점을 획득했습니다.&nbsp;&nbsp;세인트…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Collier scores 12 points as USA defeats Czech Republic in the FIBA World Cup"
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "timesrepublican.com",
+          "source": "Times Republican",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeUtnMXlVT1FOdUVKdTJ1M3dzYkZQSG43ZnhwUVJVNEpWajFuM0tYZ0c5MjZSVktvYWF2LUpQLUFUSkQ2YWRENEs0ek9GV1F0S2tTX3N4ZTZ5RklJc19yVFFVNFV2Vmg3RlFOc3J2bF93RENhNFBZd21wQW1DdW9rY0tycjVMVEJmUjhPNEF0WWhLRWJJbXk2UDFZdDJaZG56TEREUjd3?oc=5",
-          "summary": "Stewie는 미국의 체코 공화국 패배를 촉발시켰습니다 -&nbsp;&nbsp;timesrepublican.com",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Stewie sparks US to rout of Czech Republic"
@@ -1611,8 +1611,8 @@
           "category": "AUTO MARKET",
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
-          "title": "현대모비스, 슬로바키아에 전기차 구동계 공장 준공…유럽 3허브 전동화 네트워크 완성",
-          "desc": "현대모비스, 슬로바키아에 전기차 구동계 공장 준공, 유럽 3허브 전기차 완성…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "헤럴드경제",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9PNW10dFUzRjNralh0emdVRzZicWxlTTBkbm83bm9wZlQ2cDV6STNMblJNb2dzWWF0WFg5STdfUHY0Vjd0UTFmSmdDZTZPNWxVS1MyXzN3?oc=5",
           "lang": "en",
@@ -1635,8 +1635,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "주간 시장 통찰력: 연준의 금리 인상 지도 없음",
-          "desc": "주간 시장 통찰력: 연준&nbsp;&nbsp;invesco.com의 금리 인상 지도 없음",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "invesco.com",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeHJFRFJ2YWM3dVZnOWVCTlZYMTJDX3lqZk9POXZhWklSMDVGSEQ2cXYtXzgzZ2RVaGdpZVNmZUI1bkthWEMxdmUwM3dOZDNiRzYyREVIdXRaM3VFTHNKZ2Jxdkt4N1pELXRqOTJLRlJVQVdSVFBDdDdBOUVBLUNFWHdyRGNSYmxObXNpQ0txSUNjNkxINUdialVraHpXdw?oc=5",
           "lang": "en",
@@ -1681,8 +1681,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -1709,34 +1709,34 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "일부다처제, 유럽 법원과 네덜란드 측의 이산가족 상봉 중단",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Courthouse News",
           "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOU29iMkV6Q0w2MUVkeS03czNBZlpZQ21nNzNQVm9nWDNmQVQ1ekViOTV4czZoZG8xcWtLTTRubmk0VUdTQjJySjl5YXdpVGxoRmg2TTR3U1dncDB6cnVoOFp4cWJMWWR3Z054em5uVHhqaGFpUGo1MXhNRmt6eTBqZnNUMXRaR0luZm9wMkhYOTVDNWIyYk8xektwNWZtNFBFUzVac0N4ZHpEbGst?oc=5",
-          "summary": "일부다처제는 유럽 법원과 네덜란드&nbsp;&nbsp;C 사이에서 가족 상봉을 분할합니다.",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Polygamy splits a family reunion as European court sides with the Netherlands"
         },
         {
-          "title": "네덜란드, 히틀러에 대한 동정 표명 후 우익 방송 금지 조치",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The Times of Israel",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQVozZGw1RlVUZVYxNFdCcE82Ry1hLTRmbmZGYmYwQlVCam1QSGpfQ0FaamppNUE0cTFEVE1OUG1aTHlZTkoxSDM3c3RyTHdRZUhFd1hWY25oWHU1S2FNVk9QM2RHSDFDM1ZnaFZIOHBueDdKc3kxQkRPWTFDLWY3NE9wdm50Qlk0MWN2dEstNFNLLVlYeldUbUhkNFpxZGZhX1ZFRUFJWlM2QkZoU1N6N0FHVGNPZm_SAbwBQVVfeXFMT3dRY0JTejlPYm9YU3lUOThXV2ZnYjE4SHBSS3JNa2c5T1Bnek9NdUc5aFpOSnhjR2hsYzdVLVA5VjZWY3JjVTlHTjQtcmpwRDc3cGJ1X1R5MkV5Q3lROW5qeHE1TFFZOTA1WEhTeHRMb1lQX09kTFdIeGVUelJzZkFERkFuYV94Q2x5NTZrekpVTGhtT3FMUnp6eWhYUXh2SUltUnhCN0IwWjA3QnpiQXdDTHVvNnYwVHBJSno?oc=5",
-          "summary": "네덜란드, 히틀러에 대한 동정 표명 후 우익 방송 금지 조치…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Netherlands moves to ban right-wing broadcaster after head voiced sympathy for Hitler"
         },
         {
-          "title": "Rémy Cointreau, 새로운 네덜란드 유통업체로 선정",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Global Drinks Intel",
           "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWjl6dGlTRDVIdEdLVWw2MW1NdlFvaGc3Zy1uSnNDOTFqUnRXM3cwWEJzMlhqNGNoMWFpTnJJRXZObjBlai1wNWRtRDFxTVZxU3QzeEIwU1RfYzlENndQUGZjV2VjSVE4ZEJvV3p2cW1pN2dVcVB6eW1fb3R0MjhGZnZ4UTctWWt3cHc?oc=5",
-          "summary": "Rémy Cointreau가 새로운 네덜란드 유통업체로 선정&nbsp;&nbsp;Global Drinks Intel",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Rémy Cointreau names new Netherlands distributor"
@@ -1759,9 +1759,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -1771,8 +1771,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "PMI는 8월 유로존 공장 성장률이 4년 이상 최고치를 기록했다고 밝혔습니다.",
-          "desc": "8월 유로존 공장 성장률이 4년여 만에 최고치를 기록했다고 PMI가 밝혔습니다.&nbsp;&nbsp;Reute…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNanpVcS02UDRJS3U4SmExVHhrZ0xtdU9tV241Q2IyLWo0SXRPX3g2LV9FVVhnYUV6YmV3dFQtTEl5S0dnZ2RTNzVKZlZfaGRFeFJmSnE0TkRHcU9GczNjWWtQckw1enlEc1JUaUowdmZwWFFsRjNOeHo5Y3Qyc0QxUEpQRkJXbndON2tVSFZyYVFjSmVJa25LSlpWQzVTTUhYd3Z6UmlvX3ZGWml0c2NpVXlQelItQQ?oc=5",
           "lang": "en",
@@ -1783,13 +1783,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "2035년까지 EAF 제강 확장에 의해 주도되는 보크사이트 내화 재료 시장 성장",
-          "desc": "2030년까지 EAF 제강 확장으로 보크사이트 내화 재료 시장 성장…",
-          "source": "IndexBox",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQal9FSHpJVVRxeU1JMld5bVp5aUE4RlR6Q2w2MklidWQwQ1NLR0ZMVzdjZlhpRW1CNnFQUkg5MzBxQWhQX2xPZU54cVc3QkdQaEwxejZLb0dOUXQycENmSFdjdDVRaXdtVUdreEI3a0Y4dEhUenBlUGVDU2RWOFdMQ1BpRXM5TndPZXhNUFBHMmo1dE4weHlnZ2lJSXhBcEEtdlA5cnZPalNaQnFfcXRkYzdZVDRtQXpId0w4REF3?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Bauxite Refractory Materials Market Growth Driven by EAF Steelmaking Expansion Through 2035"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -1818,7 +1818,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 139.8,
-        "change_pct": -0.23,
+        "change_pct": -0.18,
         "history_labels": [
           "10월",
           "11월",
@@ -1851,28 +1851,28 @@
       },
       "headlines": [
         {
-          "title": "선거가 다가오자 스웨덴 정부는 이민자들에게 돈을 주고 떠나게 했다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNExJRm5RbmRoeHNXbS1OWkJtTUpVam80Y3RVdXlGSW1Uak51QzZTR2FJRTN6VExJUjZhenoyMnZfLUZ5d2NBMGc1UWlxbjRxc0hoOXgzMnk3Z21Pb05BVkpoVXZxQXZJekdZdzdSWUxnM2FWRlhsWHo3b0pfU2ZVakxkN0FXdnUwSkdyMnY2YWZkbmlYbkhoMFh0d28wRmdVdTk0SA?oc=5",
-          "summary": "선거가 다가옴에 따라 스웨덴 정부는 이민자들에게 돈을 주고 떠나도록 하고 있습니다.&nbsp;&nbsp;Reuters",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "As election looms, Sweden's government is paying immigrants to leave"
         },
         {
-          "title": "스웨덴, 복지국가와 안보가 장악한 치열한 선거 경쟁에 돌입",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Euronews.com",
           "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTGVaNTdaYXdtZzY2Yy1UZk5Eb215QXBSdUcyVzdITlpvRi05blZ2SHhGZ0JsUmtFSWItRGdzbDBCb1pCQXVqUjlQZGUxcWNfUTF3WEJhdTdBNHpNOXdOZ3ZXckNmempxQ3JXY0lYY0t1bUFFVGI0TTFrR0swdl81NGNHVEMzTEh2bmE3Mmo4RFBKZGZvZGdxOWZkS0l4N3E0YU0yakd0NXBxcjlyc1Q2SWc2bUNRa1ZsdUZxVVBlRFd5VHZPUWs5RldB?oc=5",
-          "summary": "스웨덴, 복지 국가와 안보가 주도하는 치열한 선거 경쟁에서 여론조사로 향하다…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Sweden heads to polls in close election race dominated by welfare state and security"
         },
         {
-          "title": "스웨덴, 약 7억 3천만 달러에 HIMARS 로켓 포 구입",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Defense News",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNEhFOHhwYnhCR2tQS2c2cm9GS1p4c181MkJhODhtazNaQmNwZ0RGTE9qczk3ZmJyOGlDUnBiUDlyOEI4T25XcllKVFBtcGtSR1pwLWIyU2xuRjRLZUJFdTZ4NG45c01LNjNUMXlhZEtlbEVlTTJtRkFvZjhWTHpwamZQemdiN1Z6RG5lU3c3cjd3Rnl6Vjdfdjl3eXhqMGpveEJaMTg3Z2lHSkZMSXdCN3ZNcS0?oc=5",
-          "summary": "스웨덴, 약 7억 3천만 달러에 HIMARS 로켓 포 구입&nbsp;&nbsp;디펜스 뉴스",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Sweden to buy HIMARS rocket artillery for around $730 million"
@@ -1883,8 +1883,8 @@
           "category": "AUTO MARKET",
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
-          "title": "전기 자동차 타이어 시장 성장 및 예측 분석 2026-35",
-          "desc": "전기 자동차 타이어 시장 성장 및 예측 분석 2026-35&nbsp;&nbsp;Market.us",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Market.us",
           "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUjV3RkU4LU01a0ZoS0RzZXBnTWp0eXlReGV4czlJanR6MFJSSFVTNzE1MUdvQVJaZXM5VWRhSzhWZnRMdThSQ3p1aTNnQWl4b2JPNHk5bENaR3E2X0swZHJUNGx0QQ?oc=5",
           "lang": "en",
@@ -1895,8 +1895,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -1907,9 +1907,9 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "Tradeweb 국채 업데이트 – 2026년 8월",
-          "desc": "Tradeweb 국채 업데이트 – 2026년 8월&nbsp;&nbsp;tradeweb.com",
-          "source": "tradeweb.com",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Tradeweb",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPb19UUEJ3Tk1pWThjSzY4X0Y2NEtyTzZoRVVJTmt0SVF0LTc1b0VUNm9sTlJZWG02TU1HcmhqUjQ3c2hMUkdNUFRzdEFaTXBVNHhFTHkydk0wNHMxT1F4OWFleThaVW0xVVVCa0xfZGVPUnJ6S1FHMW9BN1BQem8tN2RlQllKSzZaNGJUdktRdkFLNUJDUllMOUF5LVBCSE9vbG96ZnlJWU55Zw?oc=5",
           "lang": "en",
           "translated": true,
@@ -1919,13 +1919,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "2035년까지 EAF 제강 확장에 의해 주도되는 보크사이트 내화 재료 시장 성장",
-          "desc": "2030년까지 EAF 제강 확장으로 보크사이트 내화 재료 시장 성장…",
-          "source": "IndexBox",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQal9FSHpJVVRxeU1JMld5bVp5aUE4RlR6Q2w2MklidWQwQ1NLR0ZMVzdjZlhpRW1CNnFQUkg5MzBxQWhQX2xPZU54cVc3QkdQaEwxejZLb0dOUXQycENmSFdjdDVRaXdtVUdreEI3a0Y4dEhUenBlUGVDU2RWOFdMQ1BpRXM5TndPZXhNUFBHMmo1dE4weHlnZ2lJSXhBcEEtdlA5cnZPalNaQnFfcXRkYzdZVDRtQXpId0w4REF3?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Bauxite Refractory Materials Market Growth Driven by EAF Steelmaking Expansion Through 2035"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -1953,8 +1953,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -1981,34 +1981,34 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "미스 오스트리아 루시아 시시치가 22세의 나이로 세상을 떠났다: '멋진 젊은 여성'",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "New York Post",
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRDJDMlNBNmNCTndENlJKMEJ2bzdZM19FcVdCcGpvTDlVajUtN3EzZ0VxbmV4YUV2NFVTVXFucjZrVWVSelVadTR6RzlWdUdTamVYOE9uUEc2Mms1MkdaNWlFLXJSZXFJbk1tbWlSaS10UUd2Y3VtVjFOdU1idlk5el9mVm5JdWgwQVNPeWpneDFfNHdIRFE?oc=5",
-          "summary": "미스 오스트리아 루시아 시시치가 22세의 나이로 사망: '멋진 젊은 여성'&nbsp;&nbsp;New…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Reigning Miss Austria Lucia Sisic dead at just 22: ‘Wonderful young woman’"
         },
         {
-          "title": "미스 오스트리아 루시아 시식(22세) 사망 2026 미스 유니버스에 참가하지 않는 나라",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "HOLA",
           "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN201eU5JSTRtQjNDQlpkNndoMVd0NDJrcFBoX3Q2MkVxaWt5VWJWcUtVcnRuN2ZhdEVsYVNicXM1alBYUjB6M01vY3dmUjM5d3E2MjVCWVhPYTc4ZFFTdXYwY3J4dkJpYzdLOEo3RXVzNWJGdHE2cWRoekVzTUYwd0JrN2k3cUdabEJnbmh1dGM?oc=5",
-          "summary": "미스 오스트리아 루시아 시식(22세) 사망 2026 미스 유니버스에 국가가 참가하지 않습니다&nb…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Miss Austria Lucia Sisic dies at 22; country will not participate at Miss Universe 2026"
         },
         {
-          "title": "미스 오스트리아 루시아 시시치(22세) 사망",
-          "source": "USA Today",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "usatoday.com",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdklPaUFHZmJ6SUJadVlkU2VISEFqcmlhWm9YMVM0T0J3WklmRVQxR1AwU0QtVS1MdUxET19JNEFJeEVfSjU4d2lVRkhaMjgwNGNVUnoxa2FWVTVTRUJFbFFiWTBvNzRYNEpWQUZ5Qm13NzIybHBaUU9FWndWblU5M1NOcW40QmNxZGxFNm8zc1RyaVNBNHVER24xaWhHbU0wV1l3VVMtUnM3aE5oamZj?oc=5",
-          "summary": "미스 오스트리아 루시아 시식(Lucia Sisic)이 22세의 나이로 사망했습니다&nbsp;&nbsp;USA Today",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Reigning Miss Austria Lucia Sisic dies at 22"
@@ -2031,9 +2031,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -2043,8 +2043,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "오스트리아 제조업 PMI, 8월 54.4로 상승해 공장 성장 가속화",
-          "desc": "오스트리아 제조업 PMI는 8월 54.4로 상승하여 공장 성장이 더욱 빨라짐을 나타냅니다&nbsp;&n…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "CryptoRank",
           "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNY2dYa2Fka1oyU2xMellyQklkRjRXeTNVc3ktUDJlaDF4c2RYYUtUUzlpWXpfWXA3dmZobGZYVUhVQmdJc2JNcHN3SDdXX3pBTFdXVExfZl9NTXpLT0kyRk1DVjY5Ym9BMmtjLUF4U2ljRWFiaFBhS0xjUmhrbGMxXw?oc=5",
           "lang": "en",
@@ -2055,8 +2055,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "2035년까지 EAF 제강 확장에 의해 주도되는 보크사이트 내화 재료 시장 성장",
-          "desc": "2030년까지 EAF 제강 확장으로 보크사이트 내화 재료 시장 성장…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "IndexBox",
           "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQal9FSHpJVVRxeU1JMld5bVp5aUE4RlR6Q2w2MklidWQwQ1NLR0ZMVzdjZlhpRW1CNnFQUkg5MzBxQWhQX2xPZU54cVc3QkdQaEwxejZLb0dOUXQycENmSFdjdDVRaXdtVUdreEI3a0Y4dEhUenBlUGVDU2RWOFdMQ1BpRXM5TndPZXhNUFBHMmo1dE4weHlnZ2lJSXhBcEEtdlA5cnZPalNaQnFfcXRkYzdZVDRtQXpId0w4REF3?oc=5",
           "lang": "en",
@@ -2123,28 +2123,28 @@
       },
       "headlines": [
         {
-          "title": "루마니아 정보국은 러시아의 파괴 공작을 막았다고 밝혔습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNUtMaFc5ZHJDWWNvWFNvTHRFX2dsLVg1cEsxSkNYaGYxQTlCM290OUI0Z1JsMkVhbDlJazBpVnhNbklQVDNpT2l2SnVjRDlkbW14dXd4M0VFeXptei1pRXhxc3hHYU85VmFZTjNBSGRmVUN0Rk0zZVZzWnRRZldiNE43cGVPR3FSblpETEdwTEdvQ1FyNTJHeU54VUJKZk5VR2Q3WTM3Y25VNHpVOVlkY3U1ZXZXOUE?oc=5",
-          "summary": "루마니아 정보국은 러시아의 방해 행위를 막았다고 밝혔습니다.&nbsp;&nbsp;로이터",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Romanian intelligence service says it prevented Russian sabotage operation"
         },
         {
-          "title": "루마니아가 몰도바 국경 근처에서 F-18 제트기를 발진시켜 NATO 영공이 침해되었습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "UNITED24 Media",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQkhobm5rRjRnclhNcGVfVHNXVWwyOENwX0l4NWpEUjVpa2Jmay00dWZzM1hISkNRTUZxWkhRZGQwaGtPQi1RRl93Q2x2WWgzcUZQdzh0VTAyaEI4N2RwTDF0VzU1aWQ3ZkYtNDRnOHotMWlGZ0tXbkJueGRkNHh5TS0wUzZSUXV5Z21ZNGozMjlVZHJDaEJOSEZsZnVPdmhKUUdDdmx4V3NBUmdpd2RvOTA3UEVQdw?oc=5",
-          "summary": "루마니아가 몰도바 국경 근처에서 F-18 제트기를 발진시켜 NATO 영공이 침해되었습니다&nbsp;&nbsp;U…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "NATO Airspace Breached With Romania Scrambling F-18 Jets Near Moldovan Border"
         },
         {
-          "title": "젊은 정교회 기독교인들이 루마니아 수도에서 빛 행렬에 참여하고 있습니다.",
-          "source": "Religion News Service",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "religionnews.com",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORU05dGtRMF96SV9tNnhjcWc1SnhpeWVibk1vQklKcXBLUDNOaWFSX1lzdXpCQTVfOEptTjB4UUNnUkhKdkNPZUV0TW4ycE0xNjQxWjRfZEgzbzdGSTl6UUhsaWZZRzFtbnVyR2RlTWFKN2t5VFJ3NXdWZmR1SHEybWdZbEVqYTNqYWJZTTRNX0E3WHY2bGtaZFprbHlhRzJLbTc4VE1QdzVyV3NDTC1UdGNOTmlodw?oc=5",
-          "summary": "젊은 정교회 기독교인들이 루마니아 수도에서 빛 행렬에 참여하고 있습니다.&nbsp;&nbsp…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Young Orthodox Christians take part in a lights procession in Romania’s capital"
@@ -2167,9 +2167,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -2179,8 +2179,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "AUD/CAD 돌파로 브래드먼 장벽이 눈에 띄게 되었습니다.",
-          "desc": "AUD/CAD 돌파로 브래드먼 장벽이 눈에 띄게 되었습니다&nbsp;&nbsp;FOREX.com",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "FOREX.com",
           "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdWZIOFF3azI2SGozM0pkUlJvc2I3Si1rQ1hkWDR6WlRxOUZKcWMtZWRpNE5HVzVRMGZULVRES25WYkVmYzZldVlIRGlyX1Q5eHVWNmRLMkJ5VXk3U3BvQzBoUlJjVnQzOFY1OVgxZndVUWoxR3JKS2YteFVqNmJlSkYzMjlhVmFMZjdXQWFQUXZwZ2x4eGVRUGJ3?oc=5",
           "lang": "en",
@@ -2259,28 +2259,28 @@
       },
       "headlines": [
         {
-          "title": "우크라이나 드론 공격이 러시아 경제에 미치는 영향",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "WSJ",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaEFINTVQRkIxRGVyMllZMGptRXBpdWU0WndVWFRUazBMTTNKbnF4OFl6R2lnLXR3T1ljYUV2S29tZGRTT0ppT21JT2drWW1wdkxlM2Z2bF8wUkp4TDB3WTRIY1B0alNCWC1vUExLeWN5bXdkbTRsbFBuLVctQkhHTVU4eS1mdmJzZVcxMjNPSWVmV2J3RWcxcG5SbjdjNEk?oc=5",
-          "summary": "우크라이나 드론 공격이 러시아 경제에 미치는 영향&nbsp;&nbsp;WSJ",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "How Ukrainian Drone Strikes Are Pounding Russia’s Economy"
         },
         {
-          "title": "러시아, 우크라이나 키예프 공격으로 최소 5명 사망",
-          "source": "Al Jazeera",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaEhXSHNycHhKQldXbnlyVks3dUh0NDZIbHB2YU43MXkxaXdaZVg2NHZIelJ4emhyZk9PVWZiUzRwcUxONDd2VnRwVC00Z0toeXZvNE84aUpxZ2I2MUdVRFhQT0tqUmJkc3NHRHMtVnE1dmk5dlZvQXBlSVQ2V28xM0NZajhDTFpRdEhKYjcxdlQ2ZFNpRFphalBjMDlQQ2ZTemdhR0ZWR2QxZ9IBrwFBVV95cUxPX0VZRUtqcjA2cWRYN19LdEpzRFJTWlRfdHo4c29qSGloM2hoME5KU01Fb1JhNDl0eDhrN1B1WmxBeVFVMkJ6Z0FVTUZkN0lMXzdVb3JTblJpT0Q5SlRoQVJBTmlzMUFBWDJSTFdUendRYnFXV3JjRXVDZEg4cHRCRF9ENW15Z1VjdG5obkdFV2QtcVVEQi1mVWFrSmlmTVNSMXdWaVRhTkEySkNpc3kw?oc=5",
-          "summary": "러시아의 우크라이나 키예프 알자지라 공격으로 최소 5명이 사망",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "At least five people killed in Russia’s attacks on Ukraine’s Kyiv"
         },
         {
-          "title": "우크라이나에 대한 러시아의 전쟁이 확산될 것을 두려워하는 가운데 리투아니아는 민간인을 훈련시키고 푸틴에게 \"우리는 당신들을 두려워하지 않는다\"고 말했다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "CBS News",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRExrT2RNTTF1QXpnQlpaMzlVTmJVVGl2WTlPd1RQb2VpQVkyTlhIYjctSjhmUXNDSm5IdUFWTjU5Q3dFUmFOYmZKSmtWZ3I2ZTZtUHNja2ZnNnNpcDVVejdoUzFaNnFNdlpnTGh0eW9xUjQ2cjJpZ3VrVlp3eFBwdVRNdWViN2J5dE8wRVFIeEVZQTBVM2tzckU4dw?oc=5",
-          "summary": "우크라이나에 대한 러시아의 전쟁이 확산될 것을 우려하는 가운데 리투아니아는 민간인을 훈련시키고 푸틴에게 다음과 같이 말했습니다.",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Amid fear of Russia's war on Ukraine spreading, Lithuania trains civilians, tells Putin: \"We don't fear you\""
@@ -2303,8 +2303,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Raghuram Rajan: 인도의 일자리 위기에는 새로운 성장 모델이 필요합니다",
-          "desc": "Raghuram Rajan: 인도의 일자리 위기에는 새로운 성장 모델이 필요합니다&nbsp;&nbsp;Frontline Magazine",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Frontline Magazine",
           "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa2x0VGFxZFMxUW1Va2dDbTVjYkJBQVliTTZsV0luZGtubG1WRHdRWDRlcGQ3N05PSC1MaWk0QldRMTc3cG9nSVNmZXNuektqX1NPSGFJWHQ1UlRBYTQ4am8zQUJaSm5vdjcxXzRkS2ZMZHRhV2syNkxqM3l0clhFMFc2cEpubDJHX0VIZkpra3MzclZZbTItVVVhbUlyTjZyVW9VSWlCV3o5ZGZydmdDX0VXcDlPd2pHNjBVd2Jn0gHEAUFVX3lxTE5GaWxtWksxd3k3N0hodkNEQU1BTjJVUEtUSU1kaWx1VmFTb0U1V1V6UW01a01zdTltQVJ0UUk4eTFNZnVhUGhQQVktVzNhel85RnpTQzRGczY5TmRSZFFMQWQtX1lPbnRnWDVaajhTeVVWeUZsV3d3eVItX1dFOVVGRF9heUVfUnVaWnl4cXV5MnVzX0FyZ2V3ZVNyTUFSd0M2bERVQzdkcWxsMl9JbEtoQVpCSDZoMkJiUHhpNk5uVHZsMTQ?oc=5",
           "lang": "en",
@@ -2395,10 +2395,10 @@
       },
       "headlines": [
         {
-          "title": "트럼프-푸틴, 미국이 우크라이나 평화 노력 재개하면서 '솔직한'전화 통화",
-          "source": "Al Jazeera",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTnI5ZEtHbXVISUxJMlNURGV4dW5fcTI0Z1FVSVg4SjBHOF91SDdCT19DTHZqV2h5b0RKTzM2eUlSaHJkcU5WLXBqN0c1dG9VVWkzZnFwUjNMX2tyanVRVlpxU05JZXhSTUZRSldSQ1NGTnkyQkd1enRMRmtURVdpODR5NXloTFdRZVV0cFNqZTJXTGg2bFotdU9nM2dGVXAzSzBVZ0drVzlwWWI5OHfSAbMBQVVfeXFMTmtsbnBLanNudWh1NENlYk5YZ3BzaFVQaC1qS0hoN3VURXJ5cUMxZzFKRUstaDBwZ3JhQWgtSjJnZnYtSG1fVGFQYTRWa0xmV05XU0ZNWEJld29fcFZ6UWJGUEFibGJ0Y3lsdE1hX1JVd2tFcTJaYWRHQkpOcWxQcFlxNkt3NDVfNHp6UjcwYlFneGQxbFR1NVNQaWhzeWQ3RFp2UF9nVUo1c1l2OGM2Ql9ZRm8?oc=5",
-          "summary": "미국이 우크라이나 평화 노력을 재개하자 트럼프-푸틴이 '솔직한' 전화통화를 했습니다.&nbsp;&nbsp;알자즈…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Trump, Putin hold ‘frank’ phone call as US revives Ukraine peace efforts"
@@ -2413,8 +2413,8 @@
           "original_title": "The Ukraine Drones That Are Carrying a Bigger Punch, Deeper Into Russia"
         },
         {
-          "title": "우크라이나가 국경을 넘는 드론 전쟁에서 처음으로 러시아를 제압했다고 3월 데이터가 밝혔습니다.",
-          "source": "abcnews.com",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "ABC News - Breaking News, Latest News and Videos",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRVdvZHNQTkx1QWcyXzJicW9TMXA1aXJ0d2FGblJ5RTVCNUdDSmlicTNMVWk5MTR1dkxfZmdnbFQtN0N5UlVoTllwaXoxZ25OVHJGS0oxcGoxQkpMM0EwbE9TU25QY2pGdktkY1BZT0VDaEg5STdqeU9KVFN2UTBlNS16MEpNZGNFdVFrWURnZlZRYnUyemRkQ1lQZlJqQlpYZWFSZXdDY9IBrAFBVV95cUxOeDNvQUhTNGpnbFQzR1ZONi1kcGJ5VDJGV0tEVWpHUFFDSDJHcUwwejRHSG5JUnMxOGw2X3VEWFdqUUhpLVEyeENvR3VvNkdfbUJVcFpiM0puT19PbmNkSEVaalUwUGpkT0VpRUJIdkY3NWdDVU1kZGJVaXpTOFB6UTdvWXZFLTNqa3JPcy1KeDRZZTBoMXgtR204Q2phSlBESm94SFRXZ2xJbG9I?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
@@ -2451,8 +2451,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "PMI는 8월 유로존 공장 성장률이 4년 이상 최고치를 기록했다고 밝혔습니다.",
-          "desc": "8월 유로존 공장 성장률이 4년여 만에 최고치를 기록했다고 PMI가 밝혔습니다.&nbsp;&nbsp;Reute…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNanpVcS02UDRJS3U4SmExVHhrZ0xtdU9tV241Q2IyLWo0SXRPX3g2LV9FVVhnYUV6YmV3dFQtTEl5S0dnZ2RTNzVKZlZfaGRFeFJmSnE0TkRHcU9GczNjWWtQckw1enlEc1JUaUowdmZwWFFsRjNOeHo5Y3Qyc0QxUEpQRkJXbndON2tVSFZyYVFjSmVJa25LSlpWQzVTTUhYd3Z6UmlvX3ZGWml0c2NpVXlQelItQQ?oc=5",
           "lang": "en",
@@ -2464,7 +2464,7 @@
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
           "title": "Error 500 (Server Error)!!1500.That’s an error…",
-          "desc": "미국 무역 규정으로 인해 테네시 폴리실리콘 공장이 폐쇄될 위기에 처했습니다&nbsp;&nbsp;Межа. 노비니…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Межа. Новини України.",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZNXNjWGZuUVZMTWVVRld3QmZDRlZwbU5GS3FFN0RYdHpyWkY5ckpocFNRSjI5M2hjcG9kMlJkOG4yd1RJZy0xUWJQdXVzdmRuUl9JMHVVdEtWbFBzMUdsSA?oc=5",
           "lang": "en",
@@ -2498,7 +2498,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 27.7,
-        "change_pct": -0.29,
+        "change_pct": -0.27,
         "history_labels": [
           "10월",
           "11월",
@@ -2531,7 +2531,7 @@
       },
       "headlines": [
         {
-          "title": "터키, 비료 수입 증대를 위해 러시아와 계약 체결 예정",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSkU3TTlfb29rVGFhdDA3WlVTcEtldW92My0zcG1fNDU4ci0zd1F0Zk5EM0l5REJfbTYxR2RGTzQ1NFAxeFVMR05zZ0NUc2ZKOXJ1RGM3bGpRc3RSWnlIUmswZ3QxdmJSemZQbl95bW84bFZ6WG9HamVqb0U4Z2FLRkpHTzAyTVRpSkJfZDRpMjBTNTZTZ3pVM01INzM2MkM5VG5zTExhY2R3OXNubGp0Y2llUk0?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -2541,7 +2541,7 @@
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "abcnews.com",
+          "source": "ABC News - Breaking News, Latest News and Videos",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPOVJrZjN1UTRKcF9ENHlZclJYUlRUN3NaaG1ucnd1ektfWGpUUW05blJZdWh2NFpqSm1vYi1qY041UEtwcGZCU0ZGQUFtNjJuOW5HeTZpck81Z1FZQVZHOUhlQkVONFhQSXU5N2RlanFxSTV2S29wN0RuQmtRdWhyaWhWX0VSY2JGam1sZ0o0Vms3Q20yZnlWNlpnVmlmOUFPUE5YbFoxOGpmV19VUGxXN2RB0gG3AUFVX3lxTFBfTW5PbGhJcDg0NUJTMkdXYTV1ZTBORkhPYTNSaTNfc080ek5xcloySXdzdlVSaW0xbEpPWGs0bHc3Vk13QVRCNm1LUHFhbk9zRFptTGJtZDctMEdZWFNWRkRBRzB5SGZ0X0FQMmo0cTNqcGlSYW8zcVBLTVljUFZZdU5HT2pNekE4SzVUQktQbWtoejRPOXM1TTNyNlM2VEI5eFVMNl9oMmZrX0RrY2I5TXRTOTZnVQ?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
@@ -2552,7 +2552,7 @@
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "JINSA",
           "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tOHBRcU1Rek00a2pWRnJ5bElmSFh2bkZ3SkZ0eklSR3RDcXZxWGRhMkM2NDM4Tk5nVE1pdnhlX20tSTBzZWRHd01qelBvX1YzaW5hVFdmU05lbVAzUXRjTUI2dEVPaHh4OXdoTTZsa1VPYXpOczVlLUhYRF9PWWs?oc=5",
-          "summary": "터키의 시리아 야망, 이스라엘의 레드 라인&nbsp;&nbsp;JINSA",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Turkey’s Syrian Ambitions, Israel’s Red Lines"
@@ -2575,8 +2575,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -2601,11 +2601,11 @@
           "tag_class": "bg-amber-100 text-amber-700",
           "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "finance.biggo.com",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NWhlWUJJeTBNWWNCRFRkT25NQTZZTUNtckxWYk9pOHhKbjFaYk1SQ2dHbnVybkg2SjZvTVFsc3BhS0MzQVMtMzVaQVUyb3pLTXBxYTFDeG1oRG5kcmd3ckd3MEExRTNGR093ME5aVnBZQXI5RUE?oc=5",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "POSCO International's Sales Network Tested by US, EU Trade Barriers; Turkey Workaround Also Blocked"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -2634,7 +2634,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 13.3,
-        "change_pct": -0.27,
+        "change_pct": -0.26,
         "history_labels": [
           "10월",
           "11월",
@@ -2667,7 +2667,7 @@
       },
       "headlines": [
         {
-          "title": "보스니아, 믈라디치 장례식에 항의하며 세르비아 대사관 외교관 2명 추방",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT25MUng0Q2VMVGFmRzZvWkMtdnFtOHNZZjNuc183ZkhmS29fR0d3VDFnODFNT2RSUFJval84VjBVZjZnUXNZSkJRU01VeEZOTnJ0ZS1KekNEa2RUYms2T05xOEZEMWxlaXV4NXhhZjF2WWh0QUFvQXBNaHRydFRZMGJQa1NZQjdWazVFQUNFX0JWQUFRRTF4Tnk3UTBtVUhVSzRicjVkVF9YQnNvV2J5MGRFTQ?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -2677,21 +2677,21 @@
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "wtvbam.com",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNREhUc3FMNXBHLXdkZ2hOOXUzS2o4ZzdhWmcwR28xTHBQYkJrTmthVHhLaVVjX1NKZUt1d1BxWEZzaTNobmt5eFd6T2VBYWxUWkI0MFV0U251N215TGNZaV9YdnBMNHE1VVdfdEx6eXZTYzh2WGlZOUlkVlRlalVMcjdHR0NPbFZ3VERUQTI3RU5UOXVQQmR5aA?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "lang": "en",
+          "translated": true,
+          "original_title": "Serbia to hold parliamentary vote on October 25, president says"
+        },
+        {
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "European Western Balkans",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTm54ZU1yZFdFYVAxNldQOGhZSlEtVExKdUhWWGozQXpXT3NyZ2hXTWVVLTlCS3hlOV9qVTZtUFRnSnJXUjNIY1dGeElUQllCU25NZmlRaGh0WVYtdnpkZWI3V1p2TzhEaXgyREZGeV9IV0VXZnA1cnpMaEpzeXhCZ1NMMHN6Rm5qbHpQY285UFlnemxYV1ZGTXBzMi1zdG5SOTdTbQ?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Strained EU–Serbia relations over Ratko Mladić’s funeral"
-        },
-        {
-          "title": "EU 지도자들은 라트코 믈라디치의 세르비아의 장례식을 비난하며 회원 가입에 대한 의구심을 불러일으켰습니다.",
-          "source": "Courthouse News",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYXlpQm85Tmd5SDRqNFo2SFdzTVk4TU8zcV9QUHZvdmtzajJWa1JnNFBweTRmRnZLbkEwallVY0NaX0xhUDZSYU9fZWhySTRZOEt6ZW8xM29GUnRXZVYwemQ3VkNBTE96Zmh1dTZ4RHFpc2pQMzRHS3NKZDJWbHpwWjNDTnVJbXdNSC1GUFFIWE5HanE2UTRBWlc2Z3ZZMjlEUl9oWDVTMkxiamFzYWZTUnFMMVNzdXBNdWdHQTlveWJkQQ?oc=5",
-          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "lang": "en",
-          "translated": true,
-          "original_title": "EU leaders condemn Serbia's funeral honors for Ratko Mladic, raising doubts over membership bid"
         }
       ],
       "hr_trends": [
@@ -2711,9 +2711,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -2769,8 +2769,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1557.7,
-        "change_pct": -0.3,
+        "current_rate": 1557.3,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -2797,13 +2797,13 @@
           1760.3,
           1636.7,
           1580.0,
-          1557.7
+          1557.3
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
-          "title": "페타르 무사(Petar Musa), 크로아티아 국가대표팀 소집",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "FC Dallas",
           "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYVFyYUp2UXdFdFk3djhnNDZUNERtazE5NjBsMFdjR0lVNkpIVm8teXdjM1NjY3pxdGJ0QW5aTDBCYnplWFNRTzJpM1M4UTN0b0FlVXJPejV5SUNwTzB2WEdTNElkaU9UemF3a1BaQkJtN1RlLXVpZDFGVXNyWHVjam9yeXc1X2xlSFQ3bFd3?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -2815,7 +2815,7 @@
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "NBC 5 Dallas-Fort Worth",
           "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWWFMNkVaTHpQNTNjQWFVeVRaOUgyZFZrLUo4MmtTS3AxZGJ2OGlMTVpUMldZMTlfNUdacWpTZHVrOWVwTC1hOW5zWEJqNjVmczRDMktIanZxQmtnVHpJOFBKSEN6bTA5UGVCQ3h1Y192OGdvZEZHYk5HS196Q3E0TzdMR3g4WDE4SnBSYmdUeE1KcnFlVkZ3Ql9XSmtRQ0xpdlJwNUNjcVLSAbABQVVfeXFMTURBZjBtenVYaDBkMFhQQVhHNlozMEk2VUhmYU1Vd2luclo0T2tlTDVnRnVPdGx5ZldOVFF4X3NVbVRGd2tiTGl0Zm9jQWhvOHJDRDV4TVFreDI0d0t2Rng2bnp3U3hJVURZR3pGdkwwQVJ2aEt1SW91d0FJNDRLeWd0UFptcWRWdGV2dVU4SDZlaEk2X05EMXVHSnk0Qko1VFZ0cGV5YmNsVGdfWEtNSVU?oc=5",
-          "summary": "FC 달라스의 페타르 무사(Petar Musa)가 크로아티아 국가대표팀에 소집되었습니다&nbsp;&nbsp;NBC 5 Dallas-For…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "FC Dallas's Petar Musa called up to the Croatian National Team"
@@ -2847,8 +2847,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -2859,8 +2859,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "주간 시장 통찰력: 연준의 금리 인상 지도 없음",
-          "desc": "주간 시장 통찰력: 연준&nbsp;&nbsp;invesco.com의 금리 인상 지도 없음",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "invesco.com",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeHJFRFJ2YWM3dVZnOWVCTlZYMTJDX3lqZk9POXZhWklSMDVGSEQ2cXYtXzgzZ2RVaGdpZVNmZUI1bkthWEMxdmUwM3dOZDNiRzYyREVIdXRaM3VFTHNKZ2Jxdkt4N1pELXRqOTJLRlJVQVdSVFBDdDdBOUVBLUNFWHdyRGNSYmxObXNpQ0txSUNjNkxINUdialVraHpXdw?oc=5",
           "lang": "en",
@@ -2871,9 +2871,9 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "Shein의 홍콩 IPO는 글로벌 역풍 속에서 흔들리고 있습니다",
-          "desc": "Shein의 홍콩 IPO는 세계적인 역풍 속에 흔들리고 있습니다&nbsp;&nbsp;evrimagaci.org",
-          "source": "evrimagaci.org",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Evrim Ağacı",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ1Z5YnJwUzlHRUVQSDNTVkhZSVc1eHFhTjhLUlpTUUlNLVJDbFU5U0hqNEJ1bnRYWlpPcFNBWVdGeWVldnlTRGZwVlBqUlVZNGlLTTRQNFpXek1YVHFZNmpPSV9KNEpnUjdFOVBrZnJIa1RRNVdKcDY0MU8zVExTcnJQS2FUZDd5QVBnZQ?oc=5",
           "lang": "en",
           "translated": true,
@@ -2906,7 +2906,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 142.9,
-        "change_pct": -3.33,
+        "change_pct": -3.35,
         "history_labels": [
           "10월",
           "11월",
@@ -2939,7 +2939,7 @@
       },
       "headlines": [
         {
-          "title": "모로코는 트럼프(그리고 이스라엘)의 지원 덕분에 더욱 대담해졌습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "EL PAÍS English",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcXZzQUF0cHVPMDZMUHlJN1ptTjBud3lDaEJoS0xjOGR0Y3NJclhFNHVzaWVkYk4xVUtZTG01MnFKVXdOZkVCQ0Q5N2d0S250NTExbTdxZWJaS1pnMnpBaThVeUpxYnZEbTc0STQwanR1cFhMM3F2UUpVUmpPYlR2ZktIS0lCUnBxcTFmZEdleG1YbElqWXZUakJSOTdNN0pOa0plTjNUVU9ZdDdWWUd6Z0NSUVjSAcgBQVVfeXFMT2NqSy1zNU1vQ0tyWWVoNXM4SmpHVHhfWkQzeDRWN283X2t6UkZ2QlY4Yzl1a3VmdnRscGJRdHJ6bmVFYmdJRDBhX1dlajhEdW1OaGs5QXpVaHdyYjFDVDFxNVp3SjdLdnZDSU1NTFB0QmVtcno1RmxzYTJsd1RZanhiM3FZc1NBdVRDWUZzZ2dBYVdnS285NU9FcGl3NjN2bU1zRDVHcjNxM1BjQnkxZm1RZFYtd0szSy1NZnA0ZVFXUzFxMXdzdHo?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -3042,7 +3042,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 79.3,
-        "change_pct": -0.02,
+        "change_pct": -0.0,
         "history_labels": [
           "10월",
           "11월",
@@ -3076,6 +3076,15 @@
       "headlines": [
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8xUjFpc05HM1dWRFFxTzZRUmFhSklLcnBURmdMVlIxNEUyUGMxWnhZdmhZOHg4ZnZmR2ZFdk1EM1R0ZHk0UVFsVg?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "lang": "en",
+          "translated": true,
+          "original_title": "Mexico"
+        },
+        {
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Mexperience",
           "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5rTlotSnlfcGJIVG9IT0pZTy1Zd0RySUhMekk3V2VkVnFManBKMjY3WE1LYmpoTnV0OEFCWGFvaUNhdXZ1aUlFaEtESC04ckh6Yy1uMGRxTHVtQzQzTVl5VkxnUC1vOUYtNmRkUElfdDhwZmNrcDh1Yw?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -3085,21 +3094,12 @@
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "governor.state.nm.us",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONndzeUFyUXdmb3V3WUdDZ2RJdUppR2s4S1VDOHdyeGhnV29PekljLVFRRlVlcUNDdWRHODVGWEFyVTlTbC1rWmtqamdHdTRxandJb20ySWFkVktYdFRWOHRwZkxBYXRhZjR5c2laUUhUNEswdG1Kd3kzV0RFQlk5R3JhQklBTnlRNlhDeG96Q2ZZcEJOQmY5MW1fQ0M?oc=5",
+          "source": "Politico",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMVhmMkllVkZJSTZkcktzTTRFb2g0QlF2dHBUUkNzeGZOUU41QkZKZFdOQk1PdEpWVVAtZFQwcDFKVm5iSkRqdDFrQV9wc2ZjNlV6UnRNT1BpQW5FQVZDYV9ZamppcFFwY1YtdFVrV0ZrQndSVVZ5RFk3am5xSGJKTzJGTmR0ekFFcHpxUVZzOFhsZVkxaHh2NW01aWw?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
-          "original_title": "Governor travels to Mexico City on trade mission"
-        },
-        {
-          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "abcnews.com",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8xUjFpc05HM1dWRFFxTzZRUmFhSklLcnBURmdMVlIxNEUyUGMxWnhZdmhZOHg4ZnZmR2ZFdk1EM1R0ZHk0UVFsVg?oc=5",
-          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "lang": "en",
-          "translated": true,
-          "original_title": "Mexico"
+          "original_title": "With Canada trade on the rocks, Lutnick heads to Mexico"
         }
       ],
       "hr_trends": [
@@ -3131,8 +3131,8 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "전망이 더욱 개선됨에 따라 텍사스 제조 활동이 가속화됩니다.",
-          "desc": "전망이 더욱 개선됨에 따라 텍사스 제조 활동이 가속화됩니다.&nbsp;&nbsp;연방 정부…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Federal Reserve Bank of Dallas",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YNXJ3LUxZVlMtVVdkTnVnTm5qbWJ5WnZ2N21TQkVqcjFTSkhRTkNyZWtMaFNFczVJcmZudEI3S2Z1UEZIOXpfRzk4eERFOTRfNHdLSkF5UkR5N2Q1Wjk4cXNjZmUzQlM1?oc=5",
           "lang": "en",
@@ -3212,21 +3212,21 @@
       "headlines": [
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdWVWVkIzWHVNX3B2QVJRZk9LOG5rSkpvdHZZeVMyUXV2Vk40WTVJZW10ekZldEw1NHJ0aXl1SmFBaURtaUJBeXc5Z3NJUlYyNGJPM3ZfYm5aZDJLVFAyS0ZyckJ6SE5oUlk0VVM3QWQ3bUJPdXRkNXFaT1MtbmxsYkNaQzhXOWVCRU9QVksxSGN6SlV5dk1CVWQxVWJwd0ctcjMtQ29Tdm0wTUlwVzFNaWM0bTTSAboBQVVfeXFMUE1ackhUNldjSnhtOWdCbVBhNENiM1lnNnpjd3JyRVA0a3JSSUF4UGNSNUZXdmFPMXpUSlRfVHdKTVdkNy1tTFJHZzF6azg2aEZKbVlFRXdJMk02dW1ZT1hPS3lYMmJQYUpIejNXbUZSa2ttampHbnUwMmQ3QXo1UHUwWEprWlFVUU0tZzQwc0tEM1ZKY1VRaDdXMzJpZGdYY0pSWXZZVzNoS3B5YTYzVlE4QnNXNDdGcW93?oc=5",
-          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "lang": "en",
-          "translated": true,
-          "original_title": "Brazil Supreme Court rift deepens as justice suspends federal police chief"
-        },
-        {
-          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "ScienceDaily",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5IQ2hRZTJwZlB6UFVFNGNMbkp2SHRUMUxHakx3ZEc1bFgyZG9wM2tyRFlZbG81NDZTTENsME00OG9OU3kyNmxYSWxGdzlTYlhVRFNPTGxnRS1XMUNQUnNKVnM1YmljaTdVWW5lbllLdw?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Giant new dinosaur discovered beneath construction site in Brazil"
+        },
+        {
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "aljazeera.com",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdWVWVkIzWHVNX3B2QVJRZk9LOG5rSkpvdHZZeVMyUXV2Vk40WTVJZW10ekZldEw1NHJ0aXl1SmFBaURtaUJBeXc5Z3NJUlYyNGJPM3ZfYm5aZDJLVFAyS0ZyckJ6SE5oUlk0VVM3QWQ3bUJPdXRkNXFaT1MtbmxsYkNaQzhXOWVCRU9QVksxSGN6SlV5dk1CVWQxVWJwd0ctcjMtQ29Tdm0wTUlwVzFNaWM0bTTSAboBQVVfeXFMUE1ackhUNldjSnhtOWdCbVBhNENiM1lnNnpjd3JyRVA0a3JSSUF4UGNSNUZXdmFPMXpUSlRfVHdKTVdkNy1tTFJHZzF6azg2aEZKbVlFRXdJMk02dW1ZT1hPS3lYMmJQYUpIejNXbUZSa2ttampHbnUwMmQ3QXo1UHUwWEprWlFVUU0tZzQwc0tEM1ZKY1VRaDdXMzJpZGdYY0pSWXZZVzNoS3B5YTYzVlE4QnNXNDdGcW93?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "lang": "en",
+          "translated": true,
+          "original_title": "Brazil Supreme Court rift deepens as justice suspends federal police chief"
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -3255,8 +3255,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -3269,11 +3269,11 @@
           "tag_class": "bg-emerald-100 text-emerald-700",
           "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "Fastmarkets",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUkpWSi1lcWZldUVSYkJCand0cUgtVHM0V2RQcGFMNFZuS3ZONEZfczlHTmdnVVlKaHctVEZRazU3R1IwQnRZVmQ2Z1ZXYTVHdGI2NENQQTR4QnJOSHhyQVZnd25sbEdZM2c1dXdUN3Joc1IzanBGWU1CNnZEVWtJRU5DR1NBSFN4OWtLRzE3aS1vTXZiWndxV1UxSnRYSW1zTlVGOVZBbWJ3WlFRZ3JHZkdUX3lIY1hSeUdGVkVfb1lFUQ?oc=5",
+          "source": "CryptoRank",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAtZnpnN085NDRLVEpKRzcyVTdtYlN2WVRDb3Zmd2Y0ZGdkaWp1cXVXUFlhTENfdXpab0FOWGNjUGh3M0ZjZ3VHdXF6RUtma3VXdGxpcjl5cHUzSzBFZHNQeWRENVpGV1RNUjJnNjZrZ2JGQkVsUjBhcGNB?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Brazil Packaging Market Outlook: Key Industry Insights"
+          "original_title": "US Redbook Index Rises to 9.6% YoY in August 28 Reading"
         },
         {
           "category": "MANAGEMENT",
@@ -3391,8 +3391,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -3403,7 +3403,7 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "칠레 산업생산은 7월에 5.1% 급락해 이전 성장을 역전시켰습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "CryptoRank",
           "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWk9Sd2xFV1Z3Y19LYWtjekZvcktZQmZhaGo4cVRfRGE1SEQzTHNOZWpIaDQxLXg3SE9LWWpPcTZHb094Mm9UQmRFcFl4ZTNtWEFiWWJkVXA0UTZVXzBHbFZDWkdDRkFEYTI0WmUxVENYZExHMkNreWhrOU52S25pMQ?oc=5",
@@ -3415,8 +3415,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "중국, 칠레와 무역 관계를 맺어 미국을 뒤흔들다",
-          "desc": "중국, 칠레와 무역 관계를 맺어 미국을 뒤흔들다&nbsp;&nbsp;Legis1",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Legis1",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE84MXpoVnpVdzAwcEtqdktKaHEtYW1zYTBnV2pDdHR1ZFJOdkZDQngyU2Y3WHRQb29QVllWSW5aVjQ3QlUzOTNxajdXTGtRMjQwOEoxby1kdXdfcTJ3SVlaS2t4dHlDN0NZbGlabE5NVmNjcHplT1JmemtB?oc=5",
           "lang": "en",
@@ -3489,7 +3489,7 @@
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
-          "original_title": "Rubio says US wants to wrap trade deals with Colombia, Peru, Ecuador soon"
+          "original_title": "Rubio says US wants to reach trade deals with Colombia, Peru, Ecuador soon"
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -3527,8 +3527,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -3551,8 +3551,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "캐나다 관세로 미국 농업의 새로운 지평 열다",
-          "desc": "캐나다 관세로 미국 농업에 새로운 전선이 열림&nbsp;&nbsp;AgroLatam",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "AgroLatam",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0xT0hGUzl5WDVIU0hUVGxmemdMRGo3QWpSME9rNkpVVnpNOEJlYl80a0Y5LVFUX2FBSnZtalBNejgzZ3RjMzFhZURLam1KLWhRVlJ3bl9vWU1qV3ZkcTZ1RXpSdVBqdmRtT2FwSUotVFB3THFIdC1EaWdvNA?oc=5",
           "lang": "en",
@@ -3585,8 +3585,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1339.9,
-        "change_pct": -2.46,
+        "current_rate": 1340.0,
+        "change_pct": -2.45,
         "history_labels": [
           "10월",
           "11월",
@@ -3613,20 +3613,11 @@
           1578.9,
           1452.0,
           1399.6,
-          1339.9
+          1340.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)"
       },
       "headlines": [
-        {
-          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTzdHenZ5Y2pmUUQzVlBYaWs1QnNzWTBHRlpQdjV3UDJzdHNEMUZLOUNFV09UMVFTckpLcXg0N0ZucDh2RE9HdmYwWUVjamNpcFVRcXBVQVBXS0ppTHItUmQyaVpLVGdRU3I0YmVpU1IycDFiSGk5WTJadW12WDIwRG8wWDRXbk5GZFZlMDZ0LVZzMXQ1b3BFN1VmcDZKUm5xNFpVNA?oc=5",
-          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "lang": "en",
-          "translated": true,
-          "original_title": "Watch El Niño Causes Panama Canal to Restrict Traffic"
-        },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "mypanhandle.com",
@@ -3638,7 +3629,16 @@
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "Al Jazeera",
+          "source": "Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTzdHenZ5Y2pmUUQzVlBYaWs1QnNzWTBHRlpQdjV3UDJzdHNEMUZLOUNFV09UMVFTckpLcXg0N0ZucDh2RE9HdmYwWUVjamNpcFVRcXBVQVBXS0ppTHItUmQyaVpLVGdRU3I0YmVpU1IycDFiSGk5WTJadW12WDIwRG8wWDRXbk5GZFZlMDZ0LVZzMXQ1b3BFN1VmcDZKUm5xNFpVNA?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "lang": "en",
+          "translated": true,
+          "original_title": "Watch El Niño Causes Panama Canal to Restrict Traffic"
+        },
+        {
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNazVVR0l6VjIwR0FkQ01ZVmFmYkwtenNFYVRMcTd2TERvb1A1UkRWbjhzV3JLSl9rRTlhRlBBOGZYOTVEbE1lbzdQenFHMWpyMUs5ajg0c19BNFRKazdPN05JME42OXgtVml5ODVIa2FpcThSTDl2SzhEZWh2SjRfZVB5eGtyZFd5NTJlSUN1bVNoUEVXeWJnTEVMWC1RbHdPS1ByVUpR0gGrAUFVX3lxTFBNdkJlV3R3aDVRNm5lMlFES1pyWDh3blRmM0JHZVV2SWVtN01XZ0RYNUlfS216WllzdGF0QWozSDIxWGpUVjB1M0duREI4TEUtZGxQdXAtMG8taXVlZkFyeVBvSVJUZmg1WmdvS2c0NFF1Q3g4ZDZYVEJFMzBRX0NoU0tpX3lrR2FsNUxzVldpZndObjQzaTJrYll1bkJ3Ul9xRTN0UTY1RTIzQQ?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
@@ -3663,8 +3663,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -3687,8 +3687,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "미국의 생산성이 관세 충격을 어떻게 완충했는지, 그리고 알아야 할 기타 무역 뉴스",
-          "desc": "미국의 생산성이 어떻게 관세 충격을 완충했는지, 그리고 알아야 할 기타 무역 뉴스…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The World Economic Forum",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUt5by0teUFjNGZ5NWQ2cEJOZkdmQjBLeTdacVUxUS1wZFJQMEkyTFQ4Nkxpb2M1Wld2LTQ1YjZQRnFCdmFtTGlNQ29XdTRoTDFVRG5OZFYtWUtYMGdpQ1BGQjBXMWxhSHJQeVB4M1BMY3hiRUhmdUVEc0d4eUhSa2U5Q3NGeTdmRzBsb25YY0FZQVNxalFWeEluWk9iYjJBaFBWVmNoYWxjbk5fQ1lwTA?oc=5",
           "lang": "en",
@@ -3767,7 +3767,7 @@
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "Al Jazeera",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWEhOSzVOWklabG9RQTdPQVVmZ3hueDBoTGlFSnk0OG5vNGFYQi1XU01PNE10R29yQ1dKaWk3a0NTMmdOaE5TWVV5S2dmc2NCLV9WLWhHWVRkYUwteW91ODNXYVhCVFFSd1hlLTBLWE5lRFMxX0JLN0xUZDZMdEJvZ2xJMXh2M2dWUmhxaEZIV2pCX2s4bzl1a3JUQ0NQbEZYV01wQXpHWFVMMkhVYkJYZ0dHOVrSAboBQVVfeXFMTXByTXZZNFVmOHdzcVhrR1BmY0N5bVpCUDdRTFNPZGNxdTZ0ZFN4bktEMF90a3d6QXAxbmNBYXprXzF5ZVNjVEg2ODNCakxndXozY0tJVVZXWEhXSlRYd1NkMm1mZkdoUmJWbV9LNnBFMEViVjQ1cVdSQVVNdDdlR21nSlQ0V3lEUXA4MDlOUWdISF9TcFF5d2wwNnkwRFA2eEhSaTY4emFYVWo5dmZXS01SeS1NQk1YeUNn?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
@@ -3801,8 +3801,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -3813,7 +3813,7 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "동남아시아 분기별 경제 리뷰: 기술 순풍이 2단 속도 지역을 주도",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "McKinsey & Company",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
@@ -3825,9 +3825,9 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "Error 500 (Server Error)!!1500.That’s an error…",
-          "desc": "중국을 넘어 아시아: 기회와 위험&nbsp;&nbsp;멕시코 비즈니스 뉴스",
-          "source": "Mexico Business News",
+          "title": "중국을 넘어 아시아: 기회와 위험",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "mexicobusiness.news",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPanJEakgwWmowZjc1Zmk5LXZvbFQySGpkT21zVUFJd1I3OUREVGo5X290V3hoaUxuWmx3Um5LcnVqRnkxS0o4ZGNkc3A1TW9YclJ5U05XTlR2aEJYdUFJeFVGNjZhZFFlcURpWjRiQTFUcmhRVEY2Z0FlSjFXd0Q0ZzZSRDViVW1xd1dsNXRHZWJETjdLWWdkVWRQWQ?oc=5",
           "lang": "en",
           "translated": true,
@@ -3937,9 +3937,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -3996,8 +3996,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 870.5,
-        "change_pct": -0.31,
+        "current_rate": 870.6,
+        "change_pct": -0.3,
         "history_labels": [
           "10월",
           "11월",
@@ -4074,8 +4074,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -4099,7 +4099,7 @@
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
           "title": "Error 500 (Server Error)!!1500.That’s an error…",
-          "desc": "일본과 미국, 5,500억 달러 규모의 무역 협정에 대한 협력을 진전시키다&nbsp;&nbsp;남중국 모닝…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "South China Morning Post",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ05UajBhUnhlUmItdmV3M0dURHBYRGhydG1KT1JmTURKb0VtWkRncXU3X0NRWXM1LUhzMDh1aXdLLU9fLW9QOVFDWlZTZHA1Y2ZhTU9vM1dhZlh5dkhKT1hycGExaDRqNTEzOHRkbXc5czN5d2ZnNkRwdzZyRUo1bUxmcHVfNGlsMTN1a0ZuSFUzdndkVFItV09sNlh6S21qN0pGNG9idGV6eG13MUQ00gGvAUFVX3lxTE1Ba0k5cjdmbWhRdWtieTVuNUY3WDd3eUpPRGpxQWg2MnhrUVJUOXNQMU1FLUNJWXY0MDJGdm9EcG92M19DUHRISEgyQzhtSlc1X3NTTjlYQkxrbzRmRGZHZnBORjVyS2dCcTRQRk8xWnZsZDROXzdCMjlBUFlNR0l3WnVKWWd3SzZ4QkwyVzcxOUUzVld6M1VpVmV0M2lpV29jVi1BcWdhdEpDc1RaSUk?oc=5",
           "lang": "en",
@@ -4132,8 +4132,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1059.9,
-        "change_pct": -0.17,
+        "current_rate": 1059.7,
+        "change_pct": -0.19,
         "history_labels": [
           "10월",
           "11월",
@@ -4160,14 +4160,14 @@
           1192.6,
           1108.0,
           1080.4,
-          1059.9
+          1059.7
         ],
         "source": "Yahoo Finance"
       },
       "headlines": [
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "abcnews.com",
+          "source": "ABC News - Breaking News, Latest News and Videos",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRVZLdUU3SGZweEdacWdmSFFXWEJKTVJDTmljZHFnMlFkT00tYWt3RG5HcU5NX3ZGTkVWYjdUMHNvQkQ3M1lISW9ucVlaMURMZ3lHZ05wdHo2QUxyNWdPLXlHVHYzSDVMRUlBaTBkZW1PbHFVTzRUTVpzbjJNVDRzdnRGQnFYSndUMjlLdDFUQWJObjYyWkV2YTR3dEpvZWM5VDBHZ1NlTVVVNU51WUhibFFhUHF2d9IBuwFBVV95cUxNYUlvNjQtNUZNODl3RVFnMGRaMTZNUzRDYlE0Z2IxY18xc20zS3pfWnlYd0NGeV9wUE5EZEExTl9xSmhDZ3IzcG5kdDNJYlBZOUlMQjJkUjZKclBvYlhJZ3g4UmUzbGhJYmVPSzN3cm1rbHhJSnJnZzg4dmJGWVNmRFRsUG1RdHRTajhsU1JJUkZNU2dwWUl3TTNMMFRLT1dZOU9qdEpXRml5VkJNbTM5NjREbDBJbnVmS1lF?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
@@ -4178,19 +4178,19 @@
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "USA Rice Federation",
           "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNb3dUWGk3d0dTc2VfWHZWaVlJRFprLVBKRDVPRXNwUDBVYmxXMjdVQXBxaTNPdUdpRS1tQ2w2UjV3cW0tQWNpbURLcDgtMUhFejJ5Nmh2ZXVUX2k1d25hRGNvWXdWWnZzcVVDckhoRXRuQ2NiQUk1M0locGk1Vno3OFlPcnIyV0pWZHBCOEltdzE0RHFuZ1h1ekVQMEgtMmVTSV9hcVRIalJPSHU0akRmeXYwTFpMVWlqNm5DVElVWlQzZjhKV0d4ZzI1Zjk3czVsUFhCSk1LVEFVS1cyejdVS0dXZFExcjR6OGNrUTZNYXdKTmV2RjBKeEZ4SGVVZkJuOUtNU1FodmRRRHNqd25wVmc4LWg?oc=5",
-          "summary": "기사&nbsp;&nbsp;미국 쌀 연맹",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Article"
         },
         {
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-          "source": "BBC",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JZTJzVVhESzhHZzFtdGFCXzVxNkp2eGJPN0x0VVRJSnZKd3pQVUlHYnVmQVBZQ1RYbWZXWXZVQXhyVTlWYi1qM0xWaHVTTkxtX0d4VmxSaGE4UQ?oc=5",
-          "summary": "세계 최고 연봉 지도자, 연봉 100만 달러 인상&nbsp;&nbsp;BBC",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSzlNcnZmVGlTa2I1bUVGZDJjSC1kSDNBRzQyV1BVcHlUaUlJVlRLSGtKeFh6OWp3MnhPZVlVRkNCMFFsX2RxUUNUUXFJNHh2dGprM1FwM3Z5Z3YzNzB1bnRXakJfSTJ5aU83NjVNam5qeXJsclNEcVZ6bWxoaVZDRGMteTZ3VjdROHFQbU44UkZnYzhWVWEybVplU09FZ1dRRXRxNHJ1Z3ZsV3pjTEc3UEE4NUMycS1fcGNDLTQtMnAzdklHUkE?oc=5",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
-          "original_title": "Highest paid world leader to get salary increase of $1 million"
+          "original_title": "Singapore's high ministerial salaries under scrutiny in parliament this week"
         }
       ],
       "hr_trends": [
@@ -4210,9 +4210,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -4222,7 +4222,7 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "동남아시아 분기별 경제 리뷰: 기술 순풍이 2단 속도 지역을 주도",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "McKinsey & Company",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
@@ -4234,13 +4234,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "뉴스 싱가포르는 규칙을 준수하며 관세 회피를 용납하지 않을 것이라고 무역부 장관이…",
-          "desc": "뉴스 싱가포르는 규칙을 준수하며 관세 회피를 용납하지 않을 것이라고 무역부 장관이 밝혔습니다.",
-          "source": "The Loadstar",
-          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYlB2b28wTGs3a3Bwa1k3blNUXy0zdUJCT2x1ZkFhdWdsOWY2RmNNcXhyc2VIVmVlcDZrMkY1NVd5NDM0Y2hKS0xncDdpMU4tNjEtUU5zME5CS1BRV3BhZEJ0QWsxLXZWcXkwRXVnOVBsb3NtQkZzb2wtazJfMmlMM3BRVlVQcE5QQU9xbk5SeUVjU2tvbXBzc3lQMlJhaHFMaVl2amlQVnFGQQ?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "News Singapore plays by the rules and won't tolerate tariff evasion, says trade minister"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     },
@@ -4302,7 +4302,7 @@
       },
       "headlines": [
         {
-          "title": "TPG, 약 80억 달러 가치의 말레이시아 병원 자산에 대한 기밀 IPO 신청서 제출",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "WSJ",
           "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVnhFeUVrZmpWcDRmRUFrS2xNNkYzUnVRbDVGNjFieWhZY2ZCVWNzaHRScWo0WEI3RjVCYUE3NXQ1Z2l5bGxLWjVMdW43WTRPWHlsZmlZcGRSSm1zd0o5N1VoeWxLX3pRZjZVbzRxX01Ua2hraDc4YWxXaWJwdExTejlIVTBnNm5DQ2Vob3V6NUJwRXBiTU5XSDBFWWRGQTNPdHlOUVVmY3pvSlA0N1UyUzV6OWV4TWdmXzd0QXFPVQ?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -4311,7 +4311,7 @@
           "original_title": "TPG Files Confidential IPO Application for Malaysia Hospital Assets Valued at Around $8 Billion"
         },
         {
-          "title": "Nvidia가 지원하는 Firmus, 말레이시아 데이터 센터 용량을 위해 OpenAI와 계약 체결",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTEl5UFVvaWZBUmFEZkVObFBBRVk3MHRBV29pSnoxSDJXSFVxUTl0SGR6NjdlamEyWUF5WF9LQW5nWVFRUTZhTnRjalplVWVEc3NPTEk4NllZR1B6VWVJbE1UaDlPLUFycVpRenZNRWRnUGlvREIyNy1kLUYyVTl0WU9IaG91MlV2dFpfYnpUNk1idFVMbmI0T2pmWHRWalY3UHRvMU1aazJhejh2eGJnS1pqUXpnNWdXY2k4THEzdV82OURFWjFz?oc=5",
           "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
@@ -4320,7 +4320,7 @@
           "original_title": "Nvidia-backed Firmus signs deal with OpenAI for Malaysia data centre capacity"
         },
         {
-          "title": "Firmus, OpenAI 파트너십 및 말레이시아 확장으로 계약 용량 900MW 초과",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Pulse 2.0",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPblBqOU9rd2lTYnJlOFlGYnkzdHRyMmctMGVjd05PX0VPZTA3aWlSNEtDc0wzZjhlaXBrMTlPRG44V3ZKcnRzOVVINHVaRVNCMU4wOFhjSlJ4c3dONzQ0UHRubG1KWG1WN205a19SbW1pYXpuS3poLWtIaFBEdGdtUk5OMGw0ZGV3ZGhMU0tvSURvOTEtZmFSeF9CMEZ6M3FrNTV0amVuVy1CSDhiNU9r0gG0AUFVX3lxTE0yRkhfOHZRZTdzcldxNWZFN2hDdkpSNHFGa00xNngyQWVJb1c3RkNyMTIyYkpRa0VSYUJQbGRCV0dSRHZNSVBDTEl0dENESGxUX3EzVktEcVZQV2V0eEs0cnJOTXpyOHJ2UkNRRHdGQ09VdEt4ZmI3ZV9MM3BfbE84czc4cWJQa1dScXdYU0dSTjBJOUlvWG0zM2JIYXNOaWNKSE9LcFJNMlJlYjJtdTJtaHFNXw?oc=5",
           "summary": "Firmus, OpenAI 파트너십 및 말레이시아 확장으로 계약 용량 900MW 초과…",
@@ -4337,7 +4337,7 @@
           "title": "전기차도 타이어 갈 때 됐다…K-타이어 '1762억弗 시장' 승부수",
           "desc": "전기차도 타이어 갈 때 됐다…K-타이어 '1762억弗 시장' 승부수&nbsp;&nbsp;v.daum.net",
           "source": "v.daum.net",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1sZnZvUUdzVFc3VWNPbThvQV9nc2lwNVR0MU5ENFlUVlE1bE9TQTIyRU1SUlVZLUpjbG9ESm9PWEZqVkdUc1pHanpUbm1qS3c?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB4YnJ3M05QZThiczdyaWhLOU96MzJ6MHpxWU43NWJuWVdrZzRmUk9rRlNCUW9laHRWb0JJdFp0WXdKRXZMeHc?oc=5",
           "lang": "ko",
           "translated": false,
           "original_title": ""
@@ -4346,9 +4346,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -4358,7 +4358,7 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "동남아시아 분기별 경제 리뷰: 기술 순풍이 2단 속도 지역을 주도",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "McKinsey & Company",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
@@ -4370,8 +4370,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "첫 번째 변화: 북미 관세는 위협에서 운영 현실로 이동합니다.",
-          "desc": "첫 번째 변화: 북미 관세는 위협에서 운영 현실로 이동&nbsp;&nbsp;공급...",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Supply Chain Management Review",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaWd6a2dxaWE1UTVCczhCYnM0M1E3NngyYUdIZDZfa29uR1E1WEhmUFVrLWduTU00MzJTOExkazY1cExSUWo3Nnkta2c1X1p3UXRZMmpqelV1V2NyS2NEaGZjZC13YVJsNnprUTJ4TjQyNmJ2bzhFd21URWdrYVRRUmIzTENVakVtcTVHV0VJWVpzWXNsUnNIZHpoVWlWb1NsOHhJ?oc=5",
           "lang": "en",
@@ -4405,7 +4405,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 40.8,
-        "change_pct": -0.29,
+        "change_pct": -0.31,
         "history_labels": [
           "10월",
           "11월",
@@ -4438,25 +4438,25 @@
       },
       "headlines": [
         {
-          "title": "태국: 바다에서 286일을 보낸 후 미국 선원들이 파타야에 상륙했습니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "dw.com",
           "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb1VYSGVZZ0JTU08zYkI4R1ZTMFhVY24zemFOdTZkWjE0MWY5MU9hQ21WZXBkbHM4QnhrRG43cDFmZmdfOG1TSENpMUZoczhLUl9iLURmc000NFNzMWpsOFUxMFNkOWlFX0YyOW5iYmFLdDFKX2hjRmNmS2xvYkxSdmlIeWQybjNzbjFRcll2c0R2WUhI?oc=5",
-          "summary": "태국: 바다에서 286일을 보낸 후 미국 선원들이 파타야에 상륙했습니다&nbsp;&nbsp;dw.com",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Thailand: After 286 days at sea, US sailors hit Pattaya"
         },
         {
-          "title": "몰리 파슬리(Molly Pasley)의 태국 복귀로 시각 장애 실무 공유 제공",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "NIU Today",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPalM5czVnM3p0SE41Q3FUdkh3cGNJaElSdy1kd0RITmdhUUNhR3RTWjRjQXpINGEtMFU3aHRUQkFVSFVNV2RQUEp1Uk5MVDlfV0U0MWtnMk1XeDBPcUhQQzdUcUsybHFMOG1vdDNzcE9iREUzVUtGMm9HUkxrVktEeEhhUWg4VmVZQXBXX1c0bWx5cGYtY3lncGVOUzBuSkE5SEVnV0s5TnZldUgzM0pDenJCejJkQjA?oc=5",
-          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "summary": "몰리 파슬리(Molly Pasley)가 태국으로 돌아와 시각 장애 분야의 실무 공유 기회 제공&nbsp;&…",
           "lang": "en",
           "translated": true,
           "original_title": "Molly Pasley’s return to Thailand offers sharing of practice in visual disabilities"
         },
         {
-          "title": "태국, 관광객의 나쁜 행동에 대해 이스라엘 대사 압박",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Bloomberg.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbEo4MWxEWG9VR0xIXzQwX2Y5Wkd6MWE1dTFwSWR6MHNPQTgtYWFkeER2V1VDQzExeG9XX1VFZlpSU3hQdXV6QlBiLTBaeDdoQXllVnJlcmJlcVJacE1ldlJqUF9vSXVmWnlNMFJ6YkEtWEVuUEFPSFA0c0RSd193b0xoVjU1TUhMZlVLMXpCU2UxS2JBaDNaRmNOWTJyRDBpRnd2LVEwejhjc2ZVbG16LWVTTHE?oc=5",
           "summary": "태국, 관광객의 나쁜 행동에 대해 이스라엘 대사 압박&nbsp;&nbsp;Bloomberg.com",
@@ -4482,8 +4482,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -4494,7 +4494,7 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "동남아시아 분기별 경제 리뷰: 기술 순풍이 2단 속도 지역을 주도",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "McKinsey & Company",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa2VLay02a3U1UnFDWmZpbUw3TGlYSU5ydGtDWW5kT0NrbVVDVzU0MXVENG9fYlNXaVFMT1lfYjdFbnpZRkhqcS0tTkNkbUFGazktNnpIa0pZa0hxaUZnOTZpWHE5VEJhVnRic0xZU2Rvd2FrS1RoQXd0ckl0U0xieUZyeHlmRWZCcjNsTTNsazZ2QzlRUnNLcmYteC1oMUE?oc=5",
@@ -4506,9 +4506,9 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "Error 500 (Server Error)!!1500.That’s an error…",
-          "desc": "중국을 넘어 아시아: 기회와 위험&nbsp;&nbsp;멕시코 비즈니스 뉴스",
-          "source": "Mexico Business News",
+          "title": "중국을 넘어 아시아: 기회와 위험",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "mexicobusiness.news",
           "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPanJEakgwWmowZjc1Zmk5LXZvbFQySGpkT21zVUFJd1I3OUREVGo5X290V3hoaUxuWmx3Um5LcnVqRnkxS0o4ZGNkc3A1TW9YclJ5U05XTlR2aEJYdUFJeFVGNjZhZFFlcURpWjRiQTFUcmhRVEY2Z0FlSjFXd0Q0ZzZSRDViVW1xd1dsNXRHZWJETjdLWWdkVWRQWQ?oc=5",
           "lang": "en",
           "translated": true,
@@ -4541,7 +4541,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "change_pct": -0.26,
+        "change_pct": -0.27,
         "history_labels": [
           "10월",
           "11월",
@@ -4586,7 +4586,7 @@
           "title": "베트남의 새우 수출은 2025년에 정체되고, 2026년에는 완만한 상승 추세를 보일 것입니다.",
           "source": "SeafoodSource",
           "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPak9FWXNNbnVlamxPajhrcVJHYjBUVEJXU0pnQlNqQnpNTjNOZ3ZjSC1NZGh1b2FUZTh6dnREU0xhTzJRNGsxWGxoS0NmaWxUX054T25iTlFRd1RWbGd0NzBCZkJoZFR2cnFRR1hVUm1Hd0pGRVBJMzdlVHdlYy1KMXFORnBmVUpLY3ZFQnVTa0JFa0ttcWp4dUpIV0JfVm1NNi1sa2JUbXZ4dw?oc=5",
-          "summary": "베트남의 새우 수출은 2025년에 정체되고, 2026년에는 완만한 상승 추세를 보일 것입니다.&nbsp;&nbsp;Seafoo…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Vietnam’s shrimp exports flat in 2025, see moderate upward trend in 2026"
@@ -4595,7 +4595,7 @@
           "title": "여행하는 베트남 벽이 크로포드에 도착 – KCSR / KBPY",
           "source": "chadronradio.com",
           "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5NRU5uRERVazlmM1daRnQtZWtNZlp5MjI1RUlvTkhUOFJ4cDh5YzkxV3p3YmZpbE5ONjZPbENNel8wdnlUQk96cEpUVUM5cFBwaWpBVURQcmV1LUMwWXBUV0VBdHY3QUpyX2oxRE9SV3lheXBpaktV?oc=5",
-          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "summary": "여행하는 베트남 벽이 크로포드에 도착 – KCSR / KBPY&nbsp;&nbsp;chadronradio.com",
           "lang": "en",
           "translated": true,
           "original_title": "Traveling Vietnam Wall Arrives in Crawford – KCSR / KBPY"
@@ -4618,8 +4618,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -4677,7 +4677,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 42.5,
-        "change_pct": -0.31,
+        "change_pct": -0.33,
         "history_labels": [
           "10월",
           "11월",
@@ -4713,16 +4713,16 @@
           "title": "대만의 음식 크롤링에서 볼거리 없이 중국 전통을 발견하다",
           "source": "WSJ",
           "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSFdqaGtLY1hSdkZ5Zmc4M1I0elQ3VTh6R1JSeTBXVndnYVNWbGFuQlhWaGd5V240Qm5VSzhUdVBzcmlTSWVNR1R4ODlLeXdfb2gtWXk3aTVMOUFBWGhlcjh6c0VmVmhtUThFX3Fja1F5NEpUR2tlZWhGVXZFWk92WlhlUm0zVFVOY255RUpKdXlGQVpuV05LWWxPNE8zN0lJVE0waXdJZC1EbmJFeEE?oc=5",
-          "summary": "대만의 음식 탐방에서 구경거리 없이 중국 전통을 발견하다&nbsp;&nbsp;WSJ",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "A Food Crawl in Taiwan Finds Chinese Tradition Without the Spectacle"
         },
         {
-          "title": "대만은 그냥 포기할 것인가?",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The Atlantic",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWG81MUZ5NkZ1QlZzcFotWHhJS1N6LW1wdnJqcUJsTUhmOWttV3B2eDFHWWxKbjJpcW11TGg1VVRjWlU1QnJFekhiWDgwWXVTODhxdW1lTHdSd2xfM0NSRmp4alI2dkE0ZWtJdE9EYm1VWDlZNDJHSWhVc1M0LTRfaHA2UGJYajVZYnV3?oc=5",
-          "summary": "대만은 과연 포기할 것인가?&nbsp;&nbsp;The Atlantic",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Will Taiwan Just Give Up?"
@@ -4731,7 +4731,7 @@
           "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Jurist.org",
           "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQOWg2Q1ZZYlA5TmktcTJYZENpVFpOZ3BnRjlSd25fVXBub21hQzB6WVhSUGZtLXdtVUlnTHJaSUhnQXdKSTIwV2Q5c2o2TXhJSnR3VVFpbGliU1BvOENza09XRm5LT0gzekJ3NnZFSkhXOG84TjVFaXVQVm9JUThfUkZFYkIwVDdTS0FQWld3RGQ3VU9VMUtQdGJaellRZy16Y0t1X1BZMTNoNGl5MTB2WGRBbENGaUx6VGFrc0k0YTBkdXcwWmZ5dG1wZkI5aDA?oc=5",
-          "summary": "대만은 침략을 환영하는 발언을 처벌하고 싶어합니다. 비용은 그 자체로 신뢰할 수 있는 것일 수 있습니다…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Taiwan Wants to Punish Speech That Welcomes an Invasion. The Cost May Be Its Own Credibility."
@@ -4754,8 +4754,8 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "Made in America: 제조업, 민간 고용력 폭발적 8월 일자리 보고서",
-          "desc": "Made in America: 제조업, 민간 고용력 폭발적 8월 채용 보고서&nbsp;&nb…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The White House (.gov)",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOVZ4MVVSX3JaMDNZMW1JRV9zTHZTb25DYlRKWnhQYWdLY3pIaXhjNUlocFJJS3owSTRydk1ESzRXZW8wM1RJQ1J5SmpScmZnUmN3YzFVV3JsQ214VXdpTTdZREl5NTRkQm03YTZ5ZXNGdmtmLTdmel9Yenl3bTNvcG5nc1lkSGhKbzE1SVNIbXpoWHpLSXd4dnNiSWd1Tk8ta29FVjJqWEpWaGNuZ19LYzkyczVCTXZWangyaW1ZV3Q3QQ?oc=5",
           "lang": "en",
@@ -4812,8 +4812,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 364.8,
-        "change_pct": -0.3,
+        "current_rate": 364.9,
+        "change_pct": -0.29,
         "history_labels": [
           "10월",
           "11월",
@@ -4840,7 +4840,7 @@
           419.9,
           386.9,
           375.1,
-          364.8
+          364.9
         ],
         "source": "Yahoo Finance (USD 교차 환산)"
       },
@@ -4855,19 +4855,19 @@
           "original_title": "Netanyahu got an explicit warning before Oct. 7. He didn't brief security chiefs"
         },
         {
-          "title": "HRW, 독일이 수단의 잔혹 행위와 국내 탄압에 대한 역할을 놓고 UAE에 맞서도록 촉구",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "Jurist.org",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcXE3eEhMT19rN3hMYlhQdlROdkhaZjQtbWVrVVZ4MEdJU0E4cVlxaGx4dkZUQjR6Y1cwT0NUYU9qTkVYSHY3TlQ0Nmw2b2otSjF6d1Jwb0wxWndteWpRUjVMMU83bFZScFFtLXdmUy1lT0gtT0xOclIxeUlTUFoyaGdVcXJOSTlDcXAzYWZEUExqT1NkQm5mN0dkS2ZMMjQzSUoyT2VEaTlEWXg1am56dXB2S0gtMkROdTc2SW1MX0RmUQ?oc=5",
-          "summary": "HRW, 독일이 수단의 잔혹 행위와 국내 탄압에 대한 역할을 놓고 UAE에 맞서도록 촉구",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "HRW urges Germany to confront UAE over role in Sudan atrocities and domestic repression"
         },
         {
           "title": "아랍에미리트",
-          "source": "The Global Legal Post",
+          "source": "globallegalpost.com",
           "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVDA3aG5LMXRVSVVPTVlXYmp3ckhvTi1ERnpTZW9sSDlnd01UbDNBV3J6S1JLLUR5YTV6aXVYWkg2NkZSVG5wRWRIV3dHbENOMDZPRllEQUo2R2xFRXNiWWJ3Z0JLcm9QcGNmZkNtMzdrdTJOZTJWcXpkMmNKTTVjcURlWmgtWnpmUlVUZkV2cGpNMm1sbmU2NHNwZFhCUTdGTVE2eW9jLUVVZ0cwYlZnbk5OVndJUGJrVk0yYVdTTmRzbzNUVVc4M3d6N0JDVW1YRFNv?oc=5",
-          "summary": "아랍에미리트 - Market Insights&nbsp;&nbsp;The Global Legal Post",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "United Arab Emirates"
@@ -4890,9 +4890,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -4903,7 +4903,7 @@
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
           "title": "치솟는 원유 가격으로 인해 주식이 채권 수익률을 높이는 압력을 받음",
-          "desc": "치솟는 원유 가격으로 인해 주식에 압력이 가해 채권 수익률이 높아졌습니다&nbsp;&nbsp;TradingView",
+          "desc": "치솟는 원유 가격으로 인해 주식이 압박을 받아 채권 수익률이 높아졌습니다&nbsp;&nbsp;TradingView",
           "source": "TradingView",
           "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRzZiU1BPcmR4VTk1NU1KR3pGWmJWcVloRFljZ3p4ZklRQWNfazdnOF9uRndPVWJaeGFXTS1pSzBDd0JPb1dpaWMybFNEbDV3WGdqaURFT3gxNWRnVTI5SW5XaVRlV215X2xKMHR0Q3lQX0o1OGw2U2FUeXRlRHpkQzhwd1hTVHdORTI4blVQelNvd3hjaElxNmd6Q29tZnZXOVJzMURXZU5QWlBmN0k3QTNpdHBwdWs?oc=5",
           "lang": "en",
@@ -4914,8 +4914,8 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "미국의 생산성이 관세 충격을 어떻게 완충했는지, 그리고 알아야 할 기타 무역 뉴스",
-          "desc": "미국의 생산성이 어떻게 관세 충격을 완충했는지, 그리고 알아야 할 기타 무역 뉴스…",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "The World Economic Forum",
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUt5by0teUFjNGZ5NWQ2cEJOZkdmQjBLeTdacVUxUS1wZFJQMEkyTFQ4Nkxpb2M1Wld2LTQ1YjZQRnFCdmFtTGlNQ29XdTRoTDFVRG5OZFYtWUtYMGdpQ1BGQjBXMWxhSHJQeVB4M1BMY3hiRUhmdUVEc0d4eUhSa2U5Q3NGeTdmRzBsb25YY0FZQVNxalFWeEluWk9iYjJBaFBWVmNoYWxjbk5fQ1lwTA?oc=5",
           "lang": "en",
@@ -4949,7 +4949,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 357.0,
-        "change_pct": -3.21,
+        "change_pct": -3.2,
         "history_labels": [
           "10월",
           "11월",
@@ -4985,7 +4985,7 @@
           "title": "사우디아라비아와 예멘의 후티 반군, 다시 전쟁 직전으로",
           "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOHhFbC1IOWIwTlZRbG45ak9BTC1vMEV1YXE1c2ktcTF2UU01eTkydkNXSWlxMklXVHRjXzBaTUdVVnRJa3hybkRGNGVTRk5YcVdaZXFCYmY4UDZfSGNtNk16eE5lYkdjeFNBOHVFY2xFazZtY29FRGdtUnRkWk80OGpMZnNmek9Qd1hnWnBCczVOMnQxbGRfQ0VUTFkzdw?oc=5",
-          "summary": "사우디아라비아와 예멘의 후티 반군, 다시 전쟁 직전으로 돌아가다&nbsp;&nbsp;뉴욕 팀…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Saudi Arabia and Yemen’s Houthis Edge Back to the Brink of War"
@@ -5001,9 +5001,9 @@
         },
         {
           "title": "사우디아라비아 후티 반군 공격으로 석유시설 화재 발생, 73명 부상",
-          "source": "npr.org",
+          "source": "NPR",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBQcXFTQzJlWGRBYmdVMnQzbVVFS2k0M3Z2MXdTNnF5T0ZiSzdXQzBaZ01tZTNFSTZVQWRSbTl6TWdZU3d5bDJTZFpHbllFUFlNVVZRdFZxcFljQm1ENmNxaVlnd091aW5kVnpXOHVVZUNJNzd6aHNTYVlR?oc=5",
-          "summary": "사우디아라비아에 대한 후티 공격으로 석유 시설에 화재가 발생하고 73명이 부상당했습니다.&nbsp;&nb…",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Houthi attacks on Saudi Arabia ignite fires at oil facilities and wound 73 people"
@@ -5026,9 +5026,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -5038,7 +5038,7 @@
           "category": "ECONOMY",
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
-          "title": "미국 주식시장 전망 | 사우디아라비아에 대한 후티(Houthi) 공격은 국제 유가를…",
+          "title": "미국 주식시장 전망 | 사우디아라비아에 대한 후티 반군 공격으로 인해 국제 유가가…",
           "desc": "미국 주식시장 전망 | 사우디아라비아 후티 반군 공격으로 국제유가 상승…",
           "source": "富途牛牛",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNXBMdUVMQVFybWhpNFFuLUgwaGlFb2JTUFRiUDVhQjd3SzF2MEdOaVZrQlBtUnZ5UU5aajRqeG5oWk5nVjN5QUZsNkhCNWs1Nzd4V2h0OWZrZklLVVE1Q0k2YTlGbi1xTUNjLUtMa2owVDV0MXdCTTNtYk8yMF9reUVmZG1PaTJJLVhYZGxUM3NZZEJJTkg2Zng3VndDd1FFOEFR?oc=5",
@@ -5050,7 +5050,7 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "기술 상품과 해외 수요가 성장을 촉진함에 따라 중국의 수출 엔진이 속도를 높입니다.",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
           "desc": "기술 상품과 해외 수요가 성장을 촉진함에 따라 중국의 수출 엔진이 속도를 높이고 있습니다&nbsp;&n…",
           "source": "Global Sources",
           "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQS0ZRaEJGSE1VckVXWnJvMEZNZERCWmxjVUV0ZG9kMW80WFZ0MlRGS1Vxc3l0ck9rclNaaTBaSE5QaUlhX2F2ZUwyTE5FRm9DcWJtaXNnaHV1UVBveFJfS0otNnptZHNVZjcybmc3bmlabVdndFQtejlXWnJBdW12eDlYQjgzMnZ6Wlc1ekNaTG5uWmVjLXJWMzRXaE5IdUU3bXB0YmNrSEdYRHdZZW1PVHIyeHRhSmFteEJJbkNmb0NVc0hjenFRN2FMTG83RWJDNVlhY0dUdkRBb2tUeHhJ?oc=5",
@@ -5085,7 +5085,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 26.3,
-        "change_pct": -0.27,
+        "change_pct": -0.26,
         "history_labels": [
           "10월",
           "11월",
@@ -5121,16 +5121,16 @@
           "title": "고고학자들은 3,200년 된 비문이 '잃어버린' 고대 이집트 도시를 가리키는 것일 수 있다고 말합니다",
           "source": "Gizmodo",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYUxZSkd1WFpQcHhOalY4SzVOcVNTakdJVzlWV0pmUVlWanVJQTkxOVpPRExUSXNjREV6XzViSkJoLWRwTllNdTFNTnJqVlpWQkIzaXlGT05wZzlVcWJoclhVOU1RX2d5NjlqdW9SSDhqR0dLZGtyOVhhd2lna1lNTXdNQmQ4RmlkUkZ4R2JUbmNFbDctSTdBbzlPbWEzOUpGM2FRWlR2ZFJlZVZ1eERLbXNSc2FkUQ?oc=5",
-          "summary": "고고학자들은 3,200년 된 비문이 '잃어버린' 고대 이집트 도시를 가리키는 것일 수 있다고 말합니다.",
+          "summary": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "lang": "en",
           "translated": true,
           "original_title": "Archaeologists Say 3,200-Year-Old Inscription May Point to ‘Lost’ Ancient Egyptian City"
         },
         {
           "title": "이집트 TV 진행자 사라 칼리파, 마약 사건으로 사형 선고",
-          "source": "USA Today",
+          "source": "usatoday.com",
           "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQlV2QjZ1WWFkOVdzbEUwSU9DZWM3a0xRaGl4YWtqRGNBd1NWOFJmRWZna3EyVGJRdDMxc2NRYjNPcm9YTW9IcjhaSFFJcmpXMU5LTmthWXhhVGlCdHF5VEVKY3VyendHVU5LeWR3NlY2V1llWFc4V0NKcTFqNWxJa183MXFpdTJTdEFrZTg3QWVXRnFVWFlZNnBSNEVpWVhaZW5ha1dPam9Rb0FzVHp2SjU0LXBqQXFnQWg2dVJGSm91bUNyNU9V?oc=5",
-          "summary": "이집트 TV 진행자 사라 칼리파, 마약 사건으로 사형 선고&nbsp;&nbsp;USA 투데이",
+          "summary": "이집트 TV 진행자 사라 칼리파, 마약 사건으로 사형 선고&nbsp;&nbsp;usatoday.co…",
           "lang": "en",
           "translated": true,
           "original_title": "Egyptian TV presenter Sarah Khalifa sentenced to death in drug case"
@@ -5162,9 +5162,9 @@
           "category": "HR & LABOR",
           "tag": "노동법·인력",
           "tag_class": "bg-indigo-100 text-indigo-700",
-          "title": "최저 급여 변경 발표",
-          "desc": "최저 급여 변경 사항 발표&nbsp;&nbsp;Fragomen",
-          "source": "Fragomen",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "fragomen.com",
           "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
           "lang": "en",
           "translated": true,
@@ -5263,7 +5263,7 @@
           "original_title": "Kazakhstan claims victory amid confusing medal count at Nomad Games"
         },
         {
-          "title": "홍콩이 카자흐스탄 자산 매각을 활용하는 방법",
+          "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
           "source": "South China Morning Post",
           "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSG14eEVjWEd1S0UyRk85YmtVdF9Qdld1bVVIY3RIZjBxb2s0Ri1sQzBxRWNOeGxfX3NRTERFNlJjOUZkTFRxUWxyRGtHcjRwaG53QnRFSEI2dW93VTM4WnlIVkwtT3U3Qlg3QkxTb2FmNEMyWUh6NU80ZlhjLTZSUVJ0Si1oNVk5NXBXVVdGU1l5TXZTQUVhNFpzcUhsZlJTNmpRdHlJV1NZU25UVm90LURKV2JaNGFHaXdyaGpmTdIBvwFBVV95cUxNeVFoMnAzcjUyaWlYdnc0X1JnWWJxMExKXzNlWjVya1Jvb1ZLb1Riczlsa05VaDFDWFlGcUVZX1dGTE1LOUZsajIzeHRqcTd5ajZTTDJzZGpFUjZfWENyOHFGNTd2eTBrdUZCNU1BZk5BZk9RUW82WDR1MW1sanJSOHdubW5GcHJsZm9OTGEyWGs0S2g0NjEyaTFZa0RVUkdhcURHbE5jeTlUMWVxaW9VWXBXeHJXTmVUUmVYSm5FMA?oc=5",
           "summary": "홍콩이 카자흐스탄 자산 매각을 활용하는 방법&nbsp;&nbsp;South China Morning Post",
@@ -5311,7 +5311,7 @@
           "tag": "경기·금리",
           "tag_class": "bg-emerald-100 text-emerald-700",
           "title": "무디스, 카자흐스탄 개발은행의 Baa1 등급과 안정적인 전망 확인",
-          "desc": "무디스는 안정적인 전망과 함께 카자흐스탄 개발 은행의 Baa1 등급을 확인합니다&nbsp;&nbs...",
+          "desc": "무디스는 카자흐스탄 개발은행의 Baa1 등급과 안정적인 전망을 확인했습니다&nbsp;&nbs...",
           "source": "trend.az",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5BNEhXNjlhVXBoNVk4amdxUWdwV0hocjFJdG1yRzZJMmozXzMxTTNCUkpsUVJOT2JtOUpPM2ZzVVh2ODdNYW8xYWl3U3NsemFEODk5Q25BUTBvc1gzVkg0?oc=5",
           "lang": "en",
@@ -5322,13 +5322,13 @@
           "category": "MANAGEMENT",
           "tag": "관세·공급망",
           "tag_class": "bg-amber-100 text-amber-700",
-          "title": "카자흐스탄, 미국 하원 중요 광물 청문회에서 중심 무대 차지",
-          "desc": "카자흐스탄은 미국 하원의 중요 광물 청문회에서 중심 무대를 차지했습니다.&nbsp;&nbsp;The Times…",
-          "source": "The Times Of Central Asia",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRWpuX2JjNnRYVTR1SnNCUEZJcThIa1ZtR2ZTYlI5NUlJUFFJV1hqVXpyMVpaN2ZKWkRwRGhnR2JGQ0VQLUtHX0lCTExhRkM5bmRiWk45Tjc0YWs2LXhRNF9IT0Zxcm9qUkxWNWdwaGVPWXljaVl0THZ0WnBueU1vNldVVlBvTkM3OTBKQjVFemxYY3M?oc=5",
+          "title": "Error 500 (Server Error)!!1500.That’s an error…",
+          "desc": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+          "source": "Cushman & Wakefield",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUlIZWJwamY4VnNnZzAwdUUtODMzaXM0NVFXWnBCM0gzdVE3cTNYSjM4aXVJUDRVRG81MGs4RVh0c1hVU3JheHRlYW9jS1dkeXl6WFFEdUlEaEFaSWVBZGU5OEMyY1ZPUXVEcUM3UFFJQzR1Zk9OQQ?oc=5",
           "lang": "en",
           "translated": true,
-          "original_title": "Kazakhstan Takes Center Stage in U.S. House Critical Minerals Hearing"
+          "original_title": "The Scale of It All​: Updates on the Most Recent U.S.-Canada Tariffs​"
         }
       ]
     }
