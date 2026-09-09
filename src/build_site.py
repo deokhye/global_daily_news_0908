@@ -8,6 +8,10 @@ collector.py가 만든 "as_of_display"("YYYY-MM-DD 06:00 KST 기준" 고정 포�
 함께 담아, 상단 배너와 날짜 피커로 과거 아카이브를 불러왔을 때 모두 동일한 필드
 (dashboard.as_of_display)로 일관되게 표시되도록 한다.
 
+국가 정렬(가나다순)은 이 스크립트가 아니라 template.html 의 클라이언트 JS에서 수행한다
+(localeCompare('ko-KR') 사용) — 서버 렌더링 시점에는 COUNTRIES 원본 순서를 그대로 유지하고,
+화면에 그릴 때만 정렬해 데이터 자체의 순서는 안정적으로 보존한다.
+
 실행:
     python src/collector.py    # 39개국 수집 -> data/countries_data.json + docs/archive/*.json
     python src/build_site.py   # 템플릿에 데이터 임베드 -> docs/index.html
@@ -30,7 +34,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, "template")
 TEMPLATE_NAME = "template.html"
 OUTPUT_PATH = os.path.join(BASE_DIR, "docs", "index.html")
 
-REQUIRED_PROFILE_FIELDS = ["capital", "population", "gdp", "inflation", "unemployment"]
+REQUIRED_PROFILE_FIELDS = ["capital", "population", "gdp", "inflation", "unemployment", "min_wage"]
 
 
 def load_data() -> dict:
