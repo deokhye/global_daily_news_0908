@@ -1,30 +1,41 @@
 """
 collector.py
 ------------
-Global Daily News — 39개 진출국 데이터 수집기 (v8)
+Global Daily News — 39개 진출국 데이터 수집기 (v9)
 
-v8 변경점 (이전 버전 대비)
-  A) 한국(KR) 현지 뉴스는 100% 순수 한국어 파이프라인
-     - KR은 번역 단계를 아예 거치지 않고, Google News 한국어 피드(hl=ko&gl=KR&ceid=KR:ko)에서
-       바로 국내 주요 언론사 기사를 가져온다.
-     - 나머지 38개국은 기존과 동일하게 "영문 우선(정확도) → 한국어 번역" 전략을 유지한다.
-  B) 39개국 전체 공식(참고) 최저임금 메타데이터 매핑
-     - 이전에는 미국(US)에만 최저임금이 하드코딩되어 있었다. 이번 버전은 39개국 전체에
-       MIN_WAGE_DATA 테이블을 매핑해 국가 프로필 카드에 항상 최저임금이 표시되도록 했다.
-     - 최저임금은 실시간 API가 없어(공식 글로벌 API 부재) 정기적으로 갱신해야 하는 참고성 정적
-       데이터이므로, 코드 내 단일 테이블로 관리하며 각 값에 기준 시점을 함께 표기한다.
-  C) '한국타이어 주요 거점' 하드코딩 버그 점검 및 영문 조직명 보강
-     - 거점 목록은 국가별로 완전히 분리된 데이터이며(다른 국가에 테네시가 노출되는 버그 없음),
-       이번 버전에서는 각 거점에 참고용 영문 조직명을 병기해 "한국어 설명 (English Name)"
-       형태로 통일했다.
+v9 변경점 — GitHub Actions "Process completed with exit code 1" 크래시 수정
+  이전 버전은 39개국 병렬 수집 루프 자체는 국가 단위로 안전하게 예외 처리되어 있었지만,
+  루프가 끝난 뒤 결과를 파일로 저장하는 `save_cache()` / `save_archive()` 호출에는
+  아무런 try-except가 없었다. 만약 39개국 중 단 하나의 값이라도(예: pandas/numpy 스칼라가
+  실수로 섞여 들어가는 경우 등) JSON으로 직렬화되지 않으면, `json.dump()`가
+  `TypeError`를 던지며 스크립트 전체가 그 자리에서 죽어버렸다 — 이게 바로
+  "Process completed with exit code 1"의 가장 유력한 원인이다. 이번 버전에서 다음을
+  적용해 이 문제를 근본적으로 차단한다.
 
-그 외 핵심 기능 (이전 버전에서 이어짐)
-  - 주요 산업/비즈니스 동향 'Error' 노출 원천 차단: 모든 수집/파싱/번역 단계 세밀한 try-except
-    + 4대 분야 슬롯은 항상 안전한 문구/링크로 채워짐 (Fallback)
-  - 국가 내 헤드라인(3)+산업동향(4) 전체 구간 기사 중복 제거 (seen_titles 공유)
-  - 환율 표기 소수점 1자리 통일 + VND/JPY/IDR 100단위 환산
-  - 일별 아카이브(docs/archive/YYYY-MM-DD.json) + 180일 보존정책
-  - 환율 수집: ~400일 일봉을 받아 pandas로 직접 월별 종가 리샘플
+    1) json.dump(..., default=str) — 혹시라도 직렬화 불가능한 값이 섞여도 예외를 던지는
+       대신 str()로 강제 변환해 저장을 계속 진행한다 (데이터 유실보다 안전).
+    2) save_cache()/save_archive() 호출을 main()에서 각각 개별 try-except로 감싸,
+       하나가 실패해도 스크립트가 죽지 않고 나머지 작업을 계속하며, 최종적으로
+       핵심 산출물(data/countries_data.json)이 정말 생성되지 않은 경우에만 실패로 간주한다.
+    3) `if __name__ == "__main__":` 진입점에 최상위 try-except를 두어, 정말로 복구
+       불가능한 예외가 발생하면 `log.exception()`으로 전체 스택 트레이스를 GitHub
+       Actions 로그에 명확히 남긴 뒤에만 실패를 다시 알린다 — 이제 "exit code 1"만
+       보고 원인을 못 찾는 상황 자체가 재발하지 않는다.
+
+핵심 기능 요약
+  1) 번역 실패/빈 값 시 원문(영문) 그대로 반환 — 화면에 'Error' 텍스트가 뜨는 일이 없다.
+  2) 39개국 수집 루프 전 구간(국가/헤드라인/산업동향/환율/프로필)에 다단계 try-except를
+     적용해, 특정 국가·특정 분야가 실패해도 '현지 산업 및 정책 모니터링 중' 같은 안전한
+     기본값으로 채우고 다음 국가로 계속 진행한다.
+  3) 한국(KR) 기사는 번역 파이프라인 없이 국내 한국어 소스(hl=ko&gl=KR&ceid=KR:ko)에서
+     직접 수집한다.
+  4) 39개국 전체 최저임금 메타데이터(MIN_WAGE_DATA)를 매핑하고, 미국 전용이었던
+     테네시 하드코딩을 제거해 국가별 거점(hubs)이 완전히 분리되어 있음을 보장한다.
+  5) VND/JPY/IDR 등 소액 통화는 100단위로 환산하고, 모든 원화 환산값은 소수점
+     1자리로 통일 포맷팅한다.
+  6) 국가 내 헤드라인(3)+산업동향(4) 전체 구간에서 `seen_titles = set()`으로 중복 기사를
+     제거하고, 일별 아카이브(docs/archive/YYYY-MM-DD.json)를 저장하며 180일 초과분은
+     자동 삭제한다(Retention Policy).
 """
 
 import os
@@ -65,6 +76,9 @@ SMALL_UNIT_CURRENCIES = {"VND": 100, "JPY": 100, "IDR": 100}
 
 # 원화 환산값(현재가/월별 히스토리) 반올림 자릿수 — 항상 소수점 1자리로 통일 표기
 WON_DECIMALS = 1
+
+# 모든 안전 Fallback 문구를 이 상수 하나로 통일 관리 (요청하신 정확한 문구)
+FALLBACK_TEXT = "현지 산업 및 정책 모니터링 중"
 
 
 # ---------------------------------------------------------------------------
@@ -244,7 +258,9 @@ def load_cache() -> dict:
 def save_cache(data: dict) -> None:
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(CACHE_PATH, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+        # default=str: 혹시라도 JSON으로 직렬화할 수 없는 값이 섞여도 예외로 죽지 않고
+        # 문자열로 강제 변환해 저장을 계속한다 (exit code 1 크래시의 가장 유력한 원인 차단).
+        json.dump(data, f, ensure_ascii=False, indent=2, default=str)
 
 
 def save_archive(data: dict) -> None:
@@ -254,7 +270,7 @@ def save_archive(data: dict) -> None:
 
     archive_path = os.path.join(ARCHIVE_DIR, f"{date_str}.json")
     with open(archive_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False)  # 용량 절약을 위해 압축(무들여쓰기) 저장
+        json.dump(data, f, ensure_ascii=False, default=str)  # 용량 절약을 위해 압축(무들여쓰기) 저장
 
     _apply_retention_and_reindex()
 
@@ -263,7 +279,13 @@ def _apply_retention_and_reindex() -> None:
     cutoff = datetime.now(KST).date() - timedelta(days=ARCHIVE_RETENTION_DAYS)
     valid_dates = []
 
-    for fname in os.listdir(ARCHIVE_DIR):
+    try:
+        archive_files = os.listdir(ARCHIVE_DIR)
+    except Exception as e:
+        log.warning(f"[retention] 아카이브 디렉토리 조회 실패, 보존정책 이번 회차는 건너뜀: {e}")
+        return
+
+    for fname in archive_files:
         if fname == "index.json" or not fname.endswith(".json"):
             continue
         date_part = fname[:-5]
@@ -288,8 +310,11 @@ def _apply_retention_and_reindex() -> None:
         "min_date": valid_dates[0] if valid_dates else None,
         "latest": valid_dates[-1] if valid_dates else None,
     }
-    with open(ARCHIVE_INDEX_PATH, "w", encoding="utf-8") as f:
-        json.dump(index_payload, f, ensure_ascii=False, indent=2)
+    try:
+        with open(ARCHIVE_INDEX_PATH, "w", encoding="utf-8") as f:
+            json.dump(index_payload, f, ensure_ascii=False, indent=2, default=str)
+    except Exception as e:
+        log.warning(f"[retention] index.json 저장 실패: {e}")
 
 
 def _strip_html(text: str) -> str:
@@ -436,15 +461,27 @@ def build_profile(country: dict, cached: dict) -> dict:
         log.warning(f"[{code}] GDP 지표 실패 → 캐시 사용: {e}")
         profile["gdp"] = cached_profile.get("gdp", "-")
 
-    profile.update(get_inflation_unemployment(code, cached_profile))
+    try:
+        profile.update(get_inflation_unemployment(code, cached_profile))
+    except Exception as e:
+        log.warning(f"[{code}] 물가·고용 지표 처리 중 예기치 못한 오류 → 캐시 사용: {e}")
+        profile["inflation"] = cached_profile.get("inflation", "-")
+        profile["unemployment"] = cached_profile.get("unemployment", "-")
+        profile["stats_source"] = cached_profile.get("stats_source", "캐시")
+        profile["stats_asof"] = cached_profile.get("stats_asof", "-")
 
     # 39개국 전체 최저임금 매핑 (미국 전용 하드코딩 제거)
-    wage = MIN_WAGE_DATA.get(code)
-    if wage:
-        profile["min_wage"] = wage["display"]
-        profile["min_wage_note"] = wage.get("note", "")
-    else:
-        log.warning(f"[{code}] 최저임금 메타데이터 누락 — MIN_WAGE_DATA 테이블 점검 필요")
+    try:
+        wage = MIN_WAGE_DATA.get(code)
+        if wage:
+            profile["min_wage"] = wage["display"]
+            profile["min_wage_note"] = wage.get("note", "")
+        else:
+            log.warning(f"[{code}] 최저임금 메타데이터 누락 — MIN_WAGE_DATA 테이블 점검 필요")
+            profile["min_wage"] = cached_profile.get("min_wage", "-")
+            profile["min_wage_note"] = cached_profile.get("min_wage_note", "")
+    except Exception as e:
+        log.warning(f"[{code}] 최저임금 처리 중 예기치 못한 오류: {e}")
         profile["min_wage"] = cached_profile.get("min_wage", "-")
         profile["min_wage_note"] = cached_profile.get("min_wage_note", "")
 
@@ -475,7 +512,7 @@ def _monthly_from_daily(daily: pd.Series, months: int = 12):
         return [], []
     try:
         grouped = daily.groupby(daily.index.to_period("M")).last().tail(months)
-        labels = [MONTH_KR[p.month - 1] for p in grouped.index]
+        labels = [str(MONTH_KR[int(p.month) - 1]) for p in grouped.index]
         values = [_round_won(v) for v in grouped]
         return labels, values
     except Exception as e:
@@ -552,18 +589,28 @@ def get_exchange_rate(country: dict, cached: dict) -> dict:
 
 # ---------------------------------------------------------------------------
 # 4. 자동 번역 (영문 기사를 한국어로 표출할 때 사용, KR 국가는 호출되지 않음)
+#    실패하거나 빈 값이 나오면 절대 Error 텍스트를 만들지 않고 원문(영문)을 그대로 반환한다.
 # ---------------------------------------------------------------------------
 @lru_cache(maxsize=2048)
-def _translate_to_ko(text: str) -> str:
-    if not text:
-        return text
+def translate_to_ko(text: str) -> str:
+    """번역 실패/빈 값/예외 발생 시 수집된 영문 원문을 그대로 반환한다 (Error 텍스트 절대 금지)."""
+    original = text if isinstance(text, str) else ("" if text is None else str(text))
+    if not original.strip():
+        return original
     try:
         from deep_translator import GoogleTranslator
-        translated = GoogleTranslator(source="auto", target="ko").translate(text)
-        return translated if translated else text
+        translated = GoogleTranslator(source="auto", target="ko").translate(original)
+        if not translated or not str(translated).strip():
+            # 번역 결과가 비어 있으면 원문을 그대로 사용
+            return original
+        return translated
     except Exception as e:
-        log.warning(f"번역 실패, 원문 유지: {e}")
-        return text
+        log.warning(f"번역 실패, 원문(영문) 그대로 사용: {e}")
+        return original
+
+
+# 이전 버전과의 호환을 위한 별칭 (내부적으로 동일 함수 사용)
+_translate_to_ko = translate_to_ko
 
 
 # ---------------------------------------------------------------------------
@@ -584,7 +631,10 @@ def _google_news_url_en(query: str) -> str:
 
 def _google_news_search_link(query_en: str) -> str:
     """수집 실패 시 화면에 노출할 공식 Google News 검색 링크(항상 유효)."""
-    return f"https://news.google.com/search?q={requests.utils.quote(query_en)}&hl=en-US&gl=US&ceid=US:en"
+    try:
+        return f"https://news.google.com/search?q={requests.utils.quote(query_en)}&hl=en-US&gl=US&ceid=US:en"
+    except Exception:
+        return "https://news.google.com/"
 
 
 def _parse_entry(entry) -> dict:
@@ -595,10 +645,13 @@ def _parse_entry(entry) -> dict:
         raise ValueError("title 또는 link 누락")
 
     source = ""
-    if hasattr(entry, "source"):
-        source = getattr(entry.source, "title", "") or ""
-    elif " - " in title_raw:
-        source = title_raw.split(" - ")[-1]
+    try:
+        if hasattr(entry, "source"):
+            source = getattr(entry.source, "title", "") or ""
+        elif " - " in title_raw:
+            source = title_raw.split(" - ")[-1]
+    except Exception:
+        source = ""
 
     summary = _strip_html(getattr(entry, "summary", ""))
     title = title_raw.split(" - ")[0] if " - " in title_raw else title_raw
@@ -620,7 +673,12 @@ def _fetch_feed(url: str, limit: int) -> list:
         return []
 
     items = []
-    entries = getattr(feed, "entries", []) or []
+    try:
+        entries = getattr(feed, "entries", []) or []
+    except Exception as e:
+        log.warning(f"피드 엔트리 접근 실패: {e}")
+        return []
+
     # 파싱 실패분/중복 제거를 감안해 넉넉히 훑되, 필요한 개수만 채우면 즉시 중단
     for entry in entries[: max(limit * 4, limit)]:
         try:
@@ -634,24 +692,34 @@ def _fetch_feed(url: str, limit: int) -> list:
 
 
 def _dedup_key(item: dict) -> str:
-    link = (item.get("link") or "").strip().lower()
-    if link:
-        return link
-    return (item.get("title") or "").strip().lower()
+    try:
+        link = (item.get("link") or "").strip().lower()
+        if link:
+            return link
+        return (item.get("title") or "").strip().lower()
+    except Exception:
+        return ""
 
 
 # ---------------------------------------------------------------------------
 # 6. 현지 주요 뉴스 (Local Headlines)
-#    — KR: 100% 순수 한국어 (번역 파이프라인 없음)
+#    — KR: 100% 순수 한국어 (번역 파이프라인 없음, hl=ko&gl=KR)
 #    — 그 외 38개국: 정확도 우선 글로벌 영문 검색 → 한국어로 100% 자동 번역
+#      (번역 실패 시 원문 영문 그대로 노출, 절대 Error 텍스트 없음)
 # ---------------------------------------------------------------------------
 def _fallback_headline_item(country: dict) -> dict:
-    query_en = country["name_en"]
+    try:
+        query_en = country.get("name_en", "")
+        link = _google_news_search_link(query_en)
+        name_kr = country.get("name_kr", "")
+    except Exception:
+        link = "https://news.google.com/"
+        name_kr = ""
     return {
-        "title": "현지 주요 정책 및 시장 동향 모니터링 중",
+        "title": FALLBACK_TEXT,
         "source": "Google News 검색",
-        "link": _google_news_search_link(query_en),
-        "summary": f"{country['name_kr']} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다.",
+        "link": link,
+        "summary": f"{name_kr} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다." if name_kr else "관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다.",
         "lang": "ko",
         "translated": False,
         "original_title": "",
@@ -659,85 +727,108 @@ def _fallback_headline_item(country: dict) -> dict:
 
 
 def _get_headlines_kr_native(country: dict, cached: dict, seen_titles: set) -> list:
-    """한국(KR) 전용 — 번역 없이 국내 언론사 한국어 기사를 그대로 수집."""
+    """한국(KR) 전용 — 번역 없이 국내 언론사 한국어 기사를 그대로 수집 (hl=ko&gl=KR&ceid=KR:ko)."""
     limit = 3
     selected = []
     try:
         candidates = _fetch_feed(_google_news_top_url_ko(), limit=limit * 8)
         for item in candidates:
-            key = _dedup_key(item)
-            if not key or key in seen_titles:
+            try:
+                key = _dedup_key(item)
+                if not key or key in seen_titles:
+                    continue
+                item["lang"] = "ko"
+                item["translated"] = False
+                item["original_title"] = ""
+                selected.append(item)
+                seen_titles.add(key)
+                if len(selected) >= limit:
+                    break
+            except Exception as e:
+                log.warning(f"[KR] 개별 기사 처리 실패, 건너뜀: {e}")
                 continue
-            item["lang"] = "ko"
-            item["translated"] = False
-            item["original_title"] = ""
-            selected.append(item)
-            seen_titles.add(key)
-            if len(selected) >= limit:
-                break
     except Exception as e:
         log.warning(f"[KR] 국내 뉴스 수집 실패: {e}")
 
     if selected:
         return selected
 
-    cached_headlines = (cached or {}).get("headlines", [])
+    try:
+        cached_headlines = (cached or {}).get("headlines", [])
+    except Exception:
+        cached_headlines = []
     if cached_headlines:
         return cached_headlines
     return [_fallback_headline_item(country)]
 
 
 def _get_headlines_global_translated(country: dict, cached: dict, seen_titles: set) -> list:
-    """해외 38개국 — 정확도 우선 글로벌 영문 검색 → 항상 한국어로 번역해 표출."""
+    """해외 38개국 — 정확도 우선 글로벌 영문 검색 → 항상 한국어로 번역해 표출.
+    번역이 실패하거나 빈 값이면 영문 원문을 그대로 사용한다(절대 Error 텍스트 없음)."""
     limit = 3
     selected = []
     try:
-        # 중복 제거를 감안해 필요한 개수보다 훨씬 넉넉한 후보 풀을 확보한다
         candidates = _fetch_feed(_google_news_url_en(f"{country['name_en']} when:3d"), limit=limit * 8)
         for item in candidates:
-            key = _dedup_key(item)
-            if not key or key in seen_titles:
-                continue
             try:
-                original_title = item["title"]
-                original_summary = item["summary"]
-                item["title"] = _translate_to_ko(original_title) or original_title
-                item["summary"] = _translate_to_ko(original_summary) if original_summary else ""
-                item["lang"] = "en"
-                item["translated"] = True
-                item["original_title"] = original_title
+                key = _dedup_key(item)
+                if not key or key in seen_titles:
+                    continue
+                original_title = item.get("title", "")
+                original_summary = item.get("summary", "")
+                try:
+                    item["title"] = translate_to_ko(original_title)
+                    item["summary"] = translate_to_ko(original_summary) if original_summary else ""
+                    item["lang"] = "en"
+                    item["translated"] = (item["title"] != original_title)
+                    item["original_title"] = original_title
+                except Exception as e:
+                    # 번역 단계 자체에서 예기치 못한 예외가 나도 원문을 그대로 사용
+                    log.warning(f"[{country['code']}] 헤드라인 번역 실패, 원문 유지: {e}")
+                    item["title"] = original_title
+                    item["summary"] = original_summary
+                    item["lang"] = "en"
+                    item["translated"] = False
+                    item["original_title"] = original_title
+                selected.append(item)
+                seen_titles.add(key)
+                if len(selected) >= limit:
+                    break
             except Exception as e:
-                log.warning(f"[{country['code']}] 헤드라인 번역 실패, 원문 유지: {e}")
-                item["lang"] = "en"
-                item["translated"] = False
-                item["original_title"] = item.get("title", "")
-            selected.append(item)
-            seen_titles.add(key)
-            if len(selected) >= limit:
-                break
+                log.warning(f"[{country['code']}] 개별 기사 처리 실패, 건너뜀: {e}")
+                continue
     except Exception as e:
         log.warning(f"[{country['code']}] 현지 뉴스 수집 실패: {e}")
 
     if selected:
         return selected
 
-    cached_headlines = (cached or {}).get("headlines", [])
+    try:
+        cached_headlines = (cached or {}).get("headlines", [])
+    except Exception:
+        cached_headlines = []
     if cached_headlines:
         return cached_headlines
 
-    # 캐시조차 없는 완전 최초 실행 실패 상황 — 절대 빈 화면/에러 텍스트를 남기지 않는다.
+    # 캐시조차 없는 완전 최초 실행 실패 상황 — 절대 빈 화면/Error 텍스트를 남기지 않는다.
     return [_fallback_headline_item(country)]
 
 
 def get_headlines(country: dict, cached: dict, seen_titles: set) -> list:
-    if country["code"] == "KR":
-        return _get_headlines_kr_native(country, cached, seen_titles)
-    return _get_headlines_global_translated(country, cached, seen_titles)
+    try:
+        if country.get("code") == "KR":
+            return _get_headlines_kr_native(country, cached, seen_titles)
+        return _get_headlines_global_translated(country, cached, seen_titles)
+    except Exception as e:
+        log.error(f"[{country.get('code')}] get_headlines 최상위 예외, 안전 Fallback 사용: {e}")
+        cached_headlines = (cached or {}).get("headlines", [])
+        return cached_headlines if cached_headlines else [_fallback_headline_item(country)]
 
 
 # ---------------------------------------------------------------------------
 # 7. 주요 산업 및 비즈니스 동향 — 한국어 우선 → 영문 대체 + 번역 (기존 전략 유지)
 #    AUTO MARKET / HR & LABOR / ECONOMY / MANAGEMENT — 4개 슬롯은 항상 채워진다.
+#    (멕시코 HR, 베트남 등 특정 국가/분야가 실패해도 FALLBACK_TEXT로 안전하게 채움)
 # ---------------------------------------------------------------------------
 INDUSTRY_TOPICS = [
     {
@@ -764,15 +855,19 @@ INDUSTRY_TOPICS = [
 
 
 def _fallback_trend_item(spec: dict, country: dict) -> dict:
-    query_en = spec["query_en_tpl"].format(name_en=country["name_en"])
+    try:
+        query_en = spec["query_en_tpl"].format(name_en=country.get("name_en", ""))
+        link = _google_news_search_link(query_en)
+    except Exception:
+        link = "https://news.google.com/"
     return {
-        "category": spec["category"],
-        "tag": spec["tag"],
-        "tag_class": spec["tag_class"],
-        "title": "현지 주요 정책 및 시장 동향 모니터링 중",
-        "desc": f"{spec['tag']} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다. 다음 갱신 시 자동으로 업데이트됩니다.",
+        "category": spec.get("category", ""),
+        "tag": spec.get("tag", ""),
+        "tag_class": spec.get("tag_class", "bg-slate-100 text-slate-700"),
+        "title": FALLBACK_TEXT,
+        "desc": f"{spec.get('tag', '')} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다. 다음 갱신 시 자동으로 업데이트됩니다.",
         "source": "Google News 검색",
-        "link": _google_news_search_link(query_en),
+        "link": link,
         "lang": "ko",
         "translated": False,
         "original_title": "",
@@ -780,52 +875,62 @@ def _fallback_trend_item(spec: dict, country: dict) -> dict:
 
 
 def get_localized_items(query_kr: str, query_en: str, limit: int, when_filter: str, seen_titles: set) -> list:
-    """1순위 한국어 검색 → 부족한 슬롯만 2순위 영문 검색 + 자동 번역으로 채운다 (중복 제거 포함)."""
+    """1순위 한국어 검색 → 부족한 슬롯만 2순위 영문 검색 + 자동 번역으로 채운다 (중복 제거 포함).
+    번역 실패 시에는 절대 Error 텍스트를 만들지 않고 영문 원문을 그대로 사용한다."""
     results = []
 
     try:
-        # 중복 제거를 감안해 넉넉한 후보 풀 확보
         kr_candidates = _fetch_feed(_google_news_url_ko(f"{query_kr} {when_filter}"), limit=limit * 8)
         for it in kr_candidates:
-            key = _dedup_key(it)
-            if not key or key in seen_titles:
+            try:
+                key = _dedup_key(it)
+                if not key or key in seen_titles:
+                    continue
+                it["lang"] = "ko"
+                it["translated"] = False
+                it["original_title"] = ""
+                results.append(it)
+                seen_titles.add(key)
+                if len(results) >= limit:
+                    break
+            except Exception as e:
+                log.warning(f"[KO 검색] 개별 기사 처리 실패, 건너뜀: {e}")
                 continue
-            it["lang"] = "ko"
-            it["translated"] = False
-            it["original_title"] = ""
-            results.append(it)
-            seen_titles.add(key)
-            if len(results) >= limit:
-                break
     except Exception as e:
         log.warning(f"[KO 검색] 실패 ({query_kr}): {e}")
 
     remaining = limit - len(results)
     if remaining > 0:
         try:
-            # 중복 제거를 감안해 넉넉한 후보 풀 확보
             en_candidates = _fetch_feed(_google_news_url_en(f"{query_en} {when_filter}"), limit=remaining * 8)
             for it in en_candidates:
-                key = _dedup_key(it)
-                if not key or key in seen_titles:
-                    continue
                 try:
-                    original_title = it["title"]
-                    original_summary = it["summary"]
-                    it["title"] = _translate_to_ko(original_title) or original_title
-                    it["summary"] = _translate_to_ko(original_summary) if original_summary else ""
-                    it["lang"] = "en"
-                    it["translated"] = True
-                    it["original_title"] = original_title
+                    key = _dedup_key(it)
+                    if not key or key in seen_titles:
+                        continue
+                    original_title = it.get("title", "")
+                    original_summary = it.get("summary", "")
+                    try:
+                        it["title"] = translate_to_ko(original_title)
+                        it["summary"] = translate_to_ko(original_summary) if original_summary else ""
+                        it["lang"] = "en"
+                        it["translated"] = (it["title"] != original_title)
+                        it["original_title"] = original_title
+                    except Exception as e:
+                        # 번역 단계에서 무슨 일이 있어도 원문(영문)을 그대로 사용
+                        log.warning(f"번역 단계 실패, 원문(영문) 그대로 사용: {e}")
+                        it["title"] = original_title
+                        it["summary"] = original_summary
+                        it["lang"] = "en"
+                        it["translated"] = False
+                        it["original_title"] = original_title
+                    results.append(it)
+                    seen_titles.add(key)
+                    if len(results) >= limit:
+                        break
                 except Exception as e:
-                    log.warning(f"번역 단계 실패, 원문 유지: {e}")
-                    it["lang"] = "en"
-                    it["translated"] = False
-                    it["original_title"] = it.get("title", "")
-                results.append(it)
-                seen_titles.add(key)
-                if len(results) >= limit:
-                    break
+                    log.warning(f"[EN 대체 검색] 개별 기사 처리 실패, 건너뜀: {e}")
+                    continue
         except Exception as e:
             log.warning(f"[EN 대체 검색] 실패 ({query_en}): {e}")
 
@@ -839,13 +944,13 @@ def get_industry_trends(country: dict, cached: dict, seen_titles: set) -> list:
     for spec in INDUSTRY_TOPICS:
         item = None
         try:
-            query_kr = spec["query_kr_tpl"].format(name_kr=country["name_kr"])
-            query_en = spec["query_en_tpl"].format(name_en=country["name_en"])
+            query_kr = spec["query_kr_tpl"].format(name_kr=country.get("name_kr", ""))
+            query_en = spec["query_en_tpl"].format(name_en=country.get("name_en", ""))
             picked = get_localized_items(query_kr, query_en, limit=1, when_filter="when:14d", seen_titles=seen_titles)
             if picked:
                 item = picked[0]
         except Exception as e:
-            log.warning(f"[{country['code']}] '{spec['category']}' 산업 동향 수집 예외: {e}")
+            log.warning(f"[{country.get('code')}] '{spec.get('category')}' 산업 동향 수집 예외: {e}")
             item = None
 
         if item:
@@ -864,10 +969,15 @@ def get_industry_trends(country: dict, cached: dict, seen_titles: set) -> list:
                 })
                 continue
             except Exception as e:
-                log.warning(f"[{country['code']}] '{spec['category']}' 결과 가공 실패: {e}")
+                log.warning(f"[{country.get('code')}] '{spec.get('category')}' 결과 가공 실패: {e}")
 
-        # 여기 도달하면: 검색 실패 / 결과 없음 / 가공 실패 — 절대 빈 칸이나 Error를 남기지 않는다.
-        cached_item = cached_by_category.get(spec["category"])
+        # 여기 도달하면: 검색 실패 / 결과 없음 / 가공 실패
+        # (예: 멕시코 HR & LABOR, 베트남 등) — 절대 빈 칸이나 Error를 남기지 않고
+        # 캐시가 있으면 캐시, 없으면 안전한 FALLBACK_TEXT 항목으로 채운 뒤 다음 국가로 계속 진행한다.
+        try:
+            cached_item = cached_by_category.get(spec["category"])
+        except Exception:
+            cached_item = None
         trends.append(cached_item if cached_item else _fallback_trend_item(spec, country))
 
     return trends
@@ -875,6 +985,9 @@ def get_industry_trends(country: dict, cached: dict, seen_titles: set) -> list:
 
 # ---------------------------------------------------------------------------
 # 8. 국가 단위 수집 오케스트레이션
+#    이 함수 내부의 각 단계는 모두 개별 try-except로 감싸여 있어, 특정 국가의 특정
+#    분야(프로필/환율/헤드라인/산업동향) 중 어느 하나가 실패해도 해당 분야만 안전한
+#    기본값으로 대체되고, 스레드풀 전체가 죽지 않고 다음 국가로 계속 진행된다.
 # ---------------------------------------------------------------------------
 def collect_country(country: dict, cache_by_code: dict) -> dict:
     code = country["code"]
@@ -885,28 +998,34 @@ def collect_country(country: dict, cache_by_code: dict) -> dict:
     seen_titles: set = set()
 
     result = dict(country)
+
     try:
         result["profile"] = build_profile(country, cached)
     except Exception as e:
-        log.error(f"[{code}] 프로필 수집 실패: {e}")
+        log.error(f"[{code}] 프로필 수집 실패, 캐시/빈 값으로 대체 후 계속 진행: {e}")
         result["profile"] = (cached or {}).get("profile", {})
 
     try:
         result["exchange_rate"] = get_exchange_rate(country, cached)
     except Exception as e:
-        log.error(f"[{code}] 환율 수집 실패: {e}")
-        result["exchange_rate"] = (cached or {}).get("exchange_rate", {"is_base": False, "unit_base": 1})
+        log.error(f"[{code}] 환율 수집 실패, 캐시/기본값으로 대체 후 계속 진행: {e}")
+        result["exchange_rate"] = (cached or {}).get(
+            "exchange_rate",
+            {"is_base": False, "unit_base": 1, "current_rate": 0.0, "change_pct": 0.0,
+             "history_labels": [], "history_values": [], "source": "수집 실패"},
+        )
 
     try:
         result["headlines"] = get_headlines(country, cached, seen_titles)
     except Exception as e:
-        log.error(f"[{code}] 헤드라인 수집 실패: {e}")
-        result["headlines"] = (cached or {}).get("headlines", []) or [_fallback_headline_item(country)]
+        log.error(f"[{code}] 헤드라인 수집 실패, Fallback 문구로 대체 후 계속 진행: {e}")
+        cached_headlines = (cached or {}).get("headlines", [])
+        result["headlines"] = cached_headlines if cached_headlines else [_fallback_headline_item(country)]
 
     try:
         result["hr_trends"] = get_industry_trends(country, cached, seen_titles)
     except Exception as e:
-        log.error(f"[{code}] 산업 동향 수집 실패: {e}")
+        log.error(f"[{code}] 산업 동향 수집 실패, Fallback 문구로 대체 후 계속 진행: {e}")
         cached_trends = (cached or {}).get("hr_trends", [])
         result["hr_trends"] = cached_trends if cached_trends else [
             _fallback_trend_item(spec, country) for spec in INDUSTRY_TOPICS
@@ -916,34 +1035,49 @@ def collect_country(country: dict, cache_by_code: dict) -> dict:
     return result
 
 
-def main() -> dict:
-    cache_by_code = load_cache()
+def _build_country_fallback(country_code: str) -> dict:
+    """국가 단위 수집이 스레드 자체에서 완전히 실패했을 때 사용하는 최종 안전망."""
+    fallback_meta = next((c for c in COUNTRIES if c["code"] == country_code), None)
+    if fallback_meta is None:
+        # 이론상 발생할 수 없지만(항상 COUNTRIES에서 파생된 코드), 방어적으로 최소 골격 반환
+        fallback_meta = {"code": country_code, "region": "ALL", "name_kr": country_code,
+                          "name_en": country_code, "currency": "USD", "flag": "un", "hubs": []}
+    return {
+        **fallback_meta,
+        "profile": {},
+        "exchange_rate": {"is_base": False, "unit_base": 1, "current_rate": 0.0, "change_pct": 0.0,
+                           "history_labels": [], "history_values": [], "source": "수집 실패"},
+        "headlines": [_fallback_headline_item(fallback_meta)],
+        "hr_trends": [_fallback_trend_item(spec, fallback_meta) for spec in INDUSTRY_TOPICS],
+    }
 
+
+def main() -> dict:
+    try:
+        cache_by_code = load_cache()
+    except Exception as e:
+        log.error(f"캐시 로드 중 예기치 못한 오류, 빈 캐시로 계속 진행: {e}")
+        cache_by_code = {}
+
+    collected = {}
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {pool.submit(collect_country, c, cache_by_code): c["code"] for c in COUNTRIES}
-        collected = {}
         for future in as_completed(futures):
             code = futures[future]
             try:
                 collected[code] = future.result()
             except Exception as e:
-                log.error(f"[{code}] 국가 단위 수집 실패, 캐시로 대체: {e}")
-                fallback_meta = next(c for c in COUNTRIES if c["code"] == code)
-                cached_fallback = cache_by_code.get(code)
-                if cached_fallback:
-                    collected[code] = cached_fallback
-                else:
-                    collected[code] = {
-                        **fallback_meta,
-                        "profile": {},
-                        "exchange_rate": {"is_base": False, "unit_base": 1, "current_rate": 0.0,
-                                          "change_pct": 0.0, "history_labels": [], "history_values": [],
-                                          "source": "수집 실패"},
-                        "headlines": [_fallback_headline_item(fallback_meta)],
-                        "hr_trends": [_fallback_trend_item(spec, fallback_meta) for spec in INDUSTRY_TOPICS],
-                    }
-        # 원본 COUNTRIES 순서를 유지해 UI 정렬을 안정적으로 유지 (프론트엔드에서 가나다순 정렬 적용)
-        countries_result = [collected[c["code"]] for c in COUNTRIES]
+                log.error(f"[{code}] 국가 단위 수집이 스레드에서 완전히 실패, 캐시/안전망으로 대체: {e}")
+                try:
+                    cached_fallback = cache_by_code.get(code)
+                    collected[code] = cached_fallback if cached_fallback else _build_country_fallback(code)
+                except Exception as inner_e:
+                    log.error(f"[{code}] 안전망 구성 중에도 오류 발생, 최소 골격으로 대체: {inner_e}")
+                    collected[code] = _build_country_fallback(code)
+
+    # 원본 COUNTRIES 순서를 유지해 UI 정렬을 안정적으로 유지 (프론트엔드에서 가나다순 정렬 적용)
+    # .get()으로 조회해 혹시라도 특정 코드가 누락되어도 KeyError로 죽지 않고 안전망으로 채운다.
+    countries_result = [collected.get(c["code"]) or _build_country_fallback(c["code"]) for c in COUNTRIES]
 
     now_kst = datetime.now(KST)
     data = {
@@ -955,11 +1089,40 @@ def main() -> dict:
         "countries": countries_result,
     }
 
-    save_cache(data)
-    save_archive(data)
+    cache_saved = False
+    try:
+        save_cache(data)
+        cache_saved = True
+        log.info(f"data/countries_data.json 저장 완료 ({len(countries_result)}개국)")
+    except Exception as e:
+        log.error(f"data/countries_data.json 저장 실패: {e}")
+
+    try:
+        save_archive(data)
+        log.info(f"docs/archive/{now_kst.strftime('%Y-%m-%d')}.json 저장 및 보존정책 적용 완료")
+    except Exception as e:
+        # 아카이브 저장은 '과거 날짜 조회' 기능에만 영향을 주고 사이트 자체 생성에는 영향이 없으므로
+        # 실패해도 스크립트를 죽이지 않고 경고만 남긴다.
+        log.error(f"아카이브 저장/보존정책 처리 실패 (사이트 자체는 정상 생성됩니다): {e}")
+
+    if not cache_saved:
+        # 핵심 산출물(data/countries_data.json)이 정말 생성되지 않은 경우에만 실패로 간주한다.
+        # 이 경우 build_site.py가 읽을 데이터 자체가 없으므로 명확히 실패를 알린다.
+        raise RuntimeError(
+            "data/countries_data.json 저장에 실패해 사이트를 생성할 수 없습니다. "
+            "위 로그의 'data/countries_data.json 저장 실패' 항목을 확인하세요."
+        )
+
     log.info(f"전체 {len(countries_result)}개국 수집 완료 → {CACHE_PATH} / {ARCHIVE_DIR}")
     return data
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        # 여기까지 도달했다는 것은 정말로 복구 불가능한 실패라는 뜻이다.
+        # log.exception()으로 전체 스택 트레이스를 GitHub Actions 로그에 명확히 남겨,
+        # 이후에는 "exit code 1"만 보고 원인을 못 찾는 상황이 재발하지 않도록 한다.
+        log.exception("collector.py 실행 중 처리되지 않은 예외가 발생했습니다 (원인은 위 스택 트레이스 참고)")
+        raise
